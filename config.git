@@ -1,0 +1,3 @@
+git config --global user.name "Rajat Vig"
+git config --global user.email "Rajat.Vig@gmail.com"
+git config --global core.editor emacs

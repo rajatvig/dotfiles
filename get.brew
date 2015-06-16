@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install caskroom/cask/brew-cask
+
+brew tap homebrew/binary
+brew tap homebrew/science
+brew tap homebrew/dupes
+brew tap homebrew/tex
+brew tap homebrew/binary
+brew tap staticfloat/julia
+
+brew install fish
+sudo chsh -s /usr/local/bin/fish `echo $USER`
