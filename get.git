@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
 git config --global user.name "Rajat Vig"
 git config --global user.email "Rajat.Vig@gmail.com"
 git config --global core.editor emacs
+git config --global core.excludesfile "~/.gitignore_global"
+
+ln -s dotfiles/gitignore_global ~/.gitignore_global

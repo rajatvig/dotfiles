@@ -1,0 +1,14 @@
+# direnv stuff
+.direnv
+.envrc
+
+# OS Specific
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# editor specific
+*~
+*.swp
+*.swo
