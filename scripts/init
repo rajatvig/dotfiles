@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+cd ~
+git clone git@github.com:rajatvig/dotfiles.git
+
+cd dotfiles/scripts
+
+sh ./get.brew
+sh ./get.git
+sh ./get.fish
+sh ./get.spacemacs
+sh ./get.spf13-vim
+
+cd ~
