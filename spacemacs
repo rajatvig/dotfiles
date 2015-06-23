@@ -39,7 +39,9 @@
      company-mode
      scala
      clojure
-     cider
+     erlang-elixir
+     typescript
+     javascript
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
