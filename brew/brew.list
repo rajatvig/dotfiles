@@ -16,6 +16,7 @@ fish
 gdbm
 ghc
 git
+git-review
 go
 gradle
 hadoop
