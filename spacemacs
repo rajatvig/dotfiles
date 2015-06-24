@@ -42,6 +42,7 @@
      erlang-elixir
      typescript
      javascript
+     python
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
@@ -186,6 +187,7 @@ layers configuration."
  '(ahs-inhibit-face-list nil)
  '(indent-tabs-mode nil)
  '(neo-theme (quote nerd))
+ '(python-indent-offset 2)
  '(ring-bell-function (quote ignore) t)
  '(standard-indent 2))
 (custom-set-faces
