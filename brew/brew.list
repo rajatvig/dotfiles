@@ -35,6 +35,7 @@ mongodb
 node
 openssl
 pcre
+phantomjs
 pkg-config
 pyenv
 pyenv-virtualenv

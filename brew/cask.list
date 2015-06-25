@@ -4,12 +4,16 @@ amethyst
 atom
 caffeine
 chromium
+colloquy
 dropbox
 emacs
 firefox
+firefoxdeveloperedition
 flux
 google-chrome
+google-chrome-canary
 google-drive
+gpgtools
 intellij-idea
 iterm2
 java
@@ -23,4 +27,5 @@ spectacle
 transmission
 vagrant
 virtualbox
+vivaldi
 xscreensaver

@@ -25,6 +25,7 @@
      markdown
      org
      shell
+     shell-scripts
      syntax-checking
      themes-megapack
      ruby
@@ -43,6 +44,10 @@
      typescript
      javascript
      python
+     vagrant
+     puppet
+     ansible
+     salt
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these

@@ -11,6 +11,8 @@ brew tap homebrew/tex
 brew tap homebrew/binary
 brew tap staticfloat/julia
 
+brew tap caskroom/versions
+
 brew install fish
 
 sudo chsh -s /usr/local/bin/fish `echo $USER`
