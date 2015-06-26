@@ -159,7 +159,7 @@ before layers configuration."
    ;; `current' or `nil'. Default is `all'
    dotspacemacs-highlight-delimiters 'all
    ;; If non nil advises quit functions to keep server open when quitting.
-   -persistent-server nil
+   dotspacemacs-persistent-server t
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    dotspacemacs-search-tools '("ag" "pt" "ack" "grep")
@@ -176,6 +176,12 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (global-linum-mode)
+  (global-set-key (kbd "<s-left>") 'move-beginning-of-line)
+  (global-set-key (kbd "<s-right>") 'move-end-of-line)
+  (global-set-key (kbd "<s-up>") 'beginning-of-buffer)
+  (global-set-key (kbd "<s-down>") 'end-of-buffer)
+  (global-set-key (kbd "s-z") 'undo)
+  (global-set-key (kbd "s-/") 'comment-or-uncomment-region)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
