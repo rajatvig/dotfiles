@@ -1,0 +1,5 @@
+use_python() {
+  local python_root=$PYENV_ROOT/versions/$1
+  load_prefix "$python_root"
+  layout_python "$python_root/bin/python"
+}
