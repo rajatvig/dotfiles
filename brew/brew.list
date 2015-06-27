@@ -6,6 +6,7 @@ arpack-julia
 autoconf
 boot2docker
 brew-cask
+cabal-install
 cassandra
 chromedriver
 clojurescript

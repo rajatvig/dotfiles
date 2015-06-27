@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
 curl http://j.mp/spf13-vim3 -L -o - | sh
+
+ln -s dotfiles/config/vimrc.local ~/.vimrc.local
