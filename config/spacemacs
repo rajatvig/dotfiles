@@ -31,7 +31,7 @@
      ruby
      haskell
      extra-langs
-     colors
+     (colors :variables colors-enable-rainbow-identifiers t)
      html
      osx
      slime
@@ -48,6 +48,8 @@
      puppet
      ansible
      salt
+     syntax-checking
+     gtags
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
@@ -87,12 +89,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(sanityinc-tomorrow-night
-                         solarized-light
-                         solarized-dark
-                         leuven
-                         monokai
-                         zenburn)
+   dotspacemacs-themes '(jazz
+                         sanityinc-tomorrow-night)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -169,6 +167,8 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  (setq-default ruby-version-manager 'rbenv)
+  (setq-default ruby-enable-ruby-on-rails-support t)
   )
 
 (defun dotspacemacs/config ()
