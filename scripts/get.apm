@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+apm install angularjs-styleguide-snippets
+apm install atom-beautify
+apm install atom-django
+apm install autocomplete-python
+apm install language-haskell
+apm install haskell-ghc-mod
+apm install autocomplete-haskell
