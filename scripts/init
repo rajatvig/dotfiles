@@ -14,5 +14,6 @@ sh ./get.spf13-vim
 sh ./get.cabal
 sh ./get.direnv
 sh ./get.osx
+sh ./get.npm
 
 cd ~

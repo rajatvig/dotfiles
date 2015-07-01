@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+npm install -g grunt-cli
+npm install -g js-beautify
+npm install -g tern
+npm install -g karma-cli
+npm install -g yo
+npm install -g bower
+npm install -g gulp
+npm install -g nodemon
+npm install -g generator-hottowel
