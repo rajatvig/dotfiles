@@ -10,6 +10,8 @@ brew tap homebrew/dupes
 brew tap homebrew/tex
 brew tap homebrew/binary
 brew tap staticfloat/julia
+brew tap xoebus/homebrew-cloudfoundry
+brew tap pivotal/tap
 
 brew tap caskroom/versions
 

@@ -11,6 +11,7 @@ cassandra
 chromedriver
 clojurescript
 cloog018-julia
+cloudfoundry-cli
 coreutils
 ctags
 datomic
@@ -26,9 +27,11 @@ gdbm
 ghc
 git
 git-review
+global
 gmp
 gmp4-julia
 go
+godep
 gradle
 hadoop
 htop-osx
@@ -48,8 +51,10 @@ libyaml
 llvm33-julia
 maven
 memcached
+mercurial
 mongodb
 mpfr
+mysql
 node
 openblas-julia
 openssl
@@ -73,6 +78,7 @@ rust
 sbt
 scala
 selenium-server-standalone
+spiff
 sqlite
 storm
 suite-sparse42-julia

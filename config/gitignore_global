@@ -1,6 +1,7 @@
 # direnv stuff
 .direnv
 .envrc
+.ruby-version
 
 # OS Specific
 .DS_Store
