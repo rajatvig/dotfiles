@@ -9,3 +9,4 @@ npm install -g bower
 npm install -g gulp
 npm install -g nodemon
 npm install -g generator-hottowel
+npm install -g eslint

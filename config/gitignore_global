@@ -13,3 +13,14 @@ Thumbs.db
 *~
 *.swp
 *.swo
+
+# oddness
+.tern-port
+
+# IDE
+.idea/**
+*.imr
+*.iml
+.project
+.classpath
+.settings/**

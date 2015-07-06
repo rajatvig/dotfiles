@@ -198,6 +198,7 @@ layers configuration."
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
  '(indent-tabs-mode nil)
+ '(js2-basic-offset 2)
  '(neo-theme (quote nerd))
  '(python-indent-offset 2)
  '(ring-bell-function (quote ignore) t)
