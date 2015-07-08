@@ -17,39 +17,41 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     company-mode
      auto-completion
      better-defaults
-     emacs-lisp
+     shell
+     osx
+     version-control
+     (colors :variables colors-enable-rainbow-identifiers t)
      (git :variables
           git-gutter-use-fringe t)
-     markdown
      org
-     shell
-     shell-scripts
      syntax-checking
-     themes-megapack
-     ruby
-     haskell
-     extra-langs
-     (colors :variables colors-enable-rainbow-identifiers t)
-     html
-     osx
-     slime
-     rust
-     go
-     company-mode
-     scala
-     clojure
-     erlang-elixir
-     typescript
      javascript
      python
+     ruby
+     haskell
+     scala
+     clojure
+     erlang
+     elixir
+     typescript
+     rust
+     go
+     slime
+     emacs-lisp
+     html
+     markdown
+     shell-scripts
+     extra-langs
+     gtags
      vagrant
      puppet
      ansible
      salt
-     syntax-checking
-     gtags
+     themes-megapack
+     erc
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
@@ -183,6 +185,10 @@ layers configuration."
   (global-set-key (kbd "<s-down>") 'end-of-buffer)
   (global-set-key (kbd "s-z") 'undo)
   (global-set-key (kbd "s-/") 'comment-or-uncomment-region)
+  (defun save-all ()
+    (interactive)
+    (save-some-buffers t))
+  (add-hook 'focus-out-hook 'save-all)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

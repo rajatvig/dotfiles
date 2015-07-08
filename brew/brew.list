@@ -3,6 +3,7 @@ ansible
 ant
 apache-spark
 arpack-julia
+aspell
 autoconf
 boot2docker
 brew-cask
