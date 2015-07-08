@@ -184,7 +184,7 @@ layers configuration."
   (global-set-key (kbd "<s-up>") 'beginning-of-buffer)
   (global-set-key (kbd "<s-down>") 'end-of-buffer)
   (global-set-key (kbd "s-z") 'undo)
-  (global-set-key (kbd "s-/") 'comment-or-uncomment-region)
+  (global-set-key (kbd "s-/") 'comment-dwim)
   (defun save-all ()
     (interactive)
     (save-some-buffers t))

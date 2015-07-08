@@ -14,6 +14,7 @@ clojurescript
 cloog018-julia
 cloudfoundry-cli
 coreutils
+cowsay
 ctags
 datomic
 direnv
@@ -23,6 +24,7 @@ emacs
 erlang
 fftw
 fish
+fortune
 gcc
 gdbm
 gettext
@@ -47,6 +49,7 @@ jpeg
 julia
 kafka
 leiningen
+libcaca
 libevent
 libffi
 libgcrypt
@@ -93,6 +96,7 @@ storm
 suite-sparse42-julia
 the_silver_searcher
 tig
+toilet
 unixodbc
 vim
 weechat

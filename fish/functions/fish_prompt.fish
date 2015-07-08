@@ -1,5 +1,5 @@
 function fish_prompt --description 'Write out the prompt'
-	
+
 	set -l last_status $status
 
 	if not set -q __fish_prompt_normal
@@ -14,7 +14,7 @@ function fish_prompt --description 'Write out the prompt'
 	printf '%s ' (__fish_git_prompt)
 
 	if not test $last_status -eq 0
-	set_color $fish_color_error
+	  set_color $fish_color_error
 	end
 
 	echo -n '$ '
