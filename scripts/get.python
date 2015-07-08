@@ -1,2 +1,0 @@
-pip install virtualenv
-pip install jedi json-rpc service_factory

@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-cabal update
-cabal install happy
-cabal install ghc-mod
-cabal install hlint

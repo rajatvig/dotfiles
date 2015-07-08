@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 
+# vim
+curl http://j.mp/spf13-vim3 -L -o - | sh
+
+# spacemacs
+git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+# atom
 apm install angularjs-styleguide-snippets
 apm install atom-beautify
 apm install atom-django

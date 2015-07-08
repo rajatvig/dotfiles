@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-ln -s ~/dotfiles/config/aspell.en.pws ~/.aspell.en.pws

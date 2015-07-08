@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 
+# cabal
+cabal update
+cabal install happy
+cabal install ghc-mod
+cabal install hlint
+
+# npm
 npm install -g grunt-cli
 npm install -g js-beautify
 npm install -g tern
@@ -10,3 +17,7 @@ npm install -g gulp
 npm install -g nodemon
 npm install -g generator-hottowel
 npm install -g eslint
+
+# pip
+pip install virtualenv
+pip install jedi json-rpc service_factory

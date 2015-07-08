@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+mkdir ~/.config
+
+ln -s ~/dotfiles/fish ~/.config/fish
+ln -s ~/dotfiles/config/zshrc ~/.zshrc
+ln -s ~/dotfiles/config/aspell.en.pws ~/.aspell.en.pws
+ln -s ~/dotfiles/direnvrc ~/.direnvrc
+ln -s ~/dotfiles/gitignore_global ~/.gitignore_global
+ln -s ~/dotfiles/spacemacs ~/.spacemacs
+ln -s ~/dotfiles/config/vimrc.local ~/.vimrc.local
