@@ -22,3 +22,4 @@ npm install -g eslint-plugin-angular
 # pip
 pip install virtualenv
 pip install jedi json-rpc service_factory
+pip install tox

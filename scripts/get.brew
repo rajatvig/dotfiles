@@ -14,6 +14,7 @@ brew tap xoebus/homebrew-cloudfoundry
 brew tap pivotal/tap
 
 brew tap caskroom/versions
+brew tap caskroom/fonts
 
 brew install fish
 
