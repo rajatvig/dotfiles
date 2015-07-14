@@ -1,5 +1,15 @@
 #!/usr/bin/env sh
 
+brew install bash
+
+brew install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -s ~/dotfiles/config/zshrc ~/.zshrc
+
+brew install fish
+mkdir ~/.config
+ln -s ~/dotfiles/fish ~/.config/fish
+
 sudo chsh -s /usr/local/bin/fish `echo $USER`
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -s ~/dotfiles/direnvrc ~/.direnvrc

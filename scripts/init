@@ -5,12 +5,12 @@ git clone git@github.com:rajatvig/dotfiles.git ~/dotfiles
 
 cd ~/dotfiles/scripts
 
-sh ./get.brew
-sh ./get.editors
-sh ./get.git
-sh ./get.osx
-sh ./get.packages
+sh ./config.brew
+sh ./config.git
 sh ./get.shell
-sh ./make.links
+sh ./get.python
+sh ./get.packages
+sh ./get.editors
+sh ./config.prefs
 
 cd ~

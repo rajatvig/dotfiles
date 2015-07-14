@@ -5,3 +5,8 @@ defaults write com.apple.dock springboard-columns -int 10
 defaults write com.apple.dock ResetLaunchPad -bool true
 
 killall Dock
+
+ln -s ~/dotfiles/config/aspell.en.pws ~/.aspell.en.pws
+
+sudo chown root:wheel /usr/local/bin/htop
+sudo chmod u+s /usr/local/bin/htop

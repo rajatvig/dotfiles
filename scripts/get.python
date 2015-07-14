@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+export PYENV_ROOT="/usr/local/var/pyenv"
+
+brew install python pyenv
+
+pyenv install 2.7.10
+pyenv install 3.4.3
+
+# pip
+pip install virtualenv
+pip install jedi json-rpc service_factory
+pip install tox
+

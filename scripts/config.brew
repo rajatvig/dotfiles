@@ -16,9 +16,4 @@ brew tap pivotal/tap
 brew tap caskroom/versions
 brew tap caskroom/fonts
 
-brew install fish
-
-cat dotfiles/brew/brew.list | xargs brew install
-cat dotfiles/brew/cask.list | xargs brew cask install -f
-
 brew linkapps

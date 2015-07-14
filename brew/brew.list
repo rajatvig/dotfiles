@@ -5,6 +5,7 @@ apache-spark
 arpack-julia
 aspell
 autoconf
+bash
 boot2docker
 brew-cask
 cabal-install

@@ -19,7 +19,6 @@ npm install -g generator-hottowel
 npm install -g eslint
 npm install -g eslint-plugin-angular
 
-# pip
-pip install virtualenv
-pip install jedi json-rpc service_factory
-pip install tox
+# brew
+cat dotfiles/brew/brew.list | xargs brew install
+cat dotfiles/brew/cask.list | xargs brew cask install -f
