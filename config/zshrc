@@ -84,4 +84,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(direnv hook zsh)"
 
+export RBENV_ROOT="/usr/local/var/rbenv"
+
+export PYENV_ROOT="/usr/local/var/pyenv"
+
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay
