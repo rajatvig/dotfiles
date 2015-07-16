@@ -20,5 +20,5 @@ npm install -g eslint
 npm install -g eslint-plugin-angular
 
 # brew
-cat dotfiles/brew/brew.list | xargs brew install
-cat dotfiles/brew/cask.list | xargs brew cask install -f
+cat ~/dotfiles/brew/brew.list | xargs brew install
+cat ~/dotfiles/brew/cask.list | xargs brew cask install
