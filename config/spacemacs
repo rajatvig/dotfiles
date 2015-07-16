@@ -189,6 +189,7 @@ layers configuration."
     (interactive)
     (save-some-buffers t))
   (add-hook 'focus-out-hook 'save-all)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq flycheck-checkers '(javascript-eslint))
 )

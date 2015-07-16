@@ -12,3 +12,4 @@ pip install virtualenv
 pip install jedi json-rpc service_factory
 pip install tox
 
+ln -s ~/dotfiles/config/pypirc ~/.pypirc

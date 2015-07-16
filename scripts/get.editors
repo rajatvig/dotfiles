@@ -3,13 +3,16 @@
 # vim
 brew install vim
 curl http://j.mp/spf13-vim3 -L -o - | sh
+
 ln -s ~/dotfiles/config/vimrc.local ~/.vimrc.local
 
 # spacemacs
 brew install emacs
 brew cask instal emacs
+
 git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
-ln -s ~/dotfiles/spacemacs ~/.spacemacs
+
+ln -s ~/dotfiles/config/spacemacs ~/.spacemacs
 
 # atom
 brew cask install atom
