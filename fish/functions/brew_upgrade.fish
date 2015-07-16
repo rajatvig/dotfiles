@@ -1,4 +1,4 @@
-function brew_upgrade --description 'upgrade all casks'
+function brew_upgrade --description 'upgrade all brew packages'
   echo 'Updating homebrew'
   brew update
   echo 'Upgrading homebrew packages'
@@ -6,5 +6,6 @@ function brew_upgrade --description 'upgrade all casks'
   echo 'Clean up old homebrew packages'
   brew cleanup
   echo 'Outdated Casks'
-  echo (brew cask list | grep -v macvim | xargs brew cask info | grep -3 Not | grep ": " | cut -f 1 -d ":")
+  echo (brew_outdated_casks)
+  brew_update_casks
 end
