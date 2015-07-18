@@ -14,8 +14,9 @@ Thumbs.db
 *.swp
 *.swo
 
-# oddness
+# node
 .tern-port
+node_modules/**
 
 # IDE
 .idea/**

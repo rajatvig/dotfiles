@@ -209,7 +209,7 @@ layers configuration."
  '(indent-tabs-mode nil)
  '(js2-basic-offset 2)
  '(neo-theme (quote nerd))
- '(python-indent-offset 2)
+ '(python-indent-offset 4)
  '(ring-bell-function (quote ignore) t)
  '(standard-indent 2))
 (custom-set-faces
