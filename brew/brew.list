@@ -37,6 +37,7 @@ glib
 global
 gmp
 gmp4-julia
+gnu-sed
 gnutls
 go
 godep

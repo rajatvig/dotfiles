@@ -1,6 +1,7 @@
 1password
 adobe-reader
 amethyst
+android-studio
 atom
 caffeine
 chromium
@@ -13,6 +14,11 @@ evernote
 firefox
 firefoxdeveloperedition
 flux
+font-droid-sans
+font-droid-sans-mono
+font-inconsolata
+font-roboto
+font-roboto-mono
 font-source-code-pro
 font-terminus
 github
@@ -31,7 +37,7 @@ microsoft-lync
 mou
 parallels-desktop
 poedit
-pycharm
+pycharm-ce
 quip
 rstudio
 skype
