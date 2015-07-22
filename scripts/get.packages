@@ -22,3 +22,13 @@ npm install -g eslint-plugin-angular
 # brew
 cat ~/dotfiles/brew/brew.list | xargs brew install
 cat ~/dotfiles/brew/cask.list | xargs brew cask install
+
+# vagrant
+brew cask install vagrant
+vagrant plugin install vagrant-openstack-plugin
+vagrant plugin install vagrant-share
+vagrant plugin install vagrant-parallels
+vagrant plugin install vagrant-proxyconf
+
+mkdir ~/.vagrant.d
+ln -s ~/dotfiles/config/Vagrantfile ~/.vagrant.d/Vagrantfile
