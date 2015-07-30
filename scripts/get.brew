@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+brew cask install java
+brew cask install vagrant
+
+# brew
+cat ~/dotfiles/brew/brew.list | xargs brew install
+cat ~/dotfiles/brew/cask.list | xargs brew cask install
+
+brew linkapps

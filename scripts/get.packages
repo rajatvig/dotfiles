@@ -1,39 +1,16 @@
 #!/usr/bin/env sh
 
-# cabal
-brew install cabal-install
-cabal update
-cabal install happy
-cabal install ghc-mod
-cabal install hlint
+sh ./config.brew
+sh ./config.git
 
-# npm
-brew install node
-npm install -g grunt-cli
-npm install -g js-beautify
-npm install -g tern
-npm install -g karma-cli
-npm install -g yo
-npm install -g bower
-npm install -g gulp
-npm install -g nodemon
-npm install -g generator-hottowel
-npm install -g eslint
-npm install -g eslint-plugin-angular
+sh ./get.python
 
-# brew
-brew cask install java
-cat ~/dotfiles/brew/brew.list | xargs brew install
-cat ~/dotfiles/brew/cask.list | xargs brew cask install
+sh ./get.npm
+sh ./get.cabal
+sh ./get.brew
 
-brew linkapps
+sh ./get.vagrant
+sh ./get.editors
+sh ./config.prefs
 
-# vagrant
-brew cask install vagrant
-vagrant plugin install vagrant-openstack-plugin
-vagrant plugin install vagrant-share
-vagrant plugin install vagrant-parallels
-vagrant plugin install vagrant-proxyconf
-
-mkdir ~/.vagrant.d
-ln -s ~/dotfiles/config/Vagrantfile ~/.vagrant.d/Vagrantfile
+sh ./get.shell

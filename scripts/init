@@ -3,14 +3,10 @@
 cd ~
 git clone git@github.com:rajatvig/dotfiles.git ~/dotfiles
 
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 cd ~/dotfiles/scripts
 
-sh ./config.brew
-sh ./config.git
-sh ./get.shell
-sh ./get.python
 sh ./get.packages
-sh ./get.editors
-sh ./config.prefs
 
 cd ~

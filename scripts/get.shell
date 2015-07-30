@@ -2,17 +2,23 @@
 
 brew install bash
 
+# fish
+brew install fish
+
+rm -rf .config/fish
+mkdir ~/.config
+ln -s ~/dotfiles/fish ~/.config/fish
+
+# zsh
 brew install zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 rm ~/.zshrc*
 ln -s ~/dotfiles/config/zshrc ~/.zshrc
 
-brew install fish
-mkdir ~/.config
-ln -s ~/dotfiles/fish ~/.config/fish
-
+# change shell
 sudo chsh -s /usr/local/bin/fish `echo $USER`
 
+# direnv
 rm ~/.direnvrc
 ln -s ~/dotfiles/direnvrc ~/.direnvrc

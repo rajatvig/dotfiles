@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# cabal
+brew install cabal-install
+cabal update
+cabal install happy
+cabal install ghc-mod
+cabal install hlint
