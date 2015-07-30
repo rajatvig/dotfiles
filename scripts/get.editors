@@ -4,6 +4,7 @@
 brew install vim
 curl http://j.mp/spf13-vim3 -L -o - | sh
 
+rm ~/.vimrc.local
 ln -s ~/dotfiles/config/vimrc.local ~/.vimrc.local
 
 # spacemacs
@@ -12,10 +13,12 @@ brew cask instal emacs
 
 git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
+rm ~/.spacemacs
 ln -s ~/dotfiles/config/spacemacs ~/.spacemacs
 
 # atom
 brew cask install atom
+
 apm install angularjs-styleguide-snippets
 apm install atom-beautify
 apm install atom-django
