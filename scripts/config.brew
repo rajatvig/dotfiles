@@ -8,12 +8,9 @@ brew tap homebrew/binary
 brew tap homebrew/science
 brew tap homebrew/dupes
 brew tap homebrew/tex
-brew tap homebrew/binary
 brew tap staticfloat/julia
 brew tap xoebus/homebrew-cloudfoundry
 brew tap pivotal/tap
 
 brew tap caskroom/versions
 brew tap caskroom/fonts
-
-brew linkapps

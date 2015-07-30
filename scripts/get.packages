@@ -1,12 +1,14 @@
 #!/usr/bin/env sh
 
 # cabal
+brew install cabal-install
 cabal update
 cabal install happy
 cabal install ghc-mod
 cabal install hlint
 
 # npm
+brew install node
 npm install -g grunt-cli
 npm install -g js-beautify
 npm install -g tern
@@ -20,8 +22,11 @@ npm install -g eslint
 npm install -g eslint-plugin-angular
 
 # brew
+brew cask install java
 cat ~/dotfiles/brew/brew.list | xargs brew install
 cat ~/dotfiles/brew/cask.list | xargs brew cask install
+
+brew linkapps
 
 # vagrant
 brew cask install vagrant
