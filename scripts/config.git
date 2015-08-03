@@ -7,4 +7,7 @@ git config --global user.email "Rajat.Vig@gmail.com"
 git config --global core.editor vim
 git config --global core.excludesfile "~/.gitignore_global"
 
+git config --global --add gitreview.username "rajatvig"
+
+rm ~/.gitignore_global
 ln -s ~/dotfiles/gitignore_global ~/.gitignore_global
