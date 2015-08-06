@@ -21,4 +21,4 @@ sudo chsh -s /usr/local/bin/fish `echo $USER`
 
 # direnv
 rm ~/.direnvrc
-ln -s ~/dotfiles/direnvrc ~/.direnvrc
+ln -s ~/dotfiles/config/direnvrc ~/.direnvrc

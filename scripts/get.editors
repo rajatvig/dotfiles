@@ -29,3 +29,4 @@ apm install autocomplete-haskell
 apm install linter
 apm install linter-eslint
 apm install atomic-emacs
+apm install language-restructuredtext

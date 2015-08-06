@@ -63,6 +63,7 @@ libtasn1
 libtiff
 libyaml
 llvm33-julia
+markdown
 maven
 memcached
 mercurial

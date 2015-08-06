@@ -1,8 +1,76 @@
 #!/usr/bin/env sh
 
+###############################################################################
+# LaunchPad
+###############################################################################
 defaults write com.apple.dock springboard-rows -int 10
 defaults write com.apple.dock springboard-columns -int 10
 defaults write com.apple.dock ResetLaunchPad -bool true
+
+###############################################################################
+# Finder
+###############################################################################
+
+echo ""
+echo "Showing icons for hard drives, servers, and removable media on the desktop"
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+
+echo ""
+echo "Showing all filename extensions in Finder by default"
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+echo ""
+echo "Showing status bar in Finder by default"
+defaults write com.apple.finder ShowStatusBar -bool true
+
+echo ""
+echo "Allowing text selection in Quick Look/Preview in Finder by default"
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+echo ""
+echo "Displaying full POSIX path as Finder window title"
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+echo ""
+echo "Disabling the warning when changing a file extension"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+echo ""
+echo "Use column view in all Finder windows by default"
+defaults write com.apple.finder FXPreferredViewStyle Clmv
+
+echo ""
+echo "Avoiding the creation of .DS_Store files on network volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+###############################################################################
+# Dock
+###############################################################################
+
+echo ""
+echo "Setting Dock to auto-hide and removing the auto-hiding delay"
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+# Make Dock icons of hidden applications translucent
+defaults write com.apple.dock showhidden -bool true
+
+###############################################################################
+# Trackpad
+###############################################################################
+
+echo ""
+echo "Enabling tap to click"
+# Enable tap to click (Trackpad) for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# enable three finger drag
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+
+
 
 killall Dock
 
