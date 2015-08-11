@@ -1,7 +1,8 @@
 function brew_update_casks --description 'update outdated casks'
   set -x _outdated_casks (brew_outdated_casks)
+
   echo 'Outdated Casks'
-  echo (_outdated_casks)
+  echo $_outdated_casks
 
   set -x _outdated_cask_names (echo $_outdated_casks | gsed "s/ /\n/g")
 
