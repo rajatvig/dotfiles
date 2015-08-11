@@ -1,0 +1,22 @@
+"*":
+  "exception-reporting":
+    userId: "4da6c538-236c-f6aa-82ca-b2a8d82bd5a0"
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "autocomplete-haskell"
+      "haskell-ghc-mod"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 10
+    fontFamily: "Source Code Pro"
+  autosave:
+    enabled: true
+  "atom-beautify":
+    _analyticsUserId: "21580839-a0fe-44f6-96a1-28e2e81b0a61"

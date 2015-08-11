@@ -1,32 +1,5 @@
 #!/usr/bin/env sh
 
-# vim
-brew install vim
-curl http://j.mp/spf13-vim3 -L -o - | sh
-
-rm ~/.vimrc.local
-ln -s ~/dotfiles/config/vimrc.local ~/.vimrc.local
-
-# spacemacs
-brew install emacs
-brew cask instal emacs
-
-git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
-rm ~/.spacemacs
-ln -s ~/dotfiles/config/spacemacs ~/.spacemacs
-
-# atom
-brew cask install atom
-
-apm install angularjs-styleguide-snippets
-apm install atom-beautify
-apm install atom-django
-apm install autocomplete-python
-apm install language-haskell
-apm install haskell-ghc-mod
-apm install autocomplete-haskell
-apm install linter
-apm install linter-eslint
-apm install atomic-emacs
-apm install language-restructuredtext
+sh ./editors/atom
+sh ./editors/emacs
+sh ./editors/vim

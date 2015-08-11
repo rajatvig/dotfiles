@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+brew cask install atom
+
+apm install angularjs-styleguide-snippets
+apm install atom-beautify
+apm install atom-django
+apm install autocomplete-python
+apm install language-haskell
+apm install haskell-ghc-mod
+apm install autocomplete-haskell
+apm install linter
+apm install linter-eslint
+apm install atomic-emacs
+apm install language-restructuredtext
+
+mkdir ~/.atom
+rm ~/.atom/config.cson
+rm ~/.atom/keymap.cson
+
+ln -s ~/dotfiles/config/atom/config.cson ~/.atom/
+ln -s ~/dotfiles/config/atom/keymap.cson  ~/.atom/

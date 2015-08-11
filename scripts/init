@@ -7,6 +7,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 cd ~/dotfiles/scripts
 
-sh ./get.packages
+sh ./get.config
+sh ./get.install
+sh ./get.editors
 
 cd ~

@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+sh ./install/brew
+sh ./install/cabal
+sh ./install/npm
+sh ./install/python
+sh ./install/shells
+sh ./install/vagrant

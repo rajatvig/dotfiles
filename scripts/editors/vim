@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+brew install vim
+brew cask install macvim
+
+curl http://j.mp/spf13-vim3 -L -o - | sh
+
+rm ~/.vimrc.local
+ln -s ~/dotfiles/config/vimrc.local ~/.vimrc.local

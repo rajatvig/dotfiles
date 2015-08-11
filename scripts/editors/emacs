@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+brew install emacs
+brew cask instal emacs
+
+git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+rm ~/.spacemacs
+ln -s ~/dotfiles/config/spacemacs ~/.spacemacs

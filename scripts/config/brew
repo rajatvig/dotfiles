@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-
 brew install caskroom/cask/brew-cask
 
 brew tap homebrew/binary
