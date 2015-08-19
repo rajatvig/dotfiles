@@ -2,6 +2,7 @@
 adobe-reader
 amethyst
 android-studio
+aqua-data-studio
 atom
 brackets
 caffeine
@@ -23,12 +24,13 @@ font-roboto-mono
 font-source-code-pro
 font-terminus
 fuze
-github
+github-desktop
 google-chrome
 google-chrome-canary
 google-drive
 google-hangouts
 gpgtools
+handbrake
 intellij-idea
 iterm2
 java
@@ -52,6 +54,7 @@ vagrant
 vienna
 virtualbox
 vivaldi
+vlc
 vox
 webstorm
 xscreensaver

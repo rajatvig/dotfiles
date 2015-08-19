@@ -22,6 +22,7 @@ datomic
 direnv
 docker
 ejabberd
+elasticsearch
 emacs
 erlang
 fftw
@@ -43,6 +44,7 @@ go
 godep
 gradle
 hadoop
+hbase
 htop-osx
 iojs
 irssi
@@ -77,6 +79,7 @@ openssl
 pcre
 phantomjs
 pkg-config
+predictionio
 pyenv
 pyenv-virtualenv
 python
