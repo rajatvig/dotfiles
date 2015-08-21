@@ -7,16 +7,25 @@
     disabledPackages: [
       "autocomplete-haskell"
       "haskell-ghc-mod"
+      "tree-view"
     ]
     themes: [
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
+    audioBeep: false
   editor:
     invisibles: {}
+    showIndentGuide: true
+    zoomFontWhenCtrlScrolling: true
+    fontFamily: "Monoid"
+    lineHeight: 1.2
     fontSize: 10
-    fontFamily: "Source Code Pro"
   autosave:
     enabled: true
   "atom-beautify":
     _analyticsUserId: "21580839-a0fe-44f6-96a1-28e2e81b0a61"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []

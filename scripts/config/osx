@@ -74,7 +74,8 @@ defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
 killall Dock
 
-ln -s ~/dotfiles/config/aspell.en.pws ~/.aspell.en.pws
+ln -s ~/dotfiles/config/aspell/aspell.en.pws ~/.aspell.en.pws
+ln -s ~/dotfiles/config/aspell/aspell.en.prepl ~/.aspell.en.prepl
 
 sudo chown root:wheel /usr/local/bin/htop
 sudo chmod u+s /usr/local/bin/htop

@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+brew cask install limechat
+
+mkdir -p ~/work/oss/extras
+
+git clone git@github.com:jschoolcraft/Limechat-Themes.git ~/work/oss/extras/Limechat-Themes
+
+cd ~/work/oss/extras/Limechat-Themes
+
+rake themes:init
+rake themes:install
+
+cd ~/dotfiles

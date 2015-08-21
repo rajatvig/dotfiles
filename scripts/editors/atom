@@ -7,12 +7,13 @@ apm install atom-beautify
 apm install atom-django
 apm install autocomplete-python
 apm install language-haskell
-apm install haskell-ghc-mod
-apm install autocomplete-haskell
+# apm install haskell-ghc-mod
+# apm install autocomplete-haskell
 apm install linter
 apm install linter-eslint
 apm install atomic-emacs
 apm install language-restructuredtext
+apm install nuclide-installer
 
 mkdir ~/.atom
 rm ~/.atom/config.cson
