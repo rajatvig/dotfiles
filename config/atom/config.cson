@@ -7,7 +7,6 @@
     disabledPackages: [
       "autocomplete-haskell"
       "haskell-ghc-mod"
-      "tree-view"
     ]
     themes: [
       "atom-dark-ui"

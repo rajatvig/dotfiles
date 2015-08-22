@@ -16,10 +16,12 @@ cloog018-julia
 cloudfoundry-cli
 colordiff
 coreutils
+couchdb
 cowsay
 ctags
 datomic
 direnv
+djvulibre
 docker
 ejabberd
 elasticsearch
@@ -46,6 +48,7 @@ gradle
 hadoop
 hbase
 htop-osx
+icu4c
 iojs
 irssi
 isl
@@ -74,6 +77,8 @@ mpfr
 mysql
 nettle
 node
+nodenv
+nspr
 openblas-julia
 openssl
 pcre
@@ -97,6 +102,7 @@ rust
 sbt
 scala
 selenium-server-standalone
+spidermonkey
 spiff
 sqlite
 storm

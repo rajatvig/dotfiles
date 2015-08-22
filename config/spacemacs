@@ -206,6 +206,7 @@ layers configuration."
  '(ahs-idle-interval 0.25)
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
+ '(css-indent-offset 2)
  '(indent-tabs-mode nil)
  '(js2-basic-offset 2)
  '(neo-theme (quote nerd))
