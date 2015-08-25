@@ -1,4 +1,6 @@
 Plugin 'chriskempson/base16-vim'
 
 set background=dark
-colorscheme solarized
+colorscheme twilight256
+
+set guifont=Monoid:h9
