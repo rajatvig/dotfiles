@@ -25,3 +25,4 @@ node_modules/**
 .project
 .classpath
 .settings/**
+out/**

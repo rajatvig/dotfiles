@@ -9,6 +9,8 @@ rm -rf .config/fish
 mkdir ~/.config
 ln -s ~/dotfiles/fish ~/.config/fish
 
+git clone git@github.com:chriskempson/base16-shell.git ~/.config/base16-shell
+
 # zsh
 brew install zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
