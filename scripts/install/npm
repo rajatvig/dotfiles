@@ -3,6 +3,19 @@
 # node
 brew install node
 
+npm uninstall -g grunt-cli
+npm uninstall -g js-beautify
+npm uninstall -g tern
+npm uninstall -g karma-cli
+npm uninstall -g yo
+npm uninstall -g bower
+npm uninstall -g gulp
+npm uninstall -g nodemon
+npm uninstall -g generator-hottowel
+npm uninstall -g eslint
+npm uninstall -g eslint-plugin-angular
+npm uninstall -g eslint-config-openstack
+
 # node
 npm install -g grunt-cli
 npm install -g js-beautify
@@ -15,3 +28,4 @@ npm install -g nodemon
 npm install -g generator-hottowel
 npm install -g eslint
 npm install -g eslint-plugin-angular
+npm install -g eslint-config-openstack
