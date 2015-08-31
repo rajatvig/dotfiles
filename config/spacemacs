@@ -17,41 +17,51 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     company-mode
-     auto-completion
-     better-defaults
-     shell
-     osx
-     version-control
-     (colors :variables colors-enable-rainbow-identifiers t)
+     ;; config
+     ansible
+     dockerfile
+     puppet
+     salt
+     ;; irc
+     erc
+     ;; lang
+     c-c++
+     clojure
+     elixir
+     emacs-lisp
+     erlang
+     extra-langs
+     go
+     haskell
+     html
+     javascript
+     markdown
+     ocaml
+     python
+     racket
+     ruby
+     rust
+     scala
+     shell-scripts
+     typescript
+     ;; source-control
      (git :variables
           git-gutter-use-fringe t)
-     org
-     syntax-checking
-     javascript
-     python
-     ruby
-     haskell
-     scala
-     clojure
-     erlang
-     elixir
-     typescript
-     rust
-     go
-     slime
-     emacs-lisp
-     html
-     markdown
-     shell-scripts
-     extra-langs
-     gtags
+     version-control
+     ;; tools
+     dash
      vagrant
-     puppet
-     ansible
-     salt
+     ;; parent
+     auto-completion
+     better-defaults
+     (colors :variables colors-enable-rainbow-identifiers t)
+     gtags
+     org
+     osx
+     shell
+     slime
+     syntax-checking
      themes-megapack
-     erc
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these

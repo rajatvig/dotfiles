@@ -26,3 +26,8 @@ node_modules/**
 .classpath
 .settings/**
 out/**
+
+# TAGS
+GPATH
+GRTAGS
+GTAGS
