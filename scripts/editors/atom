@@ -13,7 +13,8 @@ apm install linter
 apm install linter-eslint
 apm install atomic-emacs
 apm install language-restructuredtext
-apm install nuclide-installer
+# apm install nuclide-installer
+apm install atom-fuzzy-grep
 
 mkdir ~/.atom
 rm ~/.atom/config.cson
