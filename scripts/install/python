@@ -8,8 +8,17 @@ pyenv install 2.7.10
 pyenv install 3.4.3
 
 # pip
-pip install virtualenv
+
+# for emacs
 pip install jedi json-rpc service_factory
+pip install autoflake
+pip install rope
+pip install flake8
+pip install importmagic
+pip install autopep8
+
+# for dev
 pip install tox
+pip install virtualenv
 
 ln -s ~/dotfiles/config/pypirc ~/.pypirc

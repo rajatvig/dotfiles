@@ -7,6 +7,7 @@ function git_rebase_from_master
 
   git checkout master
   git pull --rebase origin master
+  git fetch --all
   git checkout $git_branch
   git rebase master
 end
