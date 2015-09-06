@@ -221,6 +221,9 @@ layers configuration."
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
  '(css-indent-offset 2)
+ '(elpy-project-ignored-directories
+   (quote
+    (".bzr" "CVS" ".git" ".hg" ".svn" ".tox" "build" "dist" ".cask" ".direnv")))
  '(indent-tabs-mode nil)
  '(js-switch-indent-offset 2)
  '(js2-basic-offset 2)
