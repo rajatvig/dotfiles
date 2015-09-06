@@ -7,4 +7,4 @@ set -gx PYENV_ROOT /usr/local/var/pyenv
 
 set -gx PATH /usr/local/sbin $PATH
 
-eval sh $HOME/.config/base16-shell/base16-default.dark.sh
+# eval sh $HOME/.config/base16-shell/base16-default.dark.sh
