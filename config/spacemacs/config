@@ -37,7 +37,7 @@
      javascript
      markdown
      ocaml
-     python
+     (python :variables python-enable-yapf-format-on-save t)
      racket
      ruby
      rust
@@ -62,6 +62,10 @@
      slime
      syntax-checking
      themes-megapack
+     ;; custom
+     edit-server
+     elpy
+     edts
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
