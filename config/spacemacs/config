@@ -224,6 +224,10 @@ layers configuration."
  '(elpy-project-ignored-directories
    (quote
     (".bzr" "CVS" ".git" ".hg" ".svn" ".tox" "build" "dist" ".cask" ".direnv")))
+ '(haskell-tags-on-save t)
+ '(helm-gtags-auto-update t)
+ '(helm-gtags-ignore-case t)
+ '(helm-gtags-use-input-at-cursor t)
  '(indent-tabs-mode nil)
  '(js-switch-indent-offset 2)
  '(js2-basic-offset 2)
