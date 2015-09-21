@@ -6,3 +6,4 @@ sh ./install/npm
 sh ./install/python
 sh ./install/shells
 sh ./install/vagrant
+sh ./install/golang

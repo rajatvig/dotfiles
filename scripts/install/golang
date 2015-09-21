@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+mkdir -p /usr/local/var/go
+
+export GOPATH=/usr/local/var/go
+
+go get golang.org/x/tools/cmd/goimports
+go get -u github.com/golang/lint/golint
+go get -u github.com/nsf/gocode

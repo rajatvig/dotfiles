@@ -3,3 +3,4 @@
 sh ./editors/atom
 sh ./editors/emacs
 sh ./editors/vim
+sh ./editors/limechat
