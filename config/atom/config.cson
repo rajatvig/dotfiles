@@ -19,7 +19,7 @@
     zoomFontWhenCtrlScrolling: true
     fontFamily: "Monoid"
     lineHeight: 1.2
-    fontSize: 10
+    fontSize: 9
   autosave:
     enabled: true
   "atom-beautify":

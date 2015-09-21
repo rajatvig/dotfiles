@@ -2,19 +2,45 @@
 
 brew cask install atom
 
-apm install angularjs-styleguide-snippets
+apm install linter
 apm install atom-beautify
-apm install atom-django
+apm install atomic-emacs
+apm install atom-fuzzy-grep
+
+# apm install nuclide-installer
+
+# JS
+apm install angularjs-styleguide-snippets
+apm install linter-eslint
+
+# python
+apm install language-python
 apm install autocomplete-python
+apm install language-restructuredtext
+apm install atom-django
+
+# haskell
 apm install language-haskell
 # apm install haskell-ghc-mod
 # apm install autocomplete-haskell
-apm install linter
-apm install linter-eslint
-apm install atomic-emacs
-apm install language-restructuredtext
-# apm install nuclide-installer
-apm install atom-fuzzy-grep
+
+# rust
+apm install language-rust
+apm install linter-rust
+apm install racer
+
+# elixir
+apm install language-elixir
+apm install autocomplete-elixir
+
+# erlang
+apm install language-erlang
+apm install autocomplete-erlang
+apm install linter-erlang
+
+# go
+# apm install language-go
+apm install go-plus
 
 mkdir ~/.atom
 rm ~/.atom/config.cson
