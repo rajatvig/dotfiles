@@ -25,10 +25,12 @@ djvulibre
 docker
 ejabberd
 elasticsearch
+elixir
 emacs
 erlang
 fftw
 fish
+flow
 fortune
 gcc
 gdbm
@@ -105,6 +107,7 @@ selenium-server-standalone
 spidermonkey
 spiff
 sqlite
+ssh-copy-id
 storm
 suite-sparse42-julia
 the_silver_searcher
