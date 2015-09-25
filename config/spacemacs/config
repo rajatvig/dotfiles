@@ -62,6 +62,8 @@
      slime
      syntax-checking
      themes-megapack
+     ;; window management
+     (perspectives :variables perspective-enable-persp-projectile t)
      ;; custom
      edit-server
      elpy
@@ -223,7 +225,7 @@ layers configuration."
  '(css-indent-offset 2)
  '(elpy-project-ignored-directories
    (quote
-    (".bzr" "CVS" ".git" ".hg" ".svn" ".tox" "build" "dist" ".cask" ".direnv")))
+    (".bzr" "CVS" ".git" ".hg" ".svn" "build" "dist" ".cask" ".direnv")))
  '(haskell-tags-on-save t)
  '(helm-gtags-auto-update t)
  '(helm-gtags-ignore-case t)
