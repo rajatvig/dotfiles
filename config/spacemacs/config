@@ -108,7 +108,10 @@ before layers configuration."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         darkmine
+                         spacemacs-dark
                          sanityinc-tomorrow-night
+                         solarized-dark
                          jazz)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -227,9 +230,9 @@ layers configuration."
    (quote
     (".bzr" "CVS" ".git" ".hg" ".svn" "build" "dist" ".cask" ".direnv")))
  '(haskell-tags-on-save t)
- '(helm-gtags-auto-update t)
- '(helm-gtags-ignore-case t)
- '(helm-gtags-use-input-at-cursor t)
+ '(helm-gtags-auto-update t t)
+ '(helm-gtags-ignore-case t t)
+ '(helm-gtags-use-input-at-cursor t t)
  '(indent-tabs-mode nil)
  '(js-switch-indent-offset 2)
  '(js2-basic-offset 2)
