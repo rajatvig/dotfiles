@@ -22,26 +22,35 @@
      dockerfile
      puppet
      salt
+     terraform
+     ;; frameworks
+     django
+     react
+     ruby-on-rails
      ;; irc
      erc
      ;; lang
      c-c++
      clojure
      elixir
+     elm
      emacs-lisp
      erlang
      extra-langs
      go
      haskell
      html
+     java
      javascript
      markdown
+     nim
      ocaml
      (python :variables python-enable-yapf-format-on-save t)
      racket
      ruby
      rust
      scala
+     scheme
      shell-scripts
      typescript
      ;; source-control
@@ -54,20 +63,19 @@
      ;; parent
      auto-completion
      better-defaults
+     chrome
      (colors :variables colors-enable-rainbow-identifiers t)
      gtags
      org
      osx
      shell
-     slime
      syntax-checking
      themes-megapack
      ;; window management
      (perspectives :variables perspective-enable-persp-projectile t)
      ;; custom
-     edit-server
      elpy
-     edts
+     ;; edts
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
