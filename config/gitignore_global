@@ -13,6 +13,7 @@ Thumbs.db
 *~
 *.swp
 *.swo
+.dir-locals.el
 
 # node
 .tern-port

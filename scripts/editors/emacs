@@ -8,5 +8,5 @@ git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
 rm ~/.spacemacs
 ln -s ~/dotfiles/config/spacemacs/config ~/.spacemacs
 ln -s ~/dotfiles/config/spacemacs/elpy ~/.emacs.d/private
-ln -s ~/dotfiles/config/spacemacs/edit-server ~/.emacs.d/private
+ln -s ~/dotfiles/config/spacemacs/magit-gerrit ~/.emacs.d/private
 ln -s ~/dotfiles/config/spacemacs/edts ~/.emacs.d/private
