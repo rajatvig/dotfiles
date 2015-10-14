@@ -10,6 +10,7 @@ boot2docker
 brew-cask
 cabal-install
 cassandra
+ccze
 chromedriver
 clojurescript
 cloog018-julia
@@ -51,7 +52,6 @@ hadoop
 hbase
 htop-osx
 icu4c
-iojs
 irssi
 isl
 isl011-julia
@@ -77,6 +77,7 @@ mercurial
 mongodb
 mpfr
 mysql
+ncdu
 nettle
 node
 nodenv
@@ -90,6 +91,7 @@ predictionio
 pyenv
 pyenv-virtualenv
 python
+python3
 rabbitmq
 rbenv
 rbenv-bundle-exec
@@ -103,7 +105,10 @@ ruby-build
 rust
 sbt
 scala
+scons
 selenium-server-standalone
+sl
+slurm
 spidermonkey
 spiff
 sqlite
