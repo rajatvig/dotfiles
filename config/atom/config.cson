@@ -30,3 +30,4 @@
     remoteProjectsConfig: []
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
+  "autocomplete-plus": {}
