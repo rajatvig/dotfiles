@@ -72,7 +72,7 @@
      syntax-checking
      themes-megapack
      ;; window management
-     (perspectives :variables perspective-enable-persp-projectile t)
+     ;; (perspectives :variables perspective-enable-persp-projectile t)
      ;; custom
      elpy
      ;; edts

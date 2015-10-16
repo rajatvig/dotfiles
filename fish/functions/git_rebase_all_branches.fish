@@ -12,7 +12,7 @@ function git_rebase_all_branches
     if [ $_git_branch ]
       echo "checking out $_git_branch"
       git checkout $_git_branch
-      git_rebase_from_master
+      git_rebase_current_branch
     end
   end
 
