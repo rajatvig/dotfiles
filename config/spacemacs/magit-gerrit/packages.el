@@ -1,4 +1,4 @@
 (setq magit-gerrit-packages
-    '(
-      magit-gerrit
-      ))
+      '(
+        magit-gerrit
+        ))

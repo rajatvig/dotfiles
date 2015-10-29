@@ -85,6 +85,7 @@ nspr
 openblas-julia
 openssl
 pcre
+pcre2
 phantomjs
 pkg-config
 predictionio
@@ -114,6 +115,7 @@ spiff
 sqlite
 ssh-copy-id
 storm
+suite-sparse-julia
 suite-sparse42-julia
 the_silver_searcher
 tig
