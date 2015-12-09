@@ -8,13 +8,13 @@ caffeine
 ccleaner
 chromium
 colloquy
+consul
 cyberduck
 daisydisk
 darktable
 dash
 diffmerge
 djview
-dockertoolbox
 dropbox
 emacs
 evernote
@@ -41,11 +41,9 @@ google-drive
 google-hangouts
 gpgtools
 handbrake
-intellij-idea
 iterm2
 java
 java7
-kitematic
 libreoffice
 limechat
 lyx
@@ -63,6 +61,7 @@ pycharm-ce
 quip
 racket
 rstudio
+sequel-pro
 skype
 slack
 sourcetree

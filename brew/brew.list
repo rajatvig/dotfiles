@@ -6,6 +6,7 @@ arpack-julia
 aspell
 autoconf
 bash
+boost
 brew-cask
 cabal-install
 cassandra
@@ -23,8 +24,8 @@ datomic
 direnv
 djvulibre
 docker
-docker-compose
 docker-machine
+docker-machine-parallels
 docker-swarm
 ejabberd
 elasticsearch
@@ -66,9 +67,11 @@ libcaca
 libevent
 libffi
 libgcrypt
+libgit2
 libgpg-error
 libmpc
 libpng
+libssh2
 libtasn1
 libtiff
 libyaml
@@ -83,6 +86,7 @@ mysql
 ncdu
 nettle
 node
+node-build
 nodenv
 nspr
 ocaml
