@@ -48,7 +48,8 @@
      (python :variables python-enable-yapf-format-on-save t)
      racket
      ruby
-     rust
+     (rust :variables
+           rust-enable-racer t)
      scala
      scheme
      shell-scripts
@@ -200,7 +201,9 @@ before layers configuration."
   ;; User initialization goes here
   (setq-default ruby-version-manager 'rbenv)
   (setq-default ruby-enable-ruby-on-rails-support t)
-  )
+  (setq racer-cmd "~/.multirust/toolchains/beta/cargo/bin/racer")
+  (setq racer-rust-src-path "~/work/private/tryouts/rust/rust/src")
+)
 
 (defun dotspacemacs/config ()
   "Configuration function.
