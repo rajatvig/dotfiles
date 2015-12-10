@@ -36,3 +36,6 @@
     erlangHome: "/usr/local/bin"
   "autocomplete-erlang":
     elixirPath: "/usr/local/bin"
+  racer:
+    racerBinPath: "/Users/rajatv/.multirust/toolchains/beta/cargo/bin/racer"
+    rustSrcPath: "/Users/rajatv/work/private/tryouts/rust/rust/src"
