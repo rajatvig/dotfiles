@@ -31,3 +31,8 @@
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "autocomplete-plus": {}
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/local/bin"
+  "autocomplete-erlang":
+    elixirPath: "/usr/local/bin"
