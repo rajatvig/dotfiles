@@ -1,4 +1,4 @@
-function run_python3_horizon_tests
+function horizon_run_python3_tests
   source .tox/py34/bin/activate.fish
   python manage.py test --settings=horizon.test.settings horizon.test.tests
   python manage.py test --settings=openstack_dashboard.test.settings \

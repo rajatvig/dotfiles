@@ -259,6 +259,8 @@ layers configuration. You are free to put any user code."
   (global-set-key (kbd "<s-down>") 'end-of-buffer)
   (global-set-key (kbd "s-z") 'undo)
   (global-set-key (kbd "s-/") 'comment-dwim)
+  (global-set-key (kbd "s-[") 'other-window)
+  (global-set-key (kbd "s-]") 'other-window)
   (defun save-all ()
     (interactive)
     (save-some-buffers t))

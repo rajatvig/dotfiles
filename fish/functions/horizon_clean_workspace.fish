@@ -1,4 +1,4 @@
-function clean_horizon_workspace
+function horizon_clean_workspace
   find . -name '*.pyc' | xargs rm
   rm -rf static/
 end

@@ -1,4 +1,4 @@
-function git_review
+function horizon_git_review
   git checkout master
   git fetch --all
   git pull
