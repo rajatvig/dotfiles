@@ -26,6 +26,7 @@ datomic
 direnv
 djvulibre
 docker
+docker-compose
 docker-machine
 docker-machine-parallels
 docker-swarm

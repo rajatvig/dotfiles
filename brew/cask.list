@@ -11,7 +11,6 @@ colloquy
 cyberduck
 darktable
 dash
-diffmerge
 djview
 dropbox
 emacs
@@ -55,6 +54,7 @@ mongohub
 mou
 nmap
 otto
+p4merge
 parallels-desktop
 pgadmin3
 poedit
@@ -72,7 +72,6 @@ textmate
 transmission
 vagrant
 vienna
-virtualbox
 vivaldi
 vlc
 vox
