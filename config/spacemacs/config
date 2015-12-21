@@ -38,6 +38,7 @@ values."
      ;; lang
      c-c++
      clojure
+     common-lisp
      elixir
      elm
      emacs-lisp
@@ -60,6 +61,7 @@ values."
      scheme
      shell-scripts
      typescript
+     yaml
      ;; source-control
      (git :variables
           git-gutter-use-fringe t)

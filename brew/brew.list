@@ -16,6 +16,8 @@ clojurescript
 cloog018-julia
 cloudfoundry-cli
 colordiff
+consul
+consul-template
 coreutils
 couchdb
 cowsay
@@ -82,6 +84,7 @@ memcached
 mercurial
 mongodb
 mpfr
+multirust
 mysql
 ncdu
 nettle
@@ -99,8 +102,6 @@ pkg-config
 predictionio
 pyenv
 pyenv-virtualenv
-python
-python3
 rabbitmq
 rbenv
 rbenv-bundle-exec
@@ -111,7 +112,6 @@ rebar
 redis
 riak
 ruby-build
-rust
 sbt
 scala
 scons
