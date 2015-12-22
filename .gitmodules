@@ -13,3 +13,6 @@
 [submodule "config/omf/pkg/go"]
 	path = config/omf/pkg/go
 	url = git@github.com:rajatvig/fish-go.git
+[submodule "config/omf/pkg/to"]
+	path = config/omf/pkg/to
+	url = git@github.com:joehillen/to-fish.git
