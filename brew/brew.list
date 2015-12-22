@@ -93,6 +93,7 @@ node
 node-build
 nodenv
 nspr
+nvm
 ocaml
 openblas-julia
 openssl
@@ -103,6 +104,7 @@ pkg-config
 predictionio
 pyenv
 pyenv-virtualenv
+python
 rabbitmq
 rbenv
 rbenv-bundle-exec
@@ -133,6 +135,7 @@ uncrustify
 unixodbc
 vim
 weechat
+wget
 wxmac
 xz
 zookeeper
