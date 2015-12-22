@@ -130,20 +130,23 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         colorsarenice-dark
+                         jazz
+                         sanityinc-tomorrow-eighties
                          darkmine
                          spacemacs-dark
                          sanityinc-tomorrow-night
                          solarized-dark
-                         jazz)
+                         )
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Monoid"
-                               :size 9
+   dotspacemacs-default-font '("Source Code Pro"
+                               :size 10
                                :weight normal
                                :width normal
-                               :powerline-scale 0.9)
+                               :powerline-scale 1.0)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
