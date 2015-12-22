@@ -1,7 +1,15 @@
 #!/usr/bin/env sh
 
 # node
-brew install node
+brew install node nvm
+
+export NODE_VERSION="5.3.0"
+export NVM_DIR="/usr/local/var/nvm"
+mkdir -p $NVM_DIR
+
+brew list nvm | grep nvm.sh | xargs cat > $NVM_DIR/nvm.sh
+nvm install $NODE_VERSION
+nvm use $NODE_VERSION
 
 npm uninstall -g grunt-cli
 npm uninstall -g js-beautify
@@ -27,5 +35,5 @@ npm install -g gulp
 npm install -g nodemon
 npm install -g generator-hottowel
 npm install -g eslint
-npm install -g eslint-plugin-angular
+npm install -g eslint-plugin-angular@0.4.0
 npm install -g eslint-config-openstack

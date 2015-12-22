@@ -1,24 +1,12 @@
 #!/usr/bin/env sh
 
 export PYENV_ROOT="/usr/local/var/pyenv"
+mkdir -p $PYENV_ROOT
 
-brew install python pyenv
+brew install pyenv
+eval "$(pyenv init -)"
 
 pyenv install 2.7.11
 pyenv install 3.5.1
-
-# pip
-
-# # for emacs
-# pip install jedi json-rpc service_factory
-# pip install autoflake
-# pip install rope
-# pip install flake8
-# pip install importmagic
-# pip install autopep8
-
-# # for dev
-# pip install tox
-# pip install virtualenv
 
 ln -s ~/dotfiles/config/pypirc ~/.pypirc

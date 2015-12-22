@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+export RBENV_ROOT="/usr/local/var/rbenv"
+mkdir -p $RBENV_ROOT
+
+brew install python rbenv ruby-build
+
+eval "$(rbenv init -)"
+
+rbenv install 2.2.4

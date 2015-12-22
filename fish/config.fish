@@ -22,6 +22,10 @@ fundle plugin 'derekstavis/plugin-nvm'
 
 fundle plugin 'edc/bass'
 
+fundle plugin 'rajatvig/fish-brew'
+fundle plugin 'rajatvig/fish-go'
+fundle plugin 'rajatvig/fish-git'
+fundle plugin 'rajatvig/fish-horizon'
 fundle plugin 'rajatvig/fish-pyenv'
 
 fundle init
