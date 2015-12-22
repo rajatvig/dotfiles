@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 plugins=(git osx brew history-substring-search ruby brew-cask node python)
 
 # User configuration
-
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

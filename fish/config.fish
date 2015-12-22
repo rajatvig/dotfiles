@@ -1,31 +1,8 @@
-eval (direnv hook fish)
+# Path to Oh My Fish install.
+set -gx OMF_PATH /Users/rajatv/.local/share/omf
 
-set brew_rbenv "/usr/local/var/rbenv/shims"
+# Customize Oh My Fish configuration path.
+#set -gx OMF_CONFIG /Users/rajatv/.config/omf
 
-set -gx RBENV_ROOT /usr/local/var/rbenv
-set -gx PYENV_ROOT /usr/local/var/pyenv
-set -gx NVM_DIR /usr/local/var/nvm
-set -gx GOPATH /usr/local/var/go
-set -gx RUST_SRC_PATH $HOME/work/private/tryouts/rust/rust/src
-set -gx PATH /usr/local/sbin $PATH $GOPATH/bin $HOME/.multirust/toolchains/beta/cargo/bin
-
-fundle plugin 'tuvistavie/fish-theme-afowler'
-fundle plugin 'tuvistavie/oh-my-fish-core'
-fundle plugin 'tuvistavie/fish-completion-helpers'
-fundle plugin 'tuvistavie/fish-fastdir'
-
-fundle plugin 'joehillen/to-fish'
-
-fundle plugin 'oh-my-fish/plugin-rbenv'
-fundle plugin 'oh-my-fish/plugin-foreign-env'
-fundle plugin 'derekstavis/plugin-nvm'
-
-fundle plugin 'edc/bass'
-
-fundle plugin 'rajatvig/fish-brew'
-fundle plugin 'rajatvig/fish-go'
-fundle plugin 'rajatvig/fish-git'
-fundle plugin 'rajatvig/fish-horizon'
-fundle plugin 'rajatvig/fish-pyenv'
-
-fundle init
+# Load oh-my-fish configuration.
+source $OMF_PATH/init.fish

@@ -6,10 +6,12 @@ brew install bash
 brew install fish
 
 rm -rf .config/fish
-mkdir ~/.config
-ln -s ~/dotfiles/fish ~/.config/fish
+rm -rf .config/omf
 
-# git clone git@github.com:chriskempson/base16-shell.git ~/.config/base16-shell
+curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+
+mkdir ~/.config
+ln -s ~/dotfiles/config/omf ~/.config/omf
 
 # zsh
 brew install zsh

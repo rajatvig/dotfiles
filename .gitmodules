@@ -1,0 +1,15 @@
+[submodule "config/omf/pkg/pyenv"]
+	path = config/omf/pkg/pyenv
+	url = git@github.com:rajatvig/fish-pyenv.git
+[submodule "config/omf/pkg/horizon"]
+	path = config/omf/pkg/horizon
+	url = git@github.com:rajatvig/fish-horizon.git
+[submodule "config/omf/pkg/brew_extras"]
+	path = config/omf/pkg/brew_extras
+	url = git@github.com:rajatvig/fish-brew.git
+[submodule "config/omf/pkg/git_extras"]
+	path = config/omf/pkg/git_extras
+	url = git@github.com:rajatvig/fish-git.git
+[submodule "config/omf/pkg/go"]
+	path = config/omf/pkg/go
+	url = git@github.com:rajatvig/fish-go.git
