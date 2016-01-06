@@ -7,6 +7,8 @@ brew install pyenv python
 eval "$(pyenv init -)"
 
 pip install thefuck
+pip install virtualenv
+pip install tox
 
 pyenv install 2.7.11
 pyenv install 3.5.1
