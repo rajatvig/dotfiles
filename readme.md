@@ -1,12 +1,11 @@
 # What
 
-A collection of scripts, configuration to automate
-my install of OS X.
+A collection of scripts, configuration to automate my install of OS X.
 
 # Included Batteries
 
 1. [Spacemacs](https://github.com/syl20bnr/spacemacs)
-2. [fish](http://fishshell.com/) and Oh-My-Fish(https://github.com/oh-my-fish/oh-my-fish)
+2. [fish](http://fishshell.com/) and [Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish)
 3. [direnv](http://direnv.net/)
 4. Configurations for Homebrew, Pyenv, node
 5. Other Editors - Atom, Vim
