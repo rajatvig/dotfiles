@@ -1,1 +1,1 @@
-/Users/rajatv/.local/share/omf/themes/bobthefish/fish_prompt.fish
+/Users/rajatv/.local/share/omf/themes/flash/fish_prompt.fish

@@ -5,3 +5,4 @@ package rbenv
 package thefuck
 theme bobthefish
 theme default
+theme flash
