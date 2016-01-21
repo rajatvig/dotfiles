@@ -3,6 +3,4 @@ package foreign-env
 package nvm
 package rbenv
 package thefuck
-theme bobthefish
 theme default
-theme flash
