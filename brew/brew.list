@@ -100,12 +100,14 @@ ntfs-3g
 nvm
 ocaml
 openblas-julia
+openssh
 openssl
 pcre
 pcre2
 phantomjs
 pixman
 pkg-config
+postgresql
 predictionio
 pyenv
 pyenv-virtualenv
@@ -118,6 +120,7 @@ rbenv-gemset
 rbenv-vars
 readline
 rebar
+rebar3
 redis
 riak
 ruby-build
