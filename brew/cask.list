@@ -11,11 +11,13 @@ calibre
 ccleaner
 chromium
 colloquy
+coreos
 cyberduck
 darktable
 dash
 djview
 dropbox
+eclipse-platform
 emacs-mac
 firefox
 firefoxdeveloperedition
@@ -43,10 +45,12 @@ google-hangouts
 gpgtools
 handbrake
 intellij-idea-ce
-iterm2
+iterm2-beta
 java
 java7
 kindle
+kube-cluster
+kube-solo
 lego-digital-designer
 libreoffice
 limechat
