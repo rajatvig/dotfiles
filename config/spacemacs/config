@@ -78,14 +78,12 @@ values."
      better-defaults
      ;; chrome
      (colors :variables colors-enable-rainbow-identifiers t)
-     gtags
+     ;; gtags
      org
      osx
      (shell :variables shell-default-shell 'shell)
      syntax-checking
      themes-megapack
-     ;; window management
-     (perspectives :variables perspective-enable-persp-projectile t)
      ;; custom
      ;; elpy
      ;; edts
