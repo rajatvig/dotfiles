@@ -30,6 +30,10 @@ ln -s ~/dotfiles/config/zshrc ~/.zshrc
 # change shell
 sudo chsh -s /usr/local/bin/fish `echo $USER`
 
+# tmux
+rm ~/.tmux.conf
+ln -s ~/dotfiles/config/tmux.conf ~/.tmux.conf
+
 # direnv
 rm ~/.direnvrc
 ln -s ~/dotfiles/config/direnvrc ~/.direnvrc
