@@ -2,7 +2,6 @@
 adobe-digital-editions
 adobe-reader
 amethyst
-android-studio
 atom
 beyond-compare
 brackets
@@ -11,14 +10,13 @@ calibre
 ccleaner
 chromium
 colloquy
+coqide
 coreos
 cyberduck
 darktable
-dash
 djview
 dropbox
 eclipse-platform
-emacs-mac
 firefox
 firefoxdeveloperedition
 flux
@@ -33,7 +31,7 @@ font-roboto
 font-roboto-mono
 font-terminus
 freemind
-fuze
+fuze (!)
 gephi
 github-desktop
 gitup
@@ -51,7 +49,6 @@ java7
 kindle
 kube-cluster
 kube-solo
-lego-digital-designer
 libreoffice
 limechat
 lyx
@@ -59,6 +56,7 @@ mac-linux-usb-loader
 macvim
 miro
 mongohub
+moscow-ml
 mou
 nmap
 otto

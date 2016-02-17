@@ -60,6 +60,7 @@ values."
      scala
      scheme
      shell-scripts
+     sml
      sql
      swift
      typescript
