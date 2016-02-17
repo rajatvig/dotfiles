@@ -43,11 +43,12 @@ values."
      elm
      emacs-lisp
      erlang
+     ess
      extra-langs
      go
      haskell
      html
-     java
+     ;; java
      javascript
      markdown
      nim
