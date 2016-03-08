@@ -1,5 +1,4 @@
 1password
-adobe-digital-editions
 adobe-reader
 amethyst
 atom
@@ -14,9 +13,11 @@ coqide
 coreos
 cyberduck
 darktable
+devcenter
 djview
 dropbox
 eclipse-platform
+emacs
 firefox
 firefoxdeveloperedition
 flux
@@ -37,9 +38,11 @@ gitup
 gitx
 google-chrome
 google-chrome-canary
+google-cloud-sdk
 google-drive
 google-hangouts
 gpgtools
+graphiql
 handbrake
 intellij-idea-ce
 iterm2-beta
@@ -52,6 +55,7 @@ libreoffice
 limechat
 lyx
 mac-linux-usb-loader
+mactex
 macvim
 miro
 mongohub
@@ -71,6 +75,7 @@ send-to-kindle
 sequel-pro
 skype
 slack
+soundnode
 sourcetree
 spectacle
 spotify

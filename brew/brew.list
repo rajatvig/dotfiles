@@ -14,9 +14,11 @@ cairo
 camlp4
 camlp5
 cassandra
+cayley
 ccze
 chromedriver
 clasp
+cloc
 clojurescript
 cloog018-julia
 cloudfoundry-cli
@@ -46,6 +48,7 @@ elasticsearch
 elixir
 emacs
 erlang
+exercism
 fftw
 fish
 flow
@@ -73,17 +76,23 @@ gringo
 hadoop
 harfbuzz
 hbase
+helios
+helios-solo
 htop-osx
 icu4c
+idris
 imagemagick
+influxdb
 isl
 isl011-julia
 jpeg
+jq
 julia
 kafka
 kibana
 kotlin
 kubernetes-cli
+latex-mk
 leiningen
 leveldb
 libcaca
@@ -116,6 +125,7 @@ mysql
 ncdu
 nettle
 newt
+nim
 node
 node-build
 nodenv
@@ -123,6 +133,7 @@ nspr
 ntfs-3g
 nvm
 ocaml
+oniguruma
 opam
 openblas-julia
 openssl
@@ -142,6 +153,7 @@ pyenv-virtualenv
 python
 r
 rabbitmq
+ranger
 rbenv
 rbenv-bundle-exec
 rbenv-gemset
@@ -170,6 +182,7 @@ storm
 suite-sparse-julia
 suite-sparse42-julia
 tachyon
+telegraf
 terraform
 the_silver_searcher
 tig
