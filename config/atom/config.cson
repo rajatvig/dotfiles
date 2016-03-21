@@ -1,9 +1,16 @@
 "*":
-  "exception-reporting":
-    userId: "4da6c538-236c-f6aa-82ca-b2a8d82bd5a0"
-  welcome:
-    showOnStartup: false
+  "atom-beautify":
+    _analyticsUserId: "21580839-a0fe-44f6-96a1-28e2e81b0a61"
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/local/bin"
+  "autocomplete-erlang":
+    elixirPath: "/usr/local/bin"
+  "autocomplete-plus": {}
+  autosave:
+    enabled: true
   core:
+    audioBeep: false
     disabledPackages: [
       "autocomplete-haskell"
       "haskell-ghc-mod"
@@ -12,34 +19,27 @@
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-    audioBeep: false
   editor:
+    fontFamily: "Monoid"
+    fontSize: 9
     invisibles: {}
+    lineHeight: 1.2
     showIndentGuide: true
     zoomFontWhenCtrlScrolling: true
-    fontFamily: "Monoid"
-    lineHeight: 1.2
-    fontSize: 9
-  autosave:
-    enabled: true
-  "atom-beautify":
-    _analyticsUserId: "21580839-a0fe-44f6-96a1-28e2e81b0a61"
+  "exception-reporting":
+    userId: "4da6c538-236c-f6aa-82ca-b2a8d82bd5a0"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
-  nuclide:
-    remoteProjectsConfig: []
+  "go-plus":
+    goPath: "/usr/local/var/go"
+  linter:
+    showErrorPanel: false
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
-  "autocomplete-plus": {}
-  "autocomplete-elixir":
-    elixirPath: "/usr/local/bin/elixir"
-    erlangHome: "/usr/local/bin"
-  "autocomplete-erlang":
-    elixirPath: "/usr/local/bin"
+  nuclide:
+    remoteProjectsConfig: []
   racer:
     racerBinPath: "/Users/rajatv/.multirust/toolchains/beta/cargo/bin/racer"
     rustSrcPath: "/Users/rajatv/work/private/tryouts/rust/rust/src"
-  linter:
-    showErrorPanel: false
-  "go-plus":
-    goPath: "/usr/local/var/go"
+  welcome:
+    showOnStartup: false

@@ -14,7 +14,6 @@ apm install angularjs-styleguide-snippets
 apm install linter-eslint
 
 # python
-apm install language-python
 apm install autocomplete-python
 apm install language-restructuredtext
 apm install atom-django
@@ -39,7 +38,6 @@ apm install autocomplete-erlang
 apm install linter-erlang
 
 # go
-# apm install language-go
 apm install go-plus
 
 mkdir ~/.atom
