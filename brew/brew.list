@@ -7,8 +7,10 @@ aspcud
 aspell
 autoconf
 automake
+awscli
 bash
 boost
+c-ares
 cabal-install
 cairo
 camlp4
@@ -79,6 +81,7 @@ hbase
 helios
 helios-solo
 htop-osx
+hub
 icu4c
 idris
 imagemagick
@@ -95,6 +98,7 @@ kubernetes-cli
 latex-mk
 leiningen
 leveldb
+lfe
 libcaca
 libcroco
 libevent
@@ -110,7 +114,9 @@ libtasn1
 libtiff
 libtool
 libuv
+libwebsockets
 libyaml
+llvm
 llvm33-julia
 logstash
 lz4
@@ -119,6 +125,7 @@ maven
 memcached
 mercurial
 mongodb
+mosquitto
 mpfr
 multirust
 mysql
@@ -130,6 +137,7 @@ node
 node-build
 nodenv
 nspr
+nsq
 ntfs-3g
 nvm
 ocaml
@@ -145,9 +153,11 @@ phantomjs
 pixman
 pkg-config
 polyml
+ponyc
 popt
 postgresql
 predictionio
+pstree
 pyenv
 pyenv-virtualenv
 python
@@ -188,8 +198,10 @@ the_silver_searcher
 tig
 tmux
 toilet
+tree
 uncrustify
 unixodbc
+vault
 vim
 wget
 wxmac
