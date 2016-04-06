@@ -1,6 +1,7 @@
 # direnv stuff
 .direnv
 .envrc
+.env
 .ruby-version
 
 # OS Specific
@@ -27,6 +28,7 @@ node_modules/**
 .classpath
 .settings/**
 out/**
+classes/**
 
 # TAGS
 GPATH

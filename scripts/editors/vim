@@ -5,5 +5,8 @@ brew cask install macvim
 
 curl http://j.mp/spf13-vim3 -L -o - | sh
 
-rm ~/.vimrc.local
-ln -s ~/dotfiles/config/vimrc.local ~/.vimrc.local
+rm ~/.vimrc.local ~/.vimrc.bundles.local ~/.vimrc.before.local
+
+ln -s ~/dotfiles/config/vim/vimrc.before.local ~/.vimrc.before.local
+ln -s ~/dotfiles/config/vim/vimrc.bundles.local ~/.vimrc.bundles.local
+ln -s ~/dotfiles/config/vim/vimrc.local ~/.vimrc.local

@@ -1,8 +1,0 @@
-Plugin 'chriskempson/base16-vim'
-Plugin 'racer-rust/vim-racer'
-
-let base16colorspace=256
-set background=dark
-colorscheme Tomorrow-Night-Eighties
-
-set guifont=Monoid:h9

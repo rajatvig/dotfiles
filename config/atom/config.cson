@@ -36,6 +36,7 @@
     showErrorPanel: false
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
+  "markdown-preview": {}
   nuclide:
     remoteProjectsConfig: []
   racer:

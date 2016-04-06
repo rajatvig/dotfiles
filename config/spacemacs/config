@@ -335,7 +335,7 @@ layers configuration. You are free to put any user code."
  '(elpy-project-ignored-directories
    (quote
     (".bzr" "CVS" ".git" ".hg" ".svn" "build" "dist" ".cask" ".direnv")))
- '(haskell-tags-on-save t)
+ '(haskell-tags-on-save t t)
  '(helm-gtags-auto-update t t)
  '(helm-gtags-ignore-case t t)
  '(helm-gtags-use-input-at-cursor t t)
@@ -343,6 +343,7 @@ layers configuration. You are free to put any user code."
  '(js-switch-indent-offset 2)
  '(js2-basic-offset 2)
  '(js2-indent-switch-body t)
+ '(json-reformat:indent-width 2)
  '(neo-theme (quote nerd))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore) t)
