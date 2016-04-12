@@ -28,6 +28,7 @@ font-fira-sans
 font-inconsolata
 font-inconsolata-for-powerline
 font-monoid
+font-open-sans
 font-roboto
 font-roboto-mono
 font-terminus
@@ -54,12 +55,12 @@ libreoffice
 limechat
 lyx
 mac-linux-usb-loader
+macdown
 mactex
 macvim
 miro
 mongohub
 moscow-ml
-mou
 nmap
 otto
 p4merge
@@ -85,4 +86,7 @@ virtualbox
 vivaldi
 vlc
 vox
+xquartz
 xscreensaver
+yed
+zoomus
