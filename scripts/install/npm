@@ -1,15 +1,8 @@
 #!/usr/bin/env sh
 
 # node
-brew install node nvm
-
-export NODE_VERSION="5.10.1"
-export NVM_DIR="/usr/local/var/nvm"
-mkdir -p $NVM_DIR
-
-brew list nvm | grep nvm.sh | xargs cat > $NVM_DIR/nvm.sh
-nvm install $NODE_VERSION
-nvm use $NODE_VERSION
+brew install node
+brew install https://raw.githubusercontent.com/wilmoore/nodejs-install/master/share/homebrew/nodejs-install.rb
 
 npm uninstall -g grunt-cli
 npm uninstall -g js-beautify
@@ -21,7 +14,10 @@ npm uninstall -g gulp
 npm uninstall -g nodemon
 npm uninstall -g generator-hottowel
 npm uninstall -g eslint
-
+npm uninstall -g eslint-config-standard
+npm uninstall -g eslint-plugin-standard
+npm uninstall -g eslint-plugin-promise
+         
 # node
 npm install -g grunt-cli
 npm install -g js-beautify
@@ -33,3 +29,7 @@ npm install -g gulp
 npm install -g nodemon
 npm install -g generator-hottowel
 npm install -g eslint
+npm install -g eslint-config-standard
+npm install -g eslint-plugin-standard
+npm install -g eslint-plugin-promise
+
