@@ -10,13 +10,6 @@ rm -rf .config/omf
 
 curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
-cd ~/dotfiles/config/powerline-shell
-cp config.py.dist config.py
-./install.py
-cd ~
-
-ln -s ~/dotfiles/config/powerline-shell/powerline-shell.py .
-
 mkdir ~/.config
 ln -s ~/dotfiles/config/omf ~/.config/omf
 

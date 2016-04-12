@@ -13,6 +13,3 @@
 [submodule "config/omf/pkg/to"]
 	path = config/omf/pkg/to
 	url = git@github.com:joehillen/to-fish.git
-[submodule "config/powerline-shell"]
-	path = config/powerline-shell
-	url = git@github.com:milkbikis/powerline-shell.git
