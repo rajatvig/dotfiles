@@ -3,4 +3,5 @@ package foreign-env
 package nvm
 package rbenv
 package thefuck
+theme agnoster
 theme default

@@ -88,6 +88,9 @@ eval "$(pyenv init -)"
 # eval "$(opam config env)"
 eval "$(direnv hook zsh)"
 
+export NVM_DIR="/usr/local/var/nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 export RBENV_ROOT="/usr/local/var/rbenv"
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay

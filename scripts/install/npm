@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 
 # node
-brew install node
-brew install https://raw.githubusercontent.com/wilmoore/nodejs-install/master/share/homebrew/nodejs-install.rb
+brew install node nvm
+
+mkdir -p /usr/local/var/node
 
 npm uninstall -g grunt-cli
 npm uninstall -g js-beautify
@@ -17,7 +18,7 @@ npm uninstall -g eslint
 npm uninstall -g eslint-config-standard
 npm uninstall -g eslint-plugin-standard
 npm uninstall -g eslint-plugin-promise
-         
+
 # node
 npm install -g grunt-cli
 npm install -g js-beautify

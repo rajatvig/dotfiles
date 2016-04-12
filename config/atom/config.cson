@@ -34,8 +34,7 @@
     promptWhenFileHasChangedOnDisk: false
   "go-plus":
     goPath: "/usr/local/var/go"
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "markdown-preview": {}
