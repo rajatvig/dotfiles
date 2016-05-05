@@ -1,9 +1,7 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # node
 brew install node nvm
-
-mkdir -p /usr/local/var/node
 
 npm uninstall -g grunt-cli
 npm uninstall -g js-beautify
@@ -18,6 +16,7 @@ npm uninstall -g eslint
 npm uninstall -g eslint-config-standard
 npm uninstall -g eslint-plugin-standard
 npm uninstall -g eslint-plugin-promise
+npm uninstall -g eslint-plugin-react
 
 # node
 npm install -g grunt-cli
@@ -33,4 +32,4 @@ npm install -g eslint
 npm install -g eslint-config-standard
 npm install -g eslint-plugin-standard
 npm install -g eslint-plugin-promise
-
+npm install -g eslint-plugin-react
