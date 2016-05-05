@@ -40,9 +40,8 @@ datomic
 direnv
 djvulibre
 dmd
-docker
-docker-compose
 docker-machine
+docker-machine-driver-xhyve
 docker-machine-parallels
 docker-swarm
 dub
@@ -109,6 +108,7 @@ libgit2
 libgpg-error
 libmpc
 libpng
+libressl
 librsvg
 libssh2
 libsvg
@@ -123,6 +123,7 @@ llvm
 llvm33-julia
 logstash
 lz4
+lzo
 markdown
 maven
 memcached
@@ -133,7 +134,6 @@ mpfr
 multirust
 mysql
 ncdu
-neovim
 nettle
 newt
 nim
