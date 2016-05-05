@@ -8,6 +8,7 @@
     erlangHome: "/usr/local/bin"
   "autocomplete-erlang":
     elixirPath: "/usr/local/bin"
+  "autocomplete-go": {}
   "autocomplete-plus": {}
   autosave:
     enabled: true
@@ -22,8 +23,8 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Monoid"
-    fontSize: 9
+    fontFamily: "Source Code Pro"
+    fontSize: 11
     invisibles: {}
     lineHeight: 1.2
     showIndentGuide: true

@@ -33,12 +33,12 @@ values."
      ;; react
      ;; ruby-on-rails
      ;; irc
-     erc
+     ;; erc
      ;; lang
      c-c++
      clojure
      common-lisp
-     d
+     ;; d
      elixir
      elm
      emacs-lisp
@@ -51,19 +51,19 @@ values."
      ;; java
      javascript
      markdown
-     nim
+     ;; nim
      ocaml
      (python :variables python-enable-yapf-format-on-save t)
-     racket
+     ;; racket
      ruby
-     (rust :variables
-           rust-enable-racer t)
+     ;; (rust :variables
+     ;;       rust-enable-racer t)
      scala
      scheme
      shell-scripts
      sml
      sql
-     swift
+     ;; swift
      typescript
      vimscript
      yaml
@@ -166,10 +166,10 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Inconsolata for Powerline"
-                               :size 11
+                               :size 12
                                :weight normal
                                :width normal
-                               :powerline-scale 1.0)
+                               :powerline-scale 1.1)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
@@ -287,7 +287,7 @@ values."
    ;; Delete whitespace while saving buffer. Possible values are `all',
    ;; `trailing', `changed' or `nil'. Default is `changed' (cleanup whitespace
    ;; on changed lines) (default 'changed)
-   dotspacemacs-whitespace-cleanup 'changed
+   dotspacemacs-whitespace-cleanup 'all
    ))
 
 (defun dotspacemacs/user-init ()
@@ -295,12 +295,12 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
   (setq-default ruby-version-manager 'rbenv)
-  (setq-default ruby-enable-ruby-on-rails-support t)
+  ;; (setq-default ruby-enable-ruby-on-rails-support t)
   (editorconfig-mode 1)
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq flycheck-checkers '(javascript-eslint))
-  (setq racer-cmd "~/.multirust/toolchains/beta/cargo/bin/racer")
-  (setq racer-rust-src-path "~/work/private/tryouts/rust/rust/src")
+  ;; (setq racer-cmd "~/.multirust/toolchains/beta/cargo/bin/racer")
+  ;; (setq racer-rust-src-path "~/work/private/tryouts/rust/rust/src")
   (setq projectile-enable-caching t)
 )
 

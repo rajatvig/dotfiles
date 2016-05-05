@@ -1,3 +1,9 @@
+use_nvm() {
+  nvm_prefix=$(brew --prefix nvm)
+  . $(brew --prefix nvm)/nvm.sh
+  nvm use
+}
+
 use_python() {
   local python_root=$PYENV_ROOT/versions/$1
   load_prefix "$python_root"

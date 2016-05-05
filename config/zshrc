@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew history-substring-search ruby brew-cask node python)
+plugins=(aws brew brew-cask docker docker-compose git github golang gulp lein node nvm osx pyenv python rbenv sbt scala terraform thefuck vagrant vault)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
@@ -89,7 +89,7 @@ eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
 
 export NVM_DIR="/usr/local/var/nvm"
-source $(brew --prefix nvm)/nvm.sh
+. $(brew --prefix nvm)/nvm.sh
 
 export RBENV_ROOT="/usr/local/var/rbenv"
 
