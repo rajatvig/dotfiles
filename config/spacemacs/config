@@ -348,6 +348,7 @@ layers configuration. You are free to put any user code."
  '(js2-basic-offset 2)
  '(js2-indent-switch-body t)
  '(json-reformat:indent-width 2)
+ '(json-reformat:pretty-string\? t)
  '(neo-theme (quote nerd))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore) t)
