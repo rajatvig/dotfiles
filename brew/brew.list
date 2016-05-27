@@ -6,6 +6,7 @@ aspcud
 aspell
 autoconf
 automake
+aws-elasticbeanstalk
 awscli
 bash
 boost
@@ -14,6 +15,7 @@ cabal-install
 cairo
 camlp4
 camlp5
+carthage
 cayley
 ccze
 cf-cli
@@ -110,6 +112,7 @@ llvm
 llvm33-julia
 lz4
 lzo
+make
 markdown
 maven
 memcached
@@ -117,6 +120,7 @@ mercurial
 mpfr
 multirust
 ncdu
+neovim
 nettle
 newt
 nim
@@ -127,6 +131,7 @@ nspr
 ntfs-3g
 nvm
 ocaml
+ocamlbuild
 oniguruma
 opam
 openblas-julia

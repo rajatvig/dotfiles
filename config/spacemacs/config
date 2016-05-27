@@ -39,8 +39,8 @@ values."
      clojure
      common-lisp
      ;; d
-     elixir
-     elm
+     ;; elixir
+     ;; elm
      emacs-lisp
      erlang
      ess
@@ -58,7 +58,7 @@ values."
      ruby
      ;; (rust :variables
      ;;       rust-enable-racer t)
-     scala
+     ;; scala
      scheme
      shell-scripts
      sml
