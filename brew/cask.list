@@ -4,18 +4,14 @@ amethyst
 android-studio
 appcode
 atom
-brackets
 caffeine
 calibre
 ccleaner
 chromium
 colloquy
-coqide
 coreos
 cyberduck
 darktable
-dash
-devcenter
 djview
 dropbox
 emacs
@@ -35,7 +31,6 @@ font-roboto-mono
 font-terminus
 freemind
 gephi
-github-desktop
 gitup
 google-chrome
 google-chrome-canary
@@ -47,7 +42,6 @@ graphiql
 handbrake
 iterm2-beta
 java
-java7
 kindle
 kube-cluster
 kube-solo
@@ -55,10 +49,7 @@ libreoffice
 limechat
 lyx
 macdown
-mactex
 macvim
-miro
-mongohub
 moscow-ml
 mysqlworkbench
 nmap
@@ -71,7 +62,6 @@ pycharm-ce
 quip
 rstudio
 send-to-kindle
-sequel-pro
 skype
 slack
 soundnode
@@ -81,7 +71,6 @@ spotify
 transmission
 vagrant
 vienna
-virtualbox
 vivaldi
 vlc
 vox

@@ -6,7 +6,7 @@ aspcud
 aspell
 autoconf
 automake
-aws-elasticbeanstalk
+aws-shell
 awscli
 bash
 boost
@@ -16,6 +16,7 @@ cairo
 camlp4
 camlp5
 carthage
+cask
 cayley
 ccze
 cf-cli
@@ -140,13 +141,13 @@ packer
 pango
 pcre
 pcre2
+perl
 phantomjs
 pixman
 pkg-config
 polyml
 ponyc
 popt
-predictionio
 pstree
 pyenv
 pyenv-virtualenv
@@ -160,7 +161,9 @@ rbenv-vars
 readline
 rebar
 rebar3
+redis
 rocksdb
+ruby
 ruby-build
 s-lang
 sbt
@@ -180,6 +183,8 @@ suite-sparse-julia
 suite-sparse42-julia
 svg2pdf
 svg2png
+swiftgen
+swiftlint
 telegraf
 terraform
 the_silver_searcher
