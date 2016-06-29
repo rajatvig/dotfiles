@@ -30,7 +30,7 @@ values."
      terraform
      ;; frameworks
      ;; django
-     ;; react
+     react
      ;; ruby-on-rails
      ;; irc
      ;; erc
@@ -58,12 +58,12 @@ values."
      ruby
      ;; (rust :variables
      ;;       rust-enable-racer t)
-     ;; scala
+     scala
      scheme
      shell-scripts
      sml
      sql
-     ;; swift
+     swift
      typescript
      vimscript
      yaml
@@ -91,15 +91,13 @@ values."
      ;; edts
      ;; magit-gerrit
      groovy
+     editorconfig
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages
-   '(
-     editorconfig
-     )
+   dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -296,7 +294,6 @@ It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
   (setq-default ruby-version-manager 'rbenv)
   ;; (setq-default ruby-enable-ruby-on-rails-support t)
-  (editorconfig-mode 1)
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq flycheck-checkers '(javascript-eslint))
   ;; (setq racer-cmd "~/.multirust/toolchains/beta/cargo/bin/racer")
