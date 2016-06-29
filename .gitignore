@@ -1,5 +1,3 @@
 fish/fish_history
 fish/fishd.*
-fish/fundle
-fish/functions/fish_prompt.fish
 fish/functions/aws_init.fish

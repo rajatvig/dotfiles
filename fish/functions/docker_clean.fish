@@ -1,3 +1,5 @@
 function docker_clean
-  docker images -a | awk '{ print $1,$3 }' | grep $argv | awk '{print $2}' | xargs docker rmi -f
+    docker rm (docker ps -aq)
+    docker volume rm (docker volume ls -q)
 end
+
