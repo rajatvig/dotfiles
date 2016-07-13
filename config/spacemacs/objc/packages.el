@@ -6,6 +6,7 @@
 (defun objc/init-objc-font-lock ()
   (add-to-list 'auto-mode-alist '("\\.m$" . objc-mode))
   (add-to-list 'auto-mode-alist '("\\.mm$" . objc-mode))
+  (add-to-list 'auto-mode-alist '("Fastfile$" . yaml-mode))
   (add-to-list 'magic-mode-alist
     `(,(lambda ()
          (and (string= (file-name-extension buffer-file-name) "h")

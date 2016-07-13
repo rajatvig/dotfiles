@@ -19,12 +19,12 @@
       "haskell-ghc-mod"
     ]
     themes: [
-      "atom-dark-ui"
+      "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 11
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.2
     showIndentGuide: true
@@ -41,6 +41,8 @@
   "markdown-preview": {}
   nuclide:
     remoteProjectsConfig: []
+  "one-dark-ui":
+    fontSize: 9
   racer:
     racerBinPath: "/Users/rajatv/.multirust/toolchains/beta/cargo/bin/racer"
     rustSrcPath: "/Users/rajatv/work/private/tryouts/rust/rust/src"
