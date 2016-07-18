@@ -16,3 +16,6 @@
 [submodule "powerline-shell"]
 	path = powerline-shell
 	url = git@github.com:milkbikis/powerline-shell.git
+[submodule "config/spacemacs"]
+	path = config/spacemacs
+	url = git@github.com:rajatvig/spacemacs-config.git
