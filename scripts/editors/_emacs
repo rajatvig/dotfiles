@@ -9,4 +9,4 @@ rm -rf ~/spacemacs
 git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone --recursive https://github.com/rajatvig/spacemacs-config ~/spacemacs
 
-ln -s ~/dotfiles/config/spacemacs/spacemacs.el ~/.spacemacs
+ln -s ~/spacemacs/spacemacs.el ~/.spacemacs
