@@ -24,7 +24,7 @@
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 12
+    fontSize: 10
     invisibles: {}
     lineHeight: 1.2
     showIndentGuide: true

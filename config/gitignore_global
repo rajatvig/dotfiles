@@ -2,7 +2,6 @@
 .direnv
 .envrc
 .env
-.ruby-version
 
 # OS Specific
 .DS_Store

@@ -2,7 +2,6 @@
 adobe-reader
 amethyst
 android-studio
-appcode
 atom
 caffeine
 calibre
@@ -13,6 +12,7 @@ coreos
 cyberduck
 darktable
 djview
+docker
 dropbox
 emacs
 firefox
@@ -26,11 +26,9 @@ font-inconsolata
 font-inconsolata-for-powerline
 font-monoid
 font-open-sans
-font-roboto
-font-roboto-mono
-font-terminus
 freemind
 gephi
+github-desktop
 gitup
 google-chrome
 google-chrome-canary
@@ -42,6 +40,7 @@ graphiql
 handbrake
 iterm2-beta
 java
+kdiff3
 kindle
 kube-cluster
 kube-solo
@@ -50,7 +49,6 @@ limechat
 lyx
 macdown
 macvim
-moscow-ml
 mysqlworkbench
 nmap
 osxfuse

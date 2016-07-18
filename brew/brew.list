@@ -37,10 +37,6 @@ darcs
 direnv
 djvulibre
 dmd
-docker-machine
-docker-machine-driver-xhyve
-docker-machine-parallels
-docker-swarm
 dub
 elixir
 emacs
@@ -71,8 +67,6 @@ godep
 gradle
 gringo
 harfbuzz
-helios
-helios-solo
 htop-osx
 hub
 icu4c
@@ -127,9 +121,7 @@ newt
 nim
 node
 node-build
-nodenv
 nspr
-ntfs-3g
 nvm
 ocaml
 ocamlbuild
@@ -161,7 +153,6 @@ rbenv-vars
 readline
 rebar
 rebar3
-redis
 rocksdb
 ruby
 ruby-build
@@ -169,7 +160,6 @@ s-lang
 sbt
 scala
 scons
-selenium-server-standalone
 sl
 slurm
 smlnj
