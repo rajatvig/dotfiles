@@ -27,7 +27,6 @@
     fontSize: 10
     invisibles: {}
     lineHeight: 1.2
-    showIndentGuide: true
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
     userId: "4da6c538-236c-f6aa-82ca-b2a8d82bd5a0"
@@ -42,7 +41,7 @@
   nuclide:
     remoteProjectsConfig: []
   "one-dark-ui":
-    fontSize: 9
+    fontSize: 10
   racer:
     racerBinPath: "/Users/rajatv/.multirust/toolchains/beta/cargo/bin/racer"
     rustSrcPath: "/Users/rajatv/work/private/tryouts/rust/rust/src"
