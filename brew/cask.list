@@ -8,6 +8,7 @@ calibre
 ccleaner
 chromium
 colloquy
+corectl
 coreos
 cyberduck
 darktable
@@ -24,11 +25,13 @@ font-fira-mono
 font-fira-sans
 font-inconsolata
 font-inconsolata-for-powerline
+font-microsoft-cleartype-family
 font-monoid
 font-open-sans
 freemind
 gephi
 github-desktop
+gitter
 gitup
 google-chrome
 google-chrome-canary
@@ -38,6 +41,7 @@ google-hangouts
 gpgtools
 graphiql
 handbrake
+intellij-idea
 iterm2-beta
 java
 kdiff3
@@ -51,6 +55,7 @@ macdown
 macvim
 mysqlworkbench
 nmap
+oclint
 osxfuse
 otto
 parallels-desktop

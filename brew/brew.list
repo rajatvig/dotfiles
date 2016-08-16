@@ -1,7 +1,6 @@
 ack
 ansible
 ant
-arpack-julia
 aspcud
 aspell
 autoconf
@@ -19,12 +18,10 @@ carthage
 cask
 cayley
 ccze
-cf-cli
 chromedriver
 clasp
 cloc
 clojurescript
-cloog018-julia
 cloudfoundry-cli
 cmake
 colordiff
@@ -54,11 +51,11 @@ gdk-pixbuf
 gettext
 ghc
 git
+git-lfs
 git-review
 glib
 global
 gmp
-gmp4-julia
 gnu-sed
 gnutls
 go
@@ -73,10 +70,8 @@ icu4c
 idris
 imagemagick
 isl
-isl011-julia
 jpeg
 jq
-julia
 kotlin
 kubernetes-cli
 latex-mk
@@ -104,7 +99,6 @@ libuv
 libwebsockets
 libyaml
 llvm
-llvm33-julia
 lz4
 lzo
 make
@@ -127,7 +121,6 @@ ocaml
 ocamlbuild
 oniguruma
 opam
-openblas-julia
 openssl
 packer
 pango
@@ -140,6 +133,7 @@ pkg-config
 polyml
 ponyc
 popt
+postgresql
 pstree
 pyenv
 pyenv-virtualenv
@@ -164,12 +158,12 @@ sl
 slurm
 smlnj
 snappy
+sourcekitten
 spidermonkey
 spiff
 sqlite
 ssh-copy-id
 storm
-suite-sparse-julia
 suite-sparse42-julia
 svg2pdf
 svg2png
