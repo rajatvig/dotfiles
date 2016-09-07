@@ -2,15 +2,17 @@
 
 brew cask install atom
 
+rm -rf ~/.atom
+mkdir ~/.atom
+
 apm install linter
 apm install atom-beautify
 apm install atomic-emacs
 apm install atom-fuzzy-grep
 
-# apm install nuclide-installer
+apm install nuclide
 
 # JS
-apm install angularjs-styleguide-snippets
 apm install linter-eslint
 
 # python
@@ -40,7 +42,6 @@ apm install linter-erlang
 # go
 apm install go-plus
 
-mkdir ~/.atom
 rm ~/.atom/config.cson
 rm ~/.atom/keymap.cson
 
