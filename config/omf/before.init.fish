@@ -3,6 +3,7 @@ eval (opam config env)
 
 set brew_rbenv "/usr/local/var/rbenv/shims"
 
+set -gc EDITOR mvim
 set -gx RBENV_ROOT /usr/local/var/rbenv
 set -gx PYENV_ROOT /usr/local/var/pyenv
 set -gx GOPATH /usr/local/var/go
