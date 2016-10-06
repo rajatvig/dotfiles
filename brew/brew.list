@@ -15,7 +15,6 @@ c-ares
 cabal-install
 cairo
 camlp4
-camlp5
 carthage
 cask
 cayley
@@ -27,7 +26,6 @@ clojurescript
 cloudfoundry-cli
 cmake
 colordiff
-coq
 coreutils
 cowsay
 ctags
@@ -113,7 +111,6 @@ memcached
 mercurial
 mpfr
 msgpack
-multirust
 ncdu
 neovim
 nettle
@@ -169,6 +166,7 @@ sl
 slurm
 smlnj
 snappy
+sonar-runner
 spidermonkey
 spiff
 sqlite

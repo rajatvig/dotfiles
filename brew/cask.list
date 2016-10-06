@@ -47,6 +47,7 @@ hyperterm
 intellij-idea
 iterm2-beta
 java
+julia
 kdiff3
 keybase
 kindle
@@ -55,10 +56,9 @@ kube-cluster
 kube-solo
 libreoffice
 limechat
-lyx
 macdown
 macvim
-microsoft-lync
+mongohub
 mysqlworkbench
 oclint
 parallels-desktop
@@ -66,8 +66,9 @@ pgadmin3
 poedit
 pycharm-ce
 quip
+realm-browser
+rocket-chat
 rstudio
-send-to-kindle
 servo
 skype
 slack
@@ -82,7 +83,6 @@ vimr
 visual-studio-code
 vivaldi
 vlc
-xquartz
 xscreensaver
 yed
 zoomus
