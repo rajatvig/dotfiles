@@ -11,5 +11,5 @@ set -gx NVM_DIR /usr/local/var/nvm
 
 set -gx DOCKER_USER rajatvig
 
-set -gx RUST_SRC_PATH $HOME/work/oss/rust/rust/src
-set -gx PATH $PATH $HOME/.cabal/bin $HOME/.multirust/toolchains/beta/cargo/bin
+set -gx RUST_SRC_PATH $HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+set -gx PATH $PATH $HOME/.cabal/bin $HOME/.cargo/bin
