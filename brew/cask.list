@@ -43,9 +43,10 @@ google-hangouts
 gpgtools
 graphiql
 handbrake
-hyperterm
+hockey
+hyper
 intellij-idea
-iterm2-beta
+iterm2
 java
 julia
 kdiff3
@@ -61,6 +62,7 @@ macvim
 mongohub
 mysqlworkbench
 oclint
+p4merge
 parallels-desktop
 pgadmin3
 poedit
