@@ -17,6 +17,7 @@ npm uninstall -g eslint-config-standard
 npm uninstall -g eslint-plugin-standard
 npm uninstall -g eslint-plugin-promise
 npm uninstall -g eslint-plugin-react
+npm uninstall -g babel-eslint
 
 # node
 npm install -g grunt-cli
@@ -33,3 +34,5 @@ npm install -g eslint-config-standard
 npm install -g eslint-plugin-standard
 npm install -g eslint-plugin-promise
 npm install -g eslint-plugin-react
+npm install -g babel-eslint
+
