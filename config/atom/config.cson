@@ -18,6 +18,7 @@
       "source.ini": [
         ".buckconfig"
         ".flowconfig"
+        ".hgrc"
       ]
       "source.json": [
         ".arcconfig"
@@ -31,15 +32,16 @@
       "haskell-ghc-mod"
       "tree-view"
     ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 10
+    fontSize: 12
     invisibles: {}
-    lineHeight: 1.2
+    lineHeight: 1.1
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
     userId: "4da6c538-236c-f6aa-82ca-b2a8d82bd5a0"
