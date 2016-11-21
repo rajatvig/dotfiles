@@ -6,7 +6,6 @@ atom
 caffeine
 calibre
 ccleaner
-charles
 chromium
 colloquy
 corectl-app
@@ -44,7 +43,6 @@ gpgtools
 graphiql
 handbrake
 hockey
-hyper
 intellij-idea
 iterm2
 java
@@ -68,10 +66,9 @@ pgadmin3
 poedit
 pycharm-ce
 quip
-realm-browser
 rocket-chat
 rstudio
-servo
+screenhero
 skype
 slack
 soundnode
@@ -82,9 +79,9 @@ transmission
 vagrant
 vienna
 vimr
-visual-studio-code
 vivaldi
 vlc
 xscreensaver
 yed
+zeplin
 zoomus

@@ -64,6 +64,7 @@ gobject-introspection
 godep
 gperftools
 gradle
+grep
 gringo
 harfbuzz
 htop-osx
@@ -129,6 +130,7 @@ ocamlbuild
 oniguruma
 opam
 openssl
+openssl@1.1
 packer
 pango
 pcre
@@ -145,6 +147,7 @@ protobuf
 pstree
 pyenv
 pyenv-virtualenv
+python
 python3
 r
 ranger
@@ -195,5 +198,6 @@ vault
 vim
 wget
 wxmac
+xctool
 xz
 zsh
