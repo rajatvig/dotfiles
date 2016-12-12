@@ -17,12 +17,12 @@ docker
 dropbox
 emacs
 firefox
-firefoxdeveloperedition
 flux
 font-droid-sans
 font-droid-sans-mono
 font-fira-mono
 font-fira-sans
+font-great-vibes
 font-inconsolata
 font-inconsolata-for-powerline
 font-merriweather
@@ -38,6 +38,7 @@ google-chrome
 google-chrome-canary
 google-cloud-sdk
 google-drive
+google-featured-photos
 google-hangouts
 gpgtools
 graphiql
