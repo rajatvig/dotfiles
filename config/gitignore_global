@@ -19,16 +19,6 @@ Thumbs.db
 .tern-port
 node_modules/**
 
-# IDE
-.idea/**
-*.imr
-*.iml
-.project
-.classpath
-.settings/**
-out/**
-classes/**
-
 # TAGS
 GPATH
 GRTAGS

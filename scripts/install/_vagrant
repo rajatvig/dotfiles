@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 # vagrant
-vagrant plugin install vagrant-openstack-plugin
 vagrant plugin install vagrant-share
 vagrant plugin install vagrant-parallels
 vagrant plugin install vagrant-proxyconf

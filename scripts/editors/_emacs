@@ -6,7 +6,7 @@ brew cask instal emacs
 rm ~/.spacemacs
 rm -rf ~/spacemacs
 
-git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
-git clone --recursive https://github.com/rajatvig/spacemacs-config ~/spacemacs
+git clone --recursive git@github.com:syl20bnr/spacemacs ~/.emacs.d
+git clone git@github.com:rajatvig/spacemacs-config.git ~/spacemacs
 
 ln -s ~/spacemacs/spacemacs.el ~/.spacemacs

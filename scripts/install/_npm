@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # node
-brew install nvm
+brew install nvm node
 
 npm uninstall -g grunt-cli
 npm uninstall -g js-beautify
@@ -35,4 +35,3 @@ npm install -g eslint-plugin-standard
 npm install -g eslint-plugin-promise
 npm install -g eslint-plugin-react
 npm install -g babel-eslint
-

@@ -12,6 +12,10 @@ defaults write com.apple.dock ResetLaunchPad -bool true
 ###############################################################################
 
 echo ""
+echo "Enable quitting via ⌘ + Q; doing so will also hide desktop icons"
+defaults write com.apple.finder QuitMenuItem -bool true
+
+echo ""
 echo "Showing icons for hard drives, servers, and removable media on the desktop"
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 
@@ -43,6 +47,18 @@ echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
+echo ""
+echo "Disable the warning when changing a file extension."
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+echo ""
+echo "Show status bar."
+defaults write com.apple.finder ShowStatusBar -bool true
+
+echo ""
+echo "Show path bar."
+defaults write com.apple.finder ShowPathbar -bool true
+
 ###############################################################################
 # Dock
 ###############################################################################
@@ -70,12 +86,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
-
+chflags nohidden ~/Library
 
 killall Dock
 
 ln -s ~/dotfiles/config/aspell/aspell.en.pws ~/.aspell.en.pws
 ln -s ~/dotfiles/config/aspell/aspell.en.prepl ~/.aspell.en.prepl
-
-sudo chown root:wheel /usr/local/bin/htop
-sudo chmod u+s /usr/local/bin/htop

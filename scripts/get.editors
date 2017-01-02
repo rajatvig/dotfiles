@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-sh ./editors/atom
-sh ./editors/emacs
-sh ./editors/vim
-sh ./editors/limechat
+sh ./editors/_atom
+sh ./editors/_editorconfig
+sh ./editors/_emacs
+sh ./editors/_vim
+sh ./editors/_limechat

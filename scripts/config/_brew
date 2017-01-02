@@ -2,17 +2,24 @@
 
 brew install caskroom/cask/brew-cask
 
-brew tap homebrew/binary
-brew tap homebrew/science
-brew tap homebrew/dupes
-brew tap homebrew/tex
-brew tap staticfloat/julia
-brew tap pivotal/tap
-brew tap homebrew/fuse
-brew tap homebrew/versions
-brew tap railwaycat/emacsmacport
-brew tap rajatvig/rajat
-brew tap xoebus/cloudfoundry
-
 brew tap caskroom/versions
 brew tap caskroom/fonts
+
+brew tap facebook/fb
+
+brew tap homebrew/binary
+brew tap homebrew/boneyard
+brew tap homebrew/devel-only
+brew tap homebrew/dupes
+brew tap homebrew/fuse
+brew tap homebrew/gui
+brew tap homebrew/science
+brew tap homebrew/services
+brew tap homebrew/tex
+brew tap homebrew/versions
+
+brew tap neovim/neovim
+
+brew tap rajatvig/rajat
+
+brew tap xoebus/cloudfoundry
