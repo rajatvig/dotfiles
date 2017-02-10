@@ -10,6 +10,8 @@
     elixirPath: "/usr/local/bin"
   "autocomplete-go": {}
   "autocomplete-plus": {}
+  "autocomplete-python":
+    useKite: false
   autosave:
     enabled: true
   core:
@@ -31,6 +33,7 @@
       "autocomplete-haskell"
       "haskell-ghc-mod"
       "tree-view"
+      "linter"
     ]
     telemetryConsent: "limited"
     themes: [
