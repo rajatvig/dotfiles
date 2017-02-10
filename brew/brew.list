@@ -2,6 +2,8 @@ ack
 android-sdk
 ansible
 ant
+apr
+apr-util
 aspcud
 aspell
 autoconf
@@ -110,6 +112,7 @@ libtasn1
 libtermkey
 libtiff
 libtool
+libunistring
 libuv
 libvterm
 libwebsockets
@@ -124,6 +127,7 @@ make
 markdown
 maven
 memcached
+mesos
 mpfr
 msgpack
 ncdu
@@ -141,6 +145,7 @@ oniguruma
 opam
 openssl
 openssl@1.1
+p11-kit
 packer
 pango
 pcre
@@ -189,6 +194,7 @@ spiff
 sqlite
 ssh-copy-id
 storm
+subversion
 suite-sparse42-julia
 svg2pdf
 svg2png

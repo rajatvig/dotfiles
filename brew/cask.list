@@ -18,7 +18,6 @@ dropbox
 emacs
 firefox
 firefoxdeveloperedition
-flux
 font-droid-sans
 font-droid-sans-mono
 font-fira-mono
@@ -30,6 +29,8 @@ font-merriweather
 font-merriweather-sans
 font-monoid
 font-open-sans
+font-source-code-pro
+font-source-code-pro-for-powerline
 freemind
 gephi
 github-desktop
@@ -61,14 +62,13 @@ macdown
 macvim
 mongohub
 mysqlworkbench
-oclint
+onedrive
 p4merge
 parallels-desktop
 pgadmin3
 poedit
 pycharm-ce
 quip
-rocket-chat
 rstudio
 screenhero
 skype
