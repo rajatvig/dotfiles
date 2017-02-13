@@ -6,16 +6,23 @@ brew install bash
 brew install fish
 
 rm -rf .config/fish
-rm -rf .config/omf
+rm -rf .config/fish_plugins
 
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+mkdir -p .config/{fish,fish_plugins}
 
-mkdir ~/.config
-ln -s ~/dotfiles/config/omf ~/.config/omf
+git clone git@github.com:justinmayer/tacklebox.git ~/.config/fish_plugins/tacklebox
+git clone git@github.com:justinmayer/tackle.git ~/.config/fish_plugins/tackle
+git clone git@github.com:joehillen/to-fish.git ~/.config/fish_plugins/to
+
+git clone git@github.com:rajatvig/fish-brew.git ~/.config/fish_plugins/brew
+git clone git@github.com:rajatvig/fish-pyenv.git ~/.config/fish_plugins/pyenv
+git clone git@github.com:rajatvig/fish-git.git  ~/.config/fish_plugins/git
+
+ln -s ~/dotfiles/config/fish ~/.config/fish
 
 # zsh
 brew install zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 rm ~/.zshrc*
 ln -s ~/dotfiles/config/zshrc ~/.zshrc
@@ -30,3 +37,10 @@ ln -s ~/dotfiles/config/tmux.conf ~/.tmux.conf
 # direnv
 rm ~/.direnvrc
 ln -s ~/dotfiles/config/direnvrc ~/.direnvrc
+
+# powerline
+git clone git@github.com:milkbikis/powerline-shell.git ~/.config/powerline-shell
+cd ~/.config/powerline-shell
+./install.py
+cd ~
+ln -s ~/.config/powerline-shell/powerline-shell.py ~/powerline-shell.py
