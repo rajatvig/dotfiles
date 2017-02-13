@@ -12,7 +12,9 @@ mkdir -p .config/{fish,fish_plugins}
 
 git clone git@github.com:justinmayer/tacklebox.git ~/.config/fish_plugins/tacklebox
 git clone git@github.com:justinmayer/tackle.git ~/.config/fish_plugins/tackle
+
 git clone git@github.com:joehillen/to-fish.git ~/.config/fish_plugins/to
+git clone git@github.com:sjl/z-fish.git ~/.config/fish_plugins/z
 
 git clone git@github.com:rajatvig/fish-brew.git ~/.config/fish_plugins/brew
 git clone git@github.com:rajatvig/fish-pyenv.git ~/.config/fish_plugins/pyenv

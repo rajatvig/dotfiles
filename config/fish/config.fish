@@ -15,9 +15,9 @@ set -gx DOCKER_USER rajatvig
 set -gx RUST_SRC_PATH $HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 set -gx PATH $PATH $HOME/.cabal/bin $HOME/.cargo/bin
 
-set tacklebox_path ~/.config/fish_plugins/tackle ~/.config/fish_plugins/to ~/.config/fish_plugins/brew ~/.config/fish_plugins/pyenv ~/.config/fish_plugins/git
-set tacklebox_modules virtualfish virtualhooks
-set tacklebox_plugins docker extract grc pip python up
+set tacklebox_path  ~/.config/fish_plugins/z ~/.config/fish_plugins/tackle ~/.config/fish_plugins/to ~/.config/fish_plugins/brew ~/.config/fish_plugins/pyenv ~/.config/fish_plugins/git
+set tacklebox_modules virtualfish z
+set tacklebox_plugins docker extract grc pip python
 
 # set tacklebox_theme budspencer
 
