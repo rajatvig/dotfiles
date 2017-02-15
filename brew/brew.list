@@ -8,6 +8,7 @@ aspcud
 aspell
 autoconf
 automake
+awk
 aws-shell
 awscli
 bash
@@ -27,6 +28,7 @@ chromedriver
 clasp
 cloc
 clojurescript
+cloudfoundry-cli
 cmake
 colordiff
 coreutils
@@ -59,6 +61,7 @@ ghostscript
 git
 git-lfs
 git-review
+gitstats
 glib
 global
 gmp
@@ -70,6 +73,7 @@ gobject-introspection
 godep
 gperftools
 gradle
+grc
 grep
 gringo
 harfbuzz
@@ -87,7 +91,6 @@ jq
 jsoncpp
 kotlin
 kubernetes-cli
-latex-mk
 leiningen
 leveldb
 lfe
