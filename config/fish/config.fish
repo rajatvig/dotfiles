@@ -3,8 +3,8 @@ opam config env | source
 
 set brew_rbenv "/usr/local/var/rbenv/shims"
 
-set -gx EDITOR mvim
-set -gx GIT_EDITOR mvim
+set -gx EDITOR vim
+set -gx GIT_EDITOR vim
 set -gx RBENV_ROOT /usr/local/var/rbenv
 set -gx PYENV_ROOT /usr/local/var/pyenv
 set -gx GOPATH /usr/local/var/go
