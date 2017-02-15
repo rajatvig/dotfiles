@@ -7,4 +7,4 @@ brew install python rbenv ruby-build
 
 eval "$(rbenv init -)"
 
-rbenv install 2.2.4
+rbenv install 2.4.0
