@@ -27,7 +27,6 @@ chromedriver
 clasp
 cloc
 clojurescript
-cloudfoundry-cli
 cmake
 colordiff
 coreutils
@@ -60,7 +59,6 @@ ghostscript
 git
 git-lfs
 git-review
-gitstats
 glib
 global
 gmp
@@ -195,7 +193,6 @@ sqlite
 ssh-copy-id
 storm
 subversion
-suite-sparse42-julia
 svg2pdf
 svg2png
 swiftlint
