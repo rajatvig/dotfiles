@@ -42,7 +42,7 @@
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 11
+    fontSize: 13
     invisibles: {}
     lineHeight: 1.1
     zoomFontWhenCtrlScrolling: true
@@ -61,6 +61,8 @@
       formatOnSave: true
     "nuclide-distraction-free-mode":
       hideToolBar: true
+    "nuclide-file-tree":
+      revealFileOnSwitch: true
     "nuclide-python": {}
     "nuclide-swift": {}
     remoteProjectsConfig: []

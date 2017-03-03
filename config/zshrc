@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew brew-cask docker docker-compose git github golang gulp lein node nvm osx pyenv python rbenv sbt scala terraform thefuck vagrant vault)
+plugins=(aws brew brew-cask docker docker-compose git github golang gulp lein node nvm osx pyenv python rbenv sbt scala terraform thefuck vagrant vault z)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
