@@ -6,9 +6,9 @@ apr
 apr-util
 aspcud
 aspell
+augeas
 autoconf
 automake
-awk
 aws-shell
 awscli
 bash
@@ -24,6 +24,7 @@ carthage
 cask
 cayley
 ccze
+certbot
 chromedriver
 clasp
 cloc
@@ -35,9 +36,12 @@ cowsay
 ctags
 cvs
 darcs
+dialog
 direnv
 djvulibre
 dmd
+docker-machine
+docker-machine-parallels
 dub
 elixir
 emacs
@@ -60,6 +64,7 @@ ghostscript
 git
 git-lfs
 git-review
+glew
 glib
 global
 gmp
@@ -69,6 +74,7 @@ gnutls
 go
 gobject-introspection
 godep
+gource
 gperftools
 gradle
 grc
@@ -115,6 +121,7 @@ libunistring
 libuv
 libvterm
 libwebsockets
+libxml2
 libyaml
 little-cms2
 llvm
@@ -182,6 +189,8 @@ s-lang
 sbt
 scala
 scons
+sdl2
+sdl2_image
 shared-mime-info
 sl
 slurm
