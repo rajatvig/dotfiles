@@ -42,7 +42,7 @@
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 13
+    fontSize: 11
     invisibles: {}
     lineHeight: 1.1
     zoomFontWhenCtrlScrolling: true

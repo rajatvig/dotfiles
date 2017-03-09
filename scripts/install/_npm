@@ -35,8 +35,3 @@ npm install -g eslint-plugin-standard
 npm install -g eslint-plugin-promise
 npm install -g eslint-plugin-react
 npm install -g babel-eslint
-
-. $(brew --prefix nvm)/nvm.sh
-
-nvm install 7.5.0
-nvm alias default 7.5.0
