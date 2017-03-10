@@ -13,7 +13,10 @@ set -gx NVM_DIR /usr/local/var/nvm
 set -gx DOCKER_USER rajatvig
 
 set -gx RUST_SRC_PATH $HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
-set -gx PATH $PATH $HOME/.cabal/bin $HOME/.cargo/bin
+
+set -g fish_user_paths $HOME/.cabal/bin $fish_user_paths
+set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 set tacklebox_path  ~/.config/fish_plugins/z ~/.config/fish_plugins/tackle ~/.config/fish_plugins/to ~/.config/fish_plugins/brew ~/.config/fish_plugins/pyenv ~/.config/fish_plugins/git
 set tacklebox_modules virtualfish z
