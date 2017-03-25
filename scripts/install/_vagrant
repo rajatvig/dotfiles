@@ -1,9 +1,0 @@
-#!/usr/bin/env sh
-
-# vagrant
-vagrant plugin install vagrant-share
-vagrant plugin install vagrant-parallels
-vagrant plugin install vagrant-proxyconf
-
-mkdir ~/.vagrant.d
-ln -s ~/dotfiles/config/Vagrantfile ~/.vagrant.d/Vagrantfile

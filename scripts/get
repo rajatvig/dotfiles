@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-sh ./get.config
-sh ./get.install
-sh ./get.editors

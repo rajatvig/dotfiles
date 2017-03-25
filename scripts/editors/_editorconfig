@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-rm ~/.editorconfig
-ln -s ~/dotfiles/config/editorconfig ~/.editorconfig
-

@@ -2,6 +2,20 @@
 
 # A collection of scripts, configuration to automate my install of OS X.
 
+## How to Use
+
+Install XCode and then run specific targets or run
+
+```
+make install editors config
+```
+
+All available targets are defined when `make` is run without a target
+
+```bash
+make
+```
+
 ### Included Batteries
 
 1. [Spacemacs](https://github.com/syl20bnr/spacemacs)
@@ -21,6 +35,6 @@ So I started to keep a track of things, keeping it as automated as possible.
 ### Caveats
 
 1. As is may not be useful to everyone.
-2. Some stuff is not idempotent.
+2. Some targets are not idempotent.
+2. Some targets require `sudo` permissions.
 2. Scripts tested on OS X only. Ansible based [Arch Linux based developer setup with vagrant](https://github.com/rajatvig/ansible-osx)
-

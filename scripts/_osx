@@ -89,6 +89,3 @@ defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 chflags nohidden ~/Library
 
 killall Dock
-
-ln -s ~/dotfiles/config/aspell/aspell.en.pws ~/.aspell.en.pws
-ln -s ~/dotfiles/config/aspell/aspell.en.prepl ~/.aspell.en.prepl

@@ -6,6 +6,7 @@ apr
 apr-util
 aspcud
 aspell
+atlassian-plugin-sdk
 augeas
 autoconf
 automake
@@ -125,6 +126,7 @@ libxml2
 libyaml
 little-cms2
 llvm
+llvm@3.9
 lua
 luajit
 lz4
@@ -181,6 +183,7 @@ readline
 reattach-to-user-namespace
 rebar
 rebar3
+rebar@3
 redis
 rocksdb
 ruby

@@ -1,0 +1,7 @@
+:justinmayer/tacklebox.git ~/.config/fish_plugins/tacklebox
+:justinmayer/tackle.git ~/.config/fish_plugins/tackle
+:joehillen/to-fish.git ~/.config/fish_plugins/to
+:sjl/z-fish.git ~/.config/fish_plugins/z
+:rajatvig/fish-brew.git ~/.config/fish_plugins/brew
+:rajatvig/fish-pyenv.git ~/.config/fish_plugins/pyenv
+:rajatvig/fish-git.git  ~/.config/fish_plugins/git
