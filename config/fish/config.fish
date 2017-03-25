@@ -1,5 +1,6 @@
 direnv hook fish | source
 opam config env | source
+thefuck --alias | source
 
 set brew_rbenv "/usr/local/var/rbenv/shims"
 
