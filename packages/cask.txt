@@ -1,6 +1,7 @@
 1password
 adobe-reader
 amethyst
+android-sdk
 android-studio
 atom
 caffeine
@@ -45,7 +46,7 @@ google-hangouts
 gpgtools
 graphiql
 handbrake
-intellij-idea
+intellij-idea-ce
 iterm2
 java
 julia
@@ -61,6 +62,7 @@ macdown
 macvim
 mongohub
 mysqlworkbench
+omniplan
 onedrive
 p4merge
 parallels-desktop

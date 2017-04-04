@@ -1,0 +1,4 @@
+vagrant-parallels
+vagrant-proxyconf
+vagrant-scp
+vagrant-share

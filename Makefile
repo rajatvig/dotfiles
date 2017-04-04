@@ -27,6 +27,7 @@ relink: ## Relink the Packages with what is installed
 	brew list > $(PDIR)/brew.txt
 	brew cask list > $(PDIR)/cask.txt
 	ls ~/.atom/packages > $(PDIR)/atom.txt
+	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 
 install: brew brew_redo cabal golang npm opam ruby rust vagrant ## Install as much as possible
 
@@ -86,12 +87,11 @@ rust: ## Install RustUp
 	rustup update
 
 vagrant: ## Install and configure Vagrant
-	$(BI) vagrant
-	$(VBI) vagrant-share
-	$(VBI) vagrant-parallels
-	$(VBI) vagrant-proxyconf
-	mkdir ~/.vagrant.d
-	ln -s ~/dotfiles/config/Vagrantfile ~/.vagrant.d/Vagrantfile
+	$(BCI) vagrant
+	cat $(PDIR)/vagrant.txt | xargs $(VPI)
+	mkdir -p ~/.vagrant.d
+	rm ~/.vagrant.d/Vagrantfile
+	ln -s $(CDIR)/Vagrantfile ~/.vagrant.d/Vagrantfile
 
 editors: atom editorconfig emacs vim ## Install and configure all editors
 
