@@ -183,5 +183,21 @@ powerline: ## Pretty up the prompt using PowerLine
 osx: ## Setup sane OSX Defaults
 	./scripts/_osx
 
+update_brew: ## Update brew
+	brew update
+	brew upgrade
+	brew cleanup
+
+update_emacs: ## Update Emacs
+	cd ~/.emacs.d; git pull --rebase
+
+update_vim: ## Update VIM
+	cd ~/.spf13-vim-3; git pull --rebase
+	vim +BundleInstall! +BundleClean +q
+
+update: update_vim update_emacs update_brew ## Update software
+	rustup update
+	apm update -c false
+
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
