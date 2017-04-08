@@ -205,15 +205,19 @@ update_brew: ## Update brew
 
 update_emacs: ## Update Emacs
 	cd $(HOME)/.emacs.d; git pull --rebase
+	cd $(HC)/spacemacs; git pull --rebase
 
 update_vim: ## Update VIM
 	cd $(HOME)/.spf13-vim-3; git pull --rebase
 	vim +BundleInstall! +BundleClean +q
 
-update: update_vim update_emacs update_brew ## Update software
+update: ## Update Software
+	cd $(DDIR); git pull --rebase
+	make update_vim update_emacs update_brew
 	rustup update
 	apm update -c false
 	bash-it update
+	cd $(HOME)/.oh-my-zsh; git pull --rebase
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
