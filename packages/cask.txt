@@ -19,6 +19,7 @@ dropbox
 emacs
 firefox
 firefoxdeveloperedition
+font-camingocode
 font-droid-sans
 font-droid-sans-mono
 font-fira-mono

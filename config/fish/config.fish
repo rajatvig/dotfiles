@@ -23,6 +23,4 @@ set tacklebox_path  ~/.config/fish_plugins/z ~/.config/fish_plugins/tackle ~/.co
 set tacklebox_modules virtualfish z
 set tacklebox_plugins docker extract grc pip python
 
-# set tacklebox_theme budspencer
-
 source ~/.config/fish_plugins/tacklebox/tacklebox.fish

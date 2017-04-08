@@ -2,4 +2,4 @@ let base16colorspace=256
 set background=dark
 colorscheme Tomorrow-Night-Eighties
 
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+set guifont=CamingoCode:h11
