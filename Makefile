@@ -31,10 +31,12 @@ relink: ## Relink the Packages with what is installed
 
 install: brew brew_redo cabal golang npm opam ruby rust vagrant ## Install as much as possible
 
-brew: ## Install brew, brew cask, taps, all brew and cask packages
+brew_init:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	$(BI) cask
 	cat $(PDIR)/taps.txt | xargs brew tap
+
+brew: ## Install brew, brew cask, taps, all brew and cask packages
+	$(BI) cask
 	$(BCI) java
 	$(BCI) vagrant
 	make brew_redo
@@ -42,7 +44,6 @@ brew: ## Install brew, brew cask, taps, all brew and cask packages
 brew_redo: ## Install all configured brew and cask packages
 	cat $(PDIR)/brew.txt | xargs $(BI)
 	cat $(PDIR)/cask.txt | xargs $(BCI)
-	brew linkapps
 
 cabal: ## Update Cabal and add some default packages
 	$(BI) cabal-install
