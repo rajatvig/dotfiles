@@ -41,7 +41,7 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Source Code Pro"
+    fontFamily: "CamingoCode"
     fontSize: 11
     invisibles: {}
     lineHeight: 1.1
