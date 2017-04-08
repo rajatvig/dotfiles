@@ -101,6 +101,7 @@ atom: ## Configure Atom
 	mkdir ~/.atom
 	ln -s $(CDIR)/atom/config.cson ~/.atom/
 	ln -s $(CDIR)/atom/keymap.cson ~/.atom/
+	cat $(PDIR)/atom.txt | xargs apm install
 
 editorconfig: ## Setup default editorconfig
 	rm ~/.editorconfig
