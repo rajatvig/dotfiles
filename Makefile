@@ -19,6 +19,9 @@ GCG=git config --global
 
 LCT=~/.config/limchat-themes
 
+BIT=~/.config/bash_it
+BITP=$(BIT)/plugins
+
 .PHONY: help
 .DEFAULT_GOAL := help
 
@@ -28,6 +31,7 @@ relink: ## Relink the Packages with what is installed
 	brew cask list > $(PDIR)/cask.txt
 	ls ~/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
+	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 
 install: brew brew_redo cabal golang npm opam ruby rust vagrant ## Install as much as possible
 
@@ -152,6 +156,13 @@ shells: bash fish zsh tmux direnv powerline ## Configure Shells
 
 bash:
 	$(BI) bash
+	rm -rf $(BIT) ~/.bashrc ~/.bash_profile
+	$(GC):Bash-it/bash-it.git $(BIT)
+	$(BIT)/install.sh --silent
+	rm -rf ~/.bashrc ~/.bash_profile $(BITP)/enabled/*.bash
+	ln -s $(CDIR)/bashrc ~/.bashrc
+	ln -s $(CDIR)/bash_profile ~/.bash_profile
+	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
 fish: ## Configure Fish Shell, get TackleBox and custom plugins
 	$(BI) fish
@@ -198,6 +209,7 @@ update_vim: ## Update VIM
 update: update_vim update_emacs update_brew ## Update software
 	rustup update
 	apm update -c false
+	bash-it update
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

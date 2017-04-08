@@ -1,0 +1,9 @@
+alias-completion
+base
+edit-mode-emacs
+git
+gradle
+osx
+pyenv
+tmux
+z
