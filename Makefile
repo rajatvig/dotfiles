@@ -4,8 +4,9 @@ BCI=brew cask install
 GO_DIR=/usr/local/var/go
 GG=env GOPATH=$(GO_DIR) get -u
 
-PDIR=~/dotfiles/packages
-CDIR=~/dotfiles/config
+DDIR=$(HOME)/dotfiles
+PDIR=$(DDIR)/packages
+CDIR=$(DDIR)/config
 
 PYENV_ROOT=/usr/local/var/pyenv
 PYENV=env PYENV_ROOT=$(PYENV_ROOT) /usr/local/bin/pyenv
@@ -17,27 +18,30 @@ VPI=vagrant plugin install
 GC=git clone --recursive git@github.com
 GCG=git config --global
 
-LCT=~/.config/limchat-themes
+HC=$(HOME)/.config
 
-BIT=~/.config/bash_it
+LCT=$(HC)/limchat-themes
+
+BIT=$(HC)/bash_it
 BITP=$(BIT)/plugins
 
 .PHONY: help
 .DEFAULT_GOAL := help
 
+bootstrap: ## Bootstrap Brew, dotfiles
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	cat $(PDIR)/taps.txt | xargs brew tap
+	$(GC):rajatvig/dotfiles.git $(DDIR)
+
 relink: ## Relink the Packages with what is installed
 	brew tap > $(PDIR)/tap.txt
 	brew list > $(PDIR)/brew.txt
 	brew cask list > $(PDIR)/cask.txt
-	ls ~/.atom/packages > $(PDIR)/atom.txt
+	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 
 install: brew brew_redo cabal golang npm opam ruby rust vagrant ## Install as much as possible
-
-brew_init:
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	cat $(PDIR)/taps.txt | xargs brew tap
 
 brew: ## Install brew, brew cask, taps, all brew and cask packages
 	$(BI) cask
@@ -79,7 +83,7 @@ python: ## Install Python, Pip Packages, PyEnv
 	cat $(PDIR)/pip.txt | xargs pip install
 	$(PYENV) install 3.6.0
 	$(PYENV) install 2.7.13
-	ln -s $(CDIR)/pypirc ~/.pypirc
+	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
 ruby: ## Install RbEnv, Ruby
 	mkdir -p $(RBENV_ROOT)
@@ -94,31 +98,31 @@ rust: ## Install RustUp
 vagrant: ## Install and configure Vagrant
 	$(BCI) vagrant
 	cat $(PDIR)/vagrant.txt | xargs $(VPI)
-	mkdir -p ~/.vagrant.d
-	rm ~/.vagrant.d/Vagrantfile
-	ln -s $(CDIR)/Vagrantfile ~/.vagrant.d/Vagrantfile
+	mkdir -p $(HOME)/.vagrant.d
+	rm $(HOME)/.vagrant.d/Vagrantfile
+	ln -s $(CDIR)/Vagrantfile $(HOME)/.vagrant.d/Vagrantfile
 
 editors: atom editorconfig emacs vim ## Install and configure all editors
 
 atom: ## Configure Atom
 	$(BCI) atom
-	rm -rf ~/.atom
-	mkdir ~/.atom
-	ln -s $(CDIR)/atom/config.cson ~/.atom/
-	ln -s $(CDIR)/atom/keymap.cson ~/.atom/
+	rm -rf $(HOME)/.atom
+	mkdir $(HOME)/.atom
+	ln -s $(CDIR)/atom/config.cson $(HOME)/.atom/
+	ln -s $(CDIR)/atom/keymap.cson $(HOME)/.atom/
 	cat $(PDIR)/atom.txt | xargs apm install
 
 editorconfig: ## Setup default editorconfig
-	rm ~/.editorconfig
-	ln -s $(CDIR)/editorconfig ~/.editorconfig
+	rm $(HOME)/.editorconfig
+	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
 
 emacs: ## Configure Spacemacs
 	$(BI) emacs
 	$(BCI) emacs
-	rm -rf ~/.spacemacs ~/spacemacs ~/.emacs.d
-	$(GC):syl20bnr/spacemacs ~/.emacs.d
-	$(GC):rajatvig/spacemacs-config.git ~/spacemacs
-	ln -s ~/spacemacs/spacemacs.el ~/.spacemacs
+	rm -rf $(HOME)/.spacemacs $(HC)/spacemacs $(HOME)/.emacs.d
+	$(GC):syl20bnr/spacemacs.git $(HOME)/.emacs.d
+	$(GC):rajatvig/spacemacs-config.git $(HC)/spacemacs
+	ln -s $(HC)/spacemacs/spacemacs.el $(HOME)/.spacemacs
 
 limechat: ## Configure LimeChat (currently broken)
 	$(BCI) limechat
@@ -131,10 +135,10 @@ vim: ## Configure SPF-13 for VIM
 	$(BI) vim
 	$(BCI) macvim
 	curl http://j.mp/spf13-vim3 -L -o - | sh
-	rm ~/.vimrc.local ~/.vimrc.bundles.local ~/.vimrc.before.local
-	ln -s $(CDIR)/vim/vimrc.before.local ~/.vimrc.before.local
-	ln -s $(CDIR)/vim/vimrc.bundles.local ~/.vimrc.bundles.local
-	ln -s $(CDIR)/vim/vimrc.local ~/.vimrc.local
+	rm $(HOME)/.vimrc.local $(HOME)/.vimrc.bundles.local $(HOME)/.vimrc.before.local
+	ln -s $(CDIR)/vim/vimrc.before.local $(HOME)/.vimrc.before.local
+	ln -s $(CDIR)/vim/vimrc.bundles.local $(HOME)/.vimrc.bundles.local
+	ln -s $(CDIR)/vim/vimrc.local $(HOME)/.vimrc.local
 
 config: git aspell shells osx ## Configure Git, Aspell, Shells, OSX Defaults
 
@@ -143,25 +147,25 @@ git: ## Configure Git Global Settings and an Ignore file
 	$(GCG) user.name "Rajat Vig"
 	$(GCG) user.email "rajat.vig@gmail.com"
 	$(GCG) core.editor vim
-	$(GCG) core.excludesfile "~/.gitignore_global"
-	rm ~/.gitignore_global
-	ln -s $(CDIR)/gitignore_global ~/.gitignore_global
+	$(GCG) core.excludesfile "$(HOME)/.gitignore_global"
+	rm $(HOME)/.gitignore_global
+	ln -s $(CDIR)/gitignore_global $(HOME)/.gitignore_global
 
 aspell: ## Setup personal dictionary
-	rm ~/.aspell.en.pws ~/.aspell.en.prepl
-	ln -s $(CDIR)aspell/aspell.en.pws ~/.aspell.en.pws
-	ln -s $(CDIR)/aspell/aspell.en.prepl ~/.aspell.en.prepl
+	rm $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl
+	ln -s $(CDIR)aspell/aspell.en.pws $(HOME)/.aspell.en.pws
+	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
 
 shells: bash fish zsh tmux direnv powerline ## Configure Shells
 
 bash:
 	$(BI) bash
-	rm -rf $(BIT) ~/.bashrc ~/.bash_profile
+	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile
 	$(GC):Bash-it/bash-it.git $(BIT)
 	$(BIT)/install.sh --silent
-	rm -rf ~/.bashrc ~/.bash_profile $(BITP)/enabled/*.bash
-	ln -s $(CDIR)/bashrc ~/.bashrc
-	ln -s $(CDIR)/bash_profile ~/.bash_profile
+	rm -rf $(HOME)/.bashrc $(HOME)/.bash_profile $(BITP)/enabled/*.bash
+	ln -s $(CDIR)/bashrc $(HOME)/.bashrc
+	ln -s $(CDIR)/bash_profile $(HOME)/.bash_profile
 	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
 fish: ## Configure Fish Shell, get TackleBox and custom plugins
@@ -169,27 +173,27 @@ fish: ## Configure Fish Shell, get TackleBox and custom plugins
 	rm -rf .config/fish .config/fish_plugins
 	mkdir -p .config/{fish,fish_plugins}
 	cat $(PDIR)/fishplugins.txt | xarg $(GC)
-	ln -s $(CDIR)/fish ~/.config/fish
+	ln -s $(CDIR)/fish $(HC)/fish
 	sudo chsh -s /usr/local/bin/fish `echo $USER`
 
 zsh: ## Install oh-my-zsh
 	$(BI) zsh
-	$(GC):robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-	rm ~/.zshrc
-	ln -s $(CDIR)/zshrc ~/.zshrc
+	$(GC):robbyrussell/oh-my-zsh.git $(HOME)/.oh-my-zsh
+	rm $(HOME)/.zshrc
+	ln -s $(CDIR)/zshrc $(HOME)/.zshrc
 
 tmux: ## Configure tmux
-	rm ~/.tmux.conf
-	ln -s $(CDIR)/tmux.conf ~/.tmux.conf
+	rm $(HOME)/.tmux.conf
+	ln -s $(CDIR)/tmux.conf $(HOME)/.tmux.conf
 
 direnv: ## Configure direnv
-	rm ~/.direnvrc
-	ln -s $(CDIR)/direnvrc ~/.direnvrc
+	rm $(HOME)/.direnvrc
+	ln -s $(CDIR)/direnvrc $(HOME)/.direnvrc
 
 powerline: ## Pretty up the prompt using PowerLine
-	$(GC):milkbikis/powerline-shell.git ~/.config/powerline-shell
-	cd ~/.config/powerline-shell; ./install.py
-	ln -s ~/.config/powerline-shell/powerline-shell.py ~/powerline-shell.py
+	$(GC):milkbikis/powerline-shell.git $(HC)/powerline-shell
+	cd $(HC)/powerline-shell; ./install.py
+	ln -s $(HC)/powerline-shell/powerline-shell.py $(HOME)/powerline-shell.py
 
 osx: ## Setup sane OSX Defaults
 	./scripts/_osx
@@ -200,10 +204,10 @@ update_brew: ## Update brew
 	brew cleanup
 
 update_emacs: ## Update Emacs
-	cd ~/.emacs.d; git pull --rebase
+	cd $(HOME)/.emacs.d; git pull --rebase
 
 update_vim: ## Update VIM
-	cd ~/.spf13-vim-3; git pull --rebase
+	cd $(HOME)/.spf13-vim-3; git pull --rebase
 	vim +BundleInstall! +BundleClean +q
 
 update: update_vim update_emacs update_brew ## Update software
