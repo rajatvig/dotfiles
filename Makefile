@@ -140,6 +140,10 @@ vim: ## Configure SPF-13 for VIM
 	ln -s $(CDIR)/vim/vimrc.bundles.local $(HOME)/.vimrc.bundles.local
 	ln -s $(CDIR)/vim/vimrc.local $(HOME)/.vimrc.local
 
+iterm2: ## iTerm2 Configuration
+	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
+	cp $(CDIR)/com.googlecode.iterm2.plist $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
+
 config: git aspell shells osx ## Configure Git, Aspell, Shells, OSX Defaults
 
 git: ## Configure Git Global Settings and an Ignore file
