@@ -50,7 +50,7 @@ brew: ## Install brew, brew cask, taps, all brew and cask packages
 	make brew_redo
 
 brew_redo: ## Install all configured brew and cask packages
-	cat $(PDIR)/brew.txt | xargs $(BI)
+	cat $(PDIR)/brew.txt | xargs $(BI) || true
 	cat $(PDIR)/cask.txt | xargs $(BCI)
 
 cabal: ## Update Cabal and add some default packages
