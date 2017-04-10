@@ -9,6 +9,7 @@ atlassian-plugin-sdk
 augeas
 autoconf
 automake
+awk
 aws-shell
 awscli
 bash

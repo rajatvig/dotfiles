@@ -40,6 +40,7 @@ relink: ## Relink the Packages with what is installed
 	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
+	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 
 install: brew brew_redo cabal golang npm opam ruby rust vagrant ## Install as much as possible
 
