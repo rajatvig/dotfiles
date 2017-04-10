@@ -135,11 +135,20 @@ limechat: ## Configure LimeChat (currently broken)
 vim: ## Configure SPF-13 for VIM
 	$(BI) vim
 	$(BCI) macvim
-	curl http://j.mp/spf13-vim3 -L -o - | sh
-	rm $(HOME)/.vimrc.local $(HOME)/.vimrc.bundles.local $(HOME)/.vimrc.before.local
+	curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh && rm spf13-vim.sh
+	rm -rf $(HOME)/.vimrc.local $(HOME)/.vimrc.bundles.local $(HOME)/.vimrc.before.local
 	ln -s $(CDIR)/vim/vimrc.before.local $(HOME)/.vimrc.before.local
 	ln -s $(CDIR)/vim/vimrc.bundles.local $(HOME)/.vimrc.bundles.local
 	ln -s $(CDIR)/vim/vimrc.local $(HOME)/.vimrc.local
+
+neovim: ## Configure NeoVIM
+	$(BI) neovim
+	ln -s $(HOME)/.vim $(HOME)/nvim
+	ln -s $(HOME)/.vimrc $(HC)/nvim/init.vim
+	# curl -sLf https://spacevim.org/install.sh | bash -s -- install neovim
+	# mkdir -p $(HOME)/.SpaceVim.d
+	# rm -rf $(HOME)/.SpaceVim.d/init.vim
+	# cp $(CDIR)/init.vim $(HOME)/.SpaceVim.d/init.vim
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
@@ -192,7 +201,8 @@ tmux: ## Configure tmux
 	ln -s $(CDIR)/tmux.conf $(HOME)/.tmux.conf
 
 direnv: ## Configure direnv
-	rm $(HOME)/.direnvrc
+	$(BI) direnv
+	rm -rf $(HOME)/.direnvrc
 	ln -s $(CDIR)/direnvrc $(HOME)/.direnvrc
 
 powerline: ## Pretty up the prompt using PowerLine
