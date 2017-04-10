@@ -143,12 +143,8 @@ vim: ## Configure SPF-13 for VIM
 
 neovim: ## Configure NeoVIM
 	$(BI) neovim
-	ln -s $(HOME)/.vim $(HOME)/nvim
+	ln -s $(HOME)/.vim $(HC)/nvim
 	ln -s $(HOME)/.vimrc $(HC)/nvim/init.vim
-	# curl -sLf https://spacevim.org/install.sh | bash -s -- install neovim
-	# mkdir -p $(HOME)/.SpaceVim.d
-	# rm -rf $(HOME)/.SpaceVim.d/init.vim
-	# cp $(CDIR)/init.vim $(HOME)/.SpaceVim.d/init.vim
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
