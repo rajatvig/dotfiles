@@ -1,3 +1,4 @@
+MagicPython
 atom-beautify
 atom-django
 atom-fuzzy-grep
@@ -16,6 +17,7 @@ language-babel
 language-docker
 language-elixir
 language-erlang
+language-gitignore
 language-gradle
 language-graphql
 language-groovy

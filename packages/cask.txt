@@ -50,6 +50,7 @@ handbrake
 intellij-idea-ce
 iterm2
 java
+java7
 julia
 kdiff3
 keybase
