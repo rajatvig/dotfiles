@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-export PATH=/usr/local/bin:$PATH
-
 export PYENV_ROOT="/usr/local/var/pyenv"
-export NVM_DIR="/usr/local/var/nvm"
 export RBENV_ROOT="/usr/local/var/rbenv"
+export N_PREFIX="/usr/local/var/n"
+
+export PATH=$N_PREFIX/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.config/bash_it"

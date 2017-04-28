@@ -70,7 +70,7 @@ golang: ## Install and configure GoLang
 	$(GG) golang.org/x/tools/cmd/oracle
 
 npm: ## Install required NPM Packages
-	$(BI) nvm node
+	$(BI) n
 	cat $(PDIR)/npm.txt | xargs npm uninstall -g
 	cat $(PDIR)/npm.txt | xargs npm install -g
 
