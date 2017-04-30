@@ -138,15 +138,14 @@ memcached
 mesos
 mpfr
 msgpack
+n
 ncdu
 neovim
 nettle
 newt
 nim
-node
 node-build
 nspr
-nvm
 ocaml
 ocamlbuild
 oniguruma
@@ -199,7 +198,6 @@ sl
 slurm
 smlnj
 snappy
-sonar-runner
 spidermonkey
 spiff
 sqlite
