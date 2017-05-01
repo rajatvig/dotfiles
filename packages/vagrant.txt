@@ -1,3 +1,4 @@
+vagrant-hostmanager
 vagrant-parallels
 vagrant-proxyconf
 vagrant-scp
