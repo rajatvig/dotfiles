@@ -137,6 +137,7 @@ maven
 memcached
 mesos
 mpfr
+mr
 msgpack
 n
 ncdu

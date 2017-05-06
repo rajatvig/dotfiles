@@ -34,7 +34,7 @@ bootstrap: ## Bootstrap Brew, dotfiles
 	$(GC):rajatvig/dotfiles.git $(DDIR)
 
 relink: ## Relink the Packages with what is installed
-	brew tap > $(PDIR)/tap.txt
+	brew tap > $(PDIR)/taps.txt
 	brew list > $(PDIR)/brew.txt
 	brew cask list > $(PDIR)/cask.txt
 	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt

@@ -1,10 +1,11 @@
 atlassian/tap
 caskroom/cask
-caskroom/versions
 caskroom/fonts
+caskroom/versions
 facebook/fb
 homebrew/binary
 homebrew/boneyard
+homebrew/core
 homebrew/devel-only
 homebrew/dupes
 homebrew/fuse
