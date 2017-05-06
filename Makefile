@@ -179,10 +179,10 @@ bash:
 	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
 fish: ## Configure Fish Shell, get TackleBox and custom plugins
-	$(BI) fish
+	$(BI) fish mr
 	rm -rf .config/fish .config/fish_plugins
-	mkdir -p .config/{fish,fish_plugins}
-	cat $(PDIR)/fishplugins.txt | xarg $(GC)
+	mkdir -p .config/fish
+	mr boostrap $(CDIR)/mrconfig .config/fish_plugins
 	ln -s $(CDIR)/fish $(HC)/fish
 	sudo chsh -s /usr/local/bin/fish `echo $USER`
 

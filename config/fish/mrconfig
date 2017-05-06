@@ -1,0 +1,20 @@
+[brew]
+checkout = git clone 'git@github.com:rajatvig/fish-brew.git' 'brew'
+
+[git]
+checkout = git clone 'git@github.com:rajatvig/fish-git.git' 'git'
+
+[pyenv]
+checkout = git clone 'git@github.com:rajatvig/fish-pyenv.git' 'pyenv'
+
+[tackle]
+checkout = git clone 'git@github.com:justinmayer/tackle.git' 'tackle'
+
+[tacklebox]
+checkout = git clone 'git@github.com:justinmayer/tacklebox.git' 'tacklebox'
+
+[to]
+checkout = git clone 'git@github.com:joehillen/to-fish.git' 'to'
+
+[z]
+checkout = git clone 'git@github.com:sjl/z-fish.git' 'z'
