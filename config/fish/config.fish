@@ -19,6 +19,7 @@ set -g fish_user_paths $HOME/.cabal/bin $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths $N_PREFIX/bin $fish_user_paths
+set -g fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths
 
 pyenv init - | source
 
