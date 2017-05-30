@@ -1,4 +1,6 @@
+nokogiri
 vagrant-hostmanager
+vagrant-hostsupdater
 vagrant-parallels
 vagrant-proxyconf
 vagrant-scp

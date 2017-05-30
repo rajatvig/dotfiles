@@ -14,6 +14,7 @@ aws-shell
 awscli
 bash
 bazel
+bfg
 bison
 boost
 buck
@@ -35,12 +36,14 @@ colordiff
 coreutils
 cowsay
 ctags
+curl
 cvs
 darcs
 dialog
 direnv
 djvulibre
 dmd
+docker
 docker-machine
 docker-machine-parallels
 dub
