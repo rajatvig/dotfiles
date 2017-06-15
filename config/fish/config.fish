@@ -21,9 +21,8 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths $N_PREFIX/bin $fish_user_paths
 set -g fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths
 
-pyenv init - | source
-
-status --is-interactive; and source (rbenv init -|psub)
+#pyenv init - | source
+#status --is-interactive; and source (rbenv init -|psub)
 
 set tacklebox_path  ~/.config/fish_plugins/z ~/.config/fish_plugins/tackle ~/.config/fish_plugins/to ~/.config/fish_plugins/brew ~/.config/fish_plugins/pyenv ~/.config/fish_plugins/git
 set tacklebox_modules virtualfish z
