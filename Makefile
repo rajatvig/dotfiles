@@ -100,7 +100,7 @@ vagrant: ## Install and configure Vagrant
 	$(BCI) vagrant
 	cat $(PDIR)/vagrant.txt | xargs $(VPI)
 	mkdir -p $(HOME)/.vagrant.d
-	rm $(HOME)/.vagrant.d/Vagrantfile
+	rm -f $(HOME)/.vagrant.d/Vagrantfile
 	ln -s $(CDIR)/Vagrantfile $(HOME)/.vagrant.d/Vagrantfile
 
 editors: atom editorconfig emacs vim ## Install and configure all editors
@@ -114,7 +114,7 @@ atom: ## Configure Atom
 	cat $(PDIR)/atom.txt | xargs apm install
 
 editorconfig: ## Setup default editorconfig
-	rm $(HOME)/.editorconfig
+	rm -f $(HOME)/.editorconfig
 	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
 
 emacs: ## Configure Spacemacs
@@ -158,7 +158,7 @@ git: ## Configure Git Global Settings and an Ignore file
 	$(GCG) user.email "rajat.vig@gmail.com"
 	$(GCG) core.editor vim
 	$(GCG) core.excludesfile "$(HOME)/.gitignore_global"
-	rm $(HOME)/.gitignore_global
+	rm -f $(HOME)/.gitignore_global
 	ln -s $(CDIR)/gitignore_global $(HOME)/.gitignore_global
 
 mr: ## Configire mr config
@@ -166,7 +166,7 @@ mr: ## Configire mr config
 	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
 
 aspell: ## Setup personal dictionary
-	rm $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl
+	rm -f $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl
 	ln -s $(CDIR)aspell/aspell.en.pws $(HOME)/.aspell.en.pws
 	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
 
@@ -193,11 +193,11 @@ fish: ## Configure Fish Shell, get TackleBox and custom plugins
 zsh: ## Install oh-my-zsh
 	$(BI) zsh
 	$(GC):robbyrussell/oh-my-zsh.git $(HOME)/.oh-my-zsh
-	rm $(HOME)/.zshrc
+	rm -f $(HOME)/.zshrc
 	ln -s $(CDIR)/zshrc $(HOME)/.zshrc
 
 tmux: ## Configure tmux
-	rm $(HOME)/.tmux.conf
+	rm -f $(HOME)/.tmux.conf
 	ln -s $(CDIR)/tmux.conf $(HOME)/.tmux.conf
 
 direnv: ## Configure direnv
