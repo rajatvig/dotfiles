@@ -29,3 +29,4 @@ set tacklebox_modules virtualfish z
 set tacklebox_plugins docker extract grc pip python
 
 source ~/.config/fish_plugins/tacklebox/tacklebox.fish
+source ~/.config/fish/private.fish

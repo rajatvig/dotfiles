@@ -32,8 +32,8 @@
     disabledPackages: [
       "autocomplete-haskell"
       "haskell-ghc-mod"
-      "tree-view"
       "linter"
+      "tree-view"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -42,7 +42,7 @@
     ]
   editor:
     fontFamily: "CamingoCode"
-    fontSize: 11
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.1
     zoomFontWhenCtrlScrolling: true
