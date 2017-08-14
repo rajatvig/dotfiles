@@ -11,18 +11,18 @@ set -gx PYENV_ROOT /usr/local/var/pyenv
 set -gx GOPATH /usr/local/var/go
 set -gx N_PREFIX /usr/local/var/n
 
-set -gx DOCKER_USER rajatvig
-
 set -gx RUST_SRC_PATH $HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
+status --is-interactive; and source (rbenv init -|psub)
+
+set -g fish_user_paths "/usr/local/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths $HOME/.cabal/bin $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths $N_PREFIX/bin $fish_user_paths
 set -g fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths
 
 pyenv init - | source
-status --is-interactive; and source (rbenv init -|psub)
 
 set tacklebox_path  ~/.config/fish_plugins/z ~/.config/fish_plugins/tackle ~/.config/fish_plugins/to ~/.config/fish_plugins/brew ~/.config/fish_plugins/pyenv ~/.config/fish_plugins/git
 set tacklebox_modules virtualfish z
