@@ -1,4 +1,3 @@
-vagrant-winrm
 nokogiri
 vagrant-hostmanager
 vagrant-hostsupdater
@@ -6,3 +5,5 @@ vagrant-parallels
 vagrant-proxyconf
 vagrant-scp
 vagrant-share
+vagrant-vbguest
+vagrant-winrm

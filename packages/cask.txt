@@ -7,6 +7,7 @@ atom
 caffeine
 calibre
 ccleaner
+ccmenu
 chromium
 colloquy
 corectl-app
@@ -19,6 +20,7 @@ dropbox
 emacs
 firefox
 firefoxdeveloperedition
+flycut
 font-camingocode
 font-droid-sans
 font-droid-sans-mono
@@ -53,7 +55,6 @@ java
 java7
 julia
 kdiff3
-keybase
 kindle
 kitematic
 kube-cluster
@@ -62,16 +63,18 @@ libreoffice
 limechat
 macdown
 macvim
+minikube
 mongohub
 mysqlworkbench
+ngrok
 omniplan
-onedrive
 p4merge
 parallels-desktop
 pgadmin3
 poedit
 pycharm-ce
 quip
+real-vnc
 rstudio
 screenhero
 skype
@@ -84,6 +87,7 @@ transmission
 vagrant
 vienna
 vimr
+virtualbox
 vivaldi
 vlc
 xscreensaver

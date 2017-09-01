@@ -43,7 +43,6 @@ dialog
 direnv
 djvulibre
 dmd
-docker
 docker-machine
 docker-machine-parallels
 dub
@@ -64,6 +63,7 @@ gdk-pixbuf
 gettext
 gflags
 ghc
+ghc@8.0
 ghostscript
 git
 git-lfs
@@ -73,6 +73,7 @@ glib
 global
 gmp
 gnu-sed
+gnu-tar
 gnuplot
 gnutls
 go
@@ -81,6 +82,8 @@ godep
 gource
 gperftools
 gradle
+gradle@2.14
+graphite2
 grc
 grep
 gringo
@@ -109,6 +112,7 @@ libffi
 libgcrypt
 libgit2
 libgpg-error
+libksba
 libmpc
 libpng
 libressl
@@ -123,6 +127,7 @@ libtiff
 libtool
 libunistring
 libuv
+libvirt
 libvterm
 libwebsockets
 libxml2
@@ -142,6 +147,7 @@ mesos
 mpfr
 mr
 msgpack
+mysql
 n
 ncdu
 neovim
@@ -149,6 +155,7 @@ nettle
 newt
 nim
 node-build
+npth
 nspr
 ocaml
 ocamlbuild
@@ -175,6 +182,7 @@ pyenv
 pyenv-virtualenv
 python
 python3
+qt@5.5
 r
 ranger
 rbenv
@@ -188,6 +196,7 @@ rebar
 rebar3
 rebar@3
 redis
+rename
 rocksdb
 ruby
 ruby-build
@@ -232,4 +241,5 @@ wget
 wxmac
 xctool
 xz
+yajl
 zsh

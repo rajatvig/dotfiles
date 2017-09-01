@@ -10,6 +10,7 @@ autocomplete-swift
 build
 build-make
 busy
+file-icons
 go-plus
 haskell-grammar
 highlight-selected
@@ -26,6 +27,7 @@ language-ini
 language-kotlin
 language-lua
 language-ocaml
+language-powershell
 language-restructuredtext
 language-rust
 language-swift
@@ -33,10 +35,8 @@ language-terraform
 language-thrift
 linter
 linter-docker
-linter-erlang
 linter-eslint
 linter-rust
-linter-swiftlint
 merge-conflicts
 nuclide
 nuclide-format-js

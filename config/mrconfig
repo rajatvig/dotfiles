@@ -1,9 +1,7 @@
 [DEFAULT]
 git_gc = git gc "$@"
 git_prune = git remote prune origin "$@"
-git_master = git checkout master "$@"
-git_setmaster = git branch --set-upstream-to=origin/master master "$@"
-jobs = 5
+jobs = 3
 
 [dotfiles]
 checkout = git clone 'git@github.com:rajatvig/dotfiles.git' 'dotfiles'
