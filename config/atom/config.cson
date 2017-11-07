@@ -32,12 +32,10 @@
     disabledPackages: [
       "autocomplete-haskell"
       "haskell-ghc-mod"
-      "linter"
-      "tree-view"
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
+      "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
