@@ -3,6 +3,7 @@ adobe-reader
 amethyst
 android-sdk
 atom
+authy
 caffeine
 calibre
 ccleaner
