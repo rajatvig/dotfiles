@@ -2,6 +2,7 @@
 adobe-reader
 amethyst
 android-sdk
+android-studio
 atom
 authy
 caffeine
@@ -51,10 +52,10 @@ graphiql
 handbrake
 intellij-idea-ce
 iterm2
-java7
 java8
 julia
 kdiff3
+keybase
 kindle
 kitematic
 kube-cluster
@@ -66,12 +67,12 @@ macvim
 minikube
 mysqlworkbench
 ngrok
+onedrive
 p4merge
-parallels-desktop
+parallels
 pgadmin3
 poedit
 pycharm-ce
-quip
 rstudio
 screenhero
 skype
@@ -83,7 +84,6 @@ spotify
 transmission
 vagrant
 vienna
-virtualbox
 visual-studio-code
 vivaldi
 vlc
