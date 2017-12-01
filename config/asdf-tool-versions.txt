@@ -7,3 +7,7 @@ rust 1.22.1
 haskell 8.2.2
 minikube 0.24.1
 nim v0.17.2
+consul 1.0.1
+packer 1.1.2
+terraform 0.11.1
+vault 0.9.0

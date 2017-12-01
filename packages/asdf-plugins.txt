@@ -1,3 +1,4 @@
+consul
 elixir
 erlang
 haskell
@@ -5,5 +6,8 @@ lfe
 minikube
 nim
 nodejs
+packer
 ruby
 rust
+terraform
+vault

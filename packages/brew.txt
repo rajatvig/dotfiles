@@ -24,7 +24,6 @@ carthage
 cask
 cayley
 ccze
-certbot
 clasp
 clingo
 cloc
@@ -119,6 +118,7 @@ libuv
 libvterm
 libwebsockets
 libxml2
+libxslt
 libyaml
 little-cms2
 llvm
@@ -148,7 +148,6 @@ opam
 openssl
 openssl@1.1
 p11-kit
-packer
 pango
 pcre
 pcre2
@@ -198,7 +197,6 @@ svg2png
 swiftlint
 sysdig
 telegraf
-terraform
 the_silver_searcher
 thefuck
 tig
@@ -209,7 +207,6 @@ uncrustify
 unibilium
 unixodbc
 utf8proc
-vault
 vim
 watchman
 webp

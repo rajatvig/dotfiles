@@ -44,6 +44,7 @@ google-hangouts
 gpgtools
 graphiql
 handbrake
+haskell-platform
 intellij-idea-ce
 iterm2
 java
