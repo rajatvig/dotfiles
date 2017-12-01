@@ -1,12 +1,9 @@
 1password
 adobe-reader
 amethyst
-android-sdk
-android-studio
 atom
 authy
 caffeine
-calibre
 ccleaner
 ccmenu
 chromium
@@ -25,8 +22,6 @@ flycut
 font-camingocode
 font-droid-sans
 font-droid-sans-mono
-font-fira-mono
-font-fira-sans
 font-great-vibes
 font-inconsolata
 font-inconsolata-for-powerline
@@ -37,7 +32,6 @@ font-open-sans
 font-source-code-pro
 font-source-code-pro-for-powerline
 freemind
-gephi
 github-desktop
 gitter
 gitup
@@ -52,19 +46,17 @@ graphiql
 handbrake
 intellij-idea-ce
 iterm2
+java
 java8
 julia
 kdiff3
 keybase
 kindle
-kitematic
 kube-cluster
 kube-solo
-libreoffice
 limechat
 macdown
 macvim
-minikube
 mysqlworkbench
 ngrok
 onedrive
@@ -74,7 +66,6 @@ pgadmin3
 poedit
 pycharm-ce
 rstudio
-screenhero
 skype
 slack
 soundnode
@@ -84,8 +75,6 @@ spotify
 transmission
 vagrant
 vienna
-visual-studio-code
-vivaldi
 vlc
 xscreensaver
 yed

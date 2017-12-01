@@ -41,8 +41,9 @@ relink: ## Relink the Packages with what is installed
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
+	asdf plugin-list > $(PDIR)/asdf-plugins.txt
 
-install: brew brew_redo cabal golang npm opam ruby rust vagrant ## Install as much as possible
+install: brew asdf cabal golang node opam vagrant ## Install as much as possible
 
 brew: ## Install brew, brew cask, taps, all brew and cask packages
 	$(BI) cask
@@ -55,7 +56,7 @@ brew_redo: ## Install all configured brew and cask packages
 	cat $(PDIR)/cask.txt | xargs $(BCI)
 
 cabal: ## Update Cabal and add some default packages
-	$(BI) cabal-install
+	$(BCI) haskell-platform
 	cabal update
 	cabal install happy
 	cabal install ghc-mod
@@ -69,10 +70,9 @@ golang: ## Install and configure GoLang
 	$(GG) github.com/nsf/gocode
 	$(GG) golang.org/x/tools/cmd/oracle
 
-npm: ## Install required NPM Packages
-	$(BI) n
-	cat $(PDIR)/npm.txt | xargs npm uninstall -g
-	cat $(PDIR)/npm.txt | xargs npm install -g
+node: ## Install required Node Packages
+	$(BI) yarn --without-node
+	cat $(PDIR)/npm.txt | xargs yarn global add
 
 opam: ## Install and configure Opam
 	$(BI) opam
@@ -86,15 +86,12 @@ python: ## Install Python, Pip Packages, PyEnv
 	$(PYENV) install 2.7.13
 	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
-ruby: ## Install RbEnv, Ruby
-	mkdir -p $(RBENV_ROOT)
-	$(BI) python rbenv ruby-build
-	$(RBENV) install 2.4.0
-	$(RBENV) global 2.4.0
-
-rust: ## Install RustUp
-	curl https://sh.rustup.rs -sSf | sh
-	rustup update
+asdf: ## Install Languages
+	$(BI) asdf
+	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name | true
+	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version
+	rm -f $(HOME)/.tool-versions
+	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
 
 vagrant: ## Install and configure Vagrant
 	$(BCI) vagrant
@@ -140,11 +137,6 @@ vim: ## Configure SPF-13 for VIM
 	ln -s $(CDIR)/vim/vimrc.before.local $(HOME)/.vimrc.before.local
 	ln -s $(CDIR)/vim/vimrc.bundles.local $(HOME)/.vimrc.bundles.local
 	ln -s $(CDIR)/vim/vimrc.local $(HOME)/.vimrc.local
-
-neovim: ## Configure NeoVIM
-	$(BI) neovim
-	ln -s $(HOME)/.vim $(HC)/nvim
-	ln -s $(HOME)/.vimrc $(HC)/nvim/init.vim
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
@@ -223,9 +215,10 @@ update_vim: ## Update VIM
 
 update: ## Update Software
 	mr update
-	make update_vim update_brew
+	make update_brew
 	rustup update
 	apm update -c false
+	make update_vim
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

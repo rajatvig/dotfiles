@@ -1,0 +1,9 @@
+elixir
+erlang
+haskell
+lfe
+minikube
+nim
+nodejs
+ruby
+rust

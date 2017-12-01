@@ -1,0 +1,9 @@
+ruby 2.4.2
+nodejs 9.2.0
+elixir 1.5.2
+erlang 20.1
+lfe 1.2.1
+rust 1.22.1
+haskell 8.2.2
+minikube 0.24.1
+nim v0.17.2

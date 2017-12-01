@@ -3,13 +3,5 @@ js-beautify
 tern
 karma-cli
 yo
-bower
-gulp
 nodemon
 generator-hottowel
-eslint
-eslint-config-standard
-eslint-plugin-standard
-eslint-plugin-promise
-eslint-plugin-react
-babel-eslint
