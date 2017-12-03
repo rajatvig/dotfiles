@@ -1,5 +1,5 @@
 use_n() {
-  cat .node-version | xargs n
+  cat .node-version | xargs -I node-version asdf local nodejs node-version
 }
 
 use_python() {

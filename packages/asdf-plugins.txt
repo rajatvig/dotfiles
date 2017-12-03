@@ -7,6 +7,7 @@ minikube
 nim
 nodejs
 packer
+python
 ruby
 rust
 terraform
