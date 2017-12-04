@@ -13,6 +13,8 @@ set -g fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths
 source /usr/local/opt/asdf/asdf.fish
 opam config env | source
 
+set -g fish_user_paths (yarn global bin) $fish_user_paths
+
 set tacklebox_path  ~/.config/fish_plugins/z ~/.config/fish_plugins/tackle ~/.config/fish_plugins/to ~/.config/fish_plugins/brew ~/.config/fish_plugins/pyenv ~/.config/fish_plugins/git
 set tacklebox_modules virtualfish z
 set tacklebox_plugins docker extract grc pip python

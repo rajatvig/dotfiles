@@ -5,3 +5,4 @@ karma-cli
 yo
 nodemon
 generator-hottowel
+eslint

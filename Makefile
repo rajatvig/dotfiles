@@ -116,7 +116,6 @@ editorconfig: ## Setup default editorconfig
 	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
 
 emacs: ## Configure Spacemacs
-	$(BI) emacs
 	$(BCI) emacs
 	rm -rf $(HOME)/.spacemacs $(HC)/spacemacs $(HOME)/.emacs.d
 	$(GC):syl20bnr/spacemacs.git $(HOME)/.emacs.d
