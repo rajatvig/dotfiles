@@ -32,6 +32,7 @@ bootstrap: ## Bootstrap Brew, dotfiles
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	cat $(PDIR)/taps.txt | xargs brew tap
 	$(GC):rajatvig/dotfiles.git $(DDIR)
+	touch $(DDIR)/config/fish/private.fish
 
 relink: ## Relink the Packages with what is installed
 	brew tap > $(PDIR)/taps.txt
