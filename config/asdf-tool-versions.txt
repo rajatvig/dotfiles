@@ -12,3 +12,4 @@ packer 1.1.2
 terraform 0.11.1
 vault 0.9.0
 python 3.6.3
+ocaml 4.06.0

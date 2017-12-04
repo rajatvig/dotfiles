@@ -6,6 +6,7 @@ lfe
 minikube
 nim
 nodejs
+ocaml
 packer
 python
 ruby
