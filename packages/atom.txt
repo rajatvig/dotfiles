@@ -1,8 +1,12 @@
 atom-ide-ui
 busy
+haskell-ghc-mod
+ide-haskell
 ide-java
 ide-php
 ide-python
 ide-typescript
 language-gradle
 language-groovy
+language-haskell
+language-rdf

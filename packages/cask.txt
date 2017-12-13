@@ -16,6 +16,7 @@ djview
 docker
 dropbox
 emacs
+etrecheck
 firefox
 firefoxdeveloperedition
 flycut
@@ -39,6 +40,7 @@ google-chrome
 google-chrome-canary
 google-cloud-sdk
 google-drive
+google-drive-file-stream
 google-featured-photos
 google-hangouts
 gpgtools
@@ -65,9 +67,9 @@ p4merge
 parallels
 pgadmin3
 poedit
+protege
 pycharm-ce
 rstudio
-skype
 slack
 soundnode
 sourcetree

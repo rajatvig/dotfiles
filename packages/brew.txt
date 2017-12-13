@@ -2,6 +2,7 @@ ack
 ant
 asdf
 aspell
+atlassian-plugin-sdk
 augeas
 autoconf
 automake
@@ -34,7 +35,6 @@ docker-machine
 docker-machine-driver-xhyve
 docker-machine-parallels
 dub
-emacs
 exercism
 fftw
 fish
@@ -51,6 +51,7 @@ git
 git-lfs
 glew
 glib
+glide
 global
 gmp
 gnu-sed
@@ -58,8 +59,10 @@ gnu-tar
 gnutls
 go
 godep
+goss
 gource
 gperftools
+graphviz
 grc
 grep
 gringo
@@ -121,7 +124,6 @@ msgpack
 mysql
 ncdu
 nettle
-newt
 npth
 nspr
 oniguruma
@@ -144,7 +146,6 @@ readline
 reattach-to-user-namespace
 rename
 rocksdb
-s-lang
 sbt
 scala
 scons
@@ -162,6 +163,7 @@ storm
 swiftlint
 sysdig
 telegraf
+telnet
 the_silver_searcher
 thefuck
 tig
@@ -173,10 +175,8 @@ unibilium
 unixodbc
 utf8proc
 vim
-watchman
 webp
 wget
-wxmac
 xctool
 xz
 yajl
