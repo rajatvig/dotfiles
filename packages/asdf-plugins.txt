@@ -2,6 +2,7 @@ consul
 elixir
 erlang
 haskell
+kubectl
 lfe
 minikube
 nim

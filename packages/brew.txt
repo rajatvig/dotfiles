@@ -78,9 +78,8 @@ jemalloc
 jpeg
 jq
 jsoncpp
-kops
+kompose
 kotlin
-kubernetes-cli
 leiningen
 leveldb
 libcaca

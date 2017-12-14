@@ -9,7 +9,6 @@ ccmenu
 chromium
 colloquy
 corectl-app
-coreos
 cyberduck
 darktable
 djview
@@ -55,8 +54,6 @@ julia
 kdiff3
 keybase
 kindle
-kube-cluster
-kube-solo
 limechat
 macdown
 macvim
