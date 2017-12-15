@@ -121,6 +121,7 @@ mr
 msgpack
 mysql
 ncdu
+neovim
 nettle
 npth
 nspr
@@ -170,6 +171,7 @@ uncrustify
 unibilium
 unixodbc
 utf8proc
+vim
 webp
 wget
 xz

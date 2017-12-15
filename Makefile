@@ -80,8 +80,6 @@ vagrant: ## Install and configure Vagrant
 	rm -f $(HOME)/.vagrant.d/Vagrantfile
 	ln -s $(CDIR)/Vagrantfile $(HOME)/.vagrant.d/Vagrantfile
 
-editors: atom editorconfig emacs vim ## Install and configure all editors
-
 atom: ## Configure Atom
 	$(BCI) atom
 	rm -rf $(HOME)/.atom
@@ -109,13 +107,10 @@ limechat: ## Configure LimeChat (currently broken)
 	cd $(LCT); rake themes:install
 
 vim: ## Configure SPF-13 for VIM
-	$(BI) vim
+	$(BI) --without-ruby --without-python vim
+	$(BI) nvim
 	$(BCI) macvim
-	curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh && rm spf13-vim.sh
-	rm -rf $(HOME)/.vimrc.local $(HOME)/.vimrc.bundles.local $(HOME)/.vimrc.before.local
-	ln -s $(CDIR)/vim/vimrc.before.local $(HOME)/.vimrc.before.local
-	ln -s $(CDIR)/vim/vimrc.bundles.local $(HOME)/.vimrc.bundles.local
-	ln -s $(CDIR)/vim/vimrc.local $(HOME)/.vimrc.local
+	curl -sLf https://spacevim.org/install.sh | bash
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist

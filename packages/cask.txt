@@ -19,6 +19,7 @@ firefoxdeveloperedition
 flycut
 font-camingocode
 font-great-vibes
+font-hack-nerd-font
 font-inconsolata
 font-inconsolata-for-powerline
 font-merriweather

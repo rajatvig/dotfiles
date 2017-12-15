@@ -1,5 +1,4 @@
 direnv hook fish | source
-thefuck --alias | source
 
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim
@@ -23,5 +22,6 @@ set -xg PATH /usr/local/opt/asdf/installs/python/(asdf list python|head -n 1)/bi
 set -xg PATH /usr/local/opt/asdf/installs/ruby/(asdf list ruby|head -n 1)/bin $PATH
 
 opam config env | source
+thefuck --alias | source
 
 source ~/.config/fish/private.fish
