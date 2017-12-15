@@ -1,3 +1,14 @@
+colorama
+decorator
+pip
+pluggy
+powerline-shell
+psutil
+py
+pyte
+setuptools
+six
 thefuck
-virtualenv
 tox
+virtualenv
+wcwidth

@@ -37,6 +37,7 @@ relink: ## Relink the Packages with what is installed
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
+	pip list --format=legacy | cut -d ' ' -f 1 > packages/pip.txt
 
 brew_base: ## Install bare minimum brew packages
 	$(BI) cask fortune cowsay toilet asdf
