@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-export PYENV_ROOT="/usr/local/var/pyenv"
-export RBENV_ROOT="/usr/local/var/rbenv"
-export N_PREFIX="/usr/local/var/n"
-
-export PATH=$N_PREFIX/bin:/usr/local/bin:/usr/local/sbin:$PATH
-
 # Path to the bash it configuration
 export BASH_IT="$HOME/.config/bash_it"
 
@@ -46,9 +40,13 @@ export SCM_GIT_SHOW_DETAILS=true
 # after enabling or disabling aliases, plugins, and completions.
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
+export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
 eval "$(direnv hook bash)"
+
+source /usr/local/opt/asdf/asdf.sh
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay

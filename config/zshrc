@@ -1,15 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-export PYENV_ROOT="/usr/local/var/pyenv"
-export N_PREFIX="/usr/local/var/n"
-export RBENV_ROOT="/usr/local/var/rbenv"
+export ASDF_DIR=/usr/local/opt/asdf/
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,11 +51,11 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew brew-cask docker docker-compose git github golang gulp lein node osx pyenv python rbenv sbt scala terraform thefuck vagrant vault z)
+plugins=(asdf aws brew brew-cask docker docker-compose git github golang gulp lein node osx python sbt scala terraform thefuck vagrant vault z)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/local/sbin:$N_PREFIX/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,10 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(pyenv init -)"
 # eval "$(opam config env)"
 eval "$(direnv hook zsh)"
-
-# . $(brew --prefix nvm)/nvm.sh
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay

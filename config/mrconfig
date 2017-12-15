@@ -17,9 +17,3 @@ checkout = git clone 'git@github.com:Bash-it/bash-it.git' 'bash_it'
 
 [.oh-my-zsh]
 checkout = git clone 'git@github.com:robbyrussell/oh-my-zsh.git' '.oh-my-zsh'
-
-[.config/powerline-shell]
-checkout = git clone 'git@github.com:milkbikis/powerline-shell.git' 'powerline-shell'
-
-[.spf13-vim-3]
-checkout = git clone 'https://github.com/spf13/spf13-vim.git' '.spf13-vim-3'

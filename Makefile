@@ -8,11 +8,6 @@ DDIR=$(HOME)/dotfiles
 PDIR=$(DDIR)/packages
 CDIR=$(DDIR)/config
 
-PYENV_ROOT=/usr/local/var/pyenv
-PYENV=env PYENV_ROOT=$(PYENV_ROOT) /usr/local/bin/pyenv
-RBENV_ROOT=/usr/local/var/rbenv
-RBENV=env RBENV_ROOT=$(RBENV_ROOT) /usr/local/bin/rbenv
-
 VPI=vagrant plugin install
 
 GC=git clone --recursive git@github.com
@@ -29,9 +24,8 @@ BITP=$(BIT)/plugins
 .DEFAULT_GOAL := help
 
 bootstrap: ## Bootstrap Brew, dotfiles
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	cat $(PDIR)/taps.txt | xargs brew tap
-	$(GC):rajatvig/dotfiles.git $(DDIR)
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	cat $(PDIR)/taps.txt | xargs -I tap_name brew tap tap_name
 	touch $(DDIR)/config/fish/private.fish
 
 relink: ## Relink the Packages with what is installed
@@ -44,24 +38,15 @@ relink: ## Relink the Packages with what is installed
 	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
 
-install: brew asdf cabal golang node opam vagrant ## Install as much as possible
+brew_base: ## Install bare minimum brew packages
+	$(BI) cask fortune cowsay toilet asdf
+	$(BI) --without-node yarn
+	$(BI) --without-python --without-ruby vim
+	$(BCI) java java8 haskell-platform vagrant
 
-brew: ## Install brew, brew cask, taps, all brew and cask packages
-	$(BI) cask
-	$(BCI) java
-	$(BCI) vagrant
-	make brew_redo
-
-brew_redo: ## Install all configured brew and cask packages
-	cat $(PDIR)/brew.txt | xargs $(BI) || true
+brew_all: ## Install all configured brew packages
+	cat $(PDIR)/brew.txt | xargs $(BI)
 	cat $(PDIR)/cask.txt | xargs $(BCI)
-
-cabal: ## Update Cabal and add some default packages
-	$(BCI) haskell-platform
-	cabal update
-	cabal install happy
-	cabal install ghc-mod
-	cabal install hlint
 
 golang: ## Install and configure GoLang
 	$(BI) go
@@ -75,16 +60,8 @@ node: ## Install required Node Packages
 	$(BI) yarn --without-node
 	cat $(PDIR)/npm.txt | xargs yarn global add
 
-opam: ## Install and configure Opam
-	$(BI) opam
-	opam init
-
-python: ## Install Python, Pip Packages, PyEnv
-	mkdir -p $(PYENV_ROOT)
-	$(BI) pyenv python
+python: ## Install Pip Packages
 	cat $(PDIR)/pip.txt | xargs pip install
-	$(PYENV) install 3.6.0
-	$(PYENV) install 2.7.13
 	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
 asdf: ## Install Languages
@@ -93,6 +70,8 @@ asdf: ## Install Languages
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version
 	rm -f $(HOME)/.tool-versions
 	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
+	opam init
+	cabal update
 
 vagrant: ## Install and configure Vagrant
 	$(BCI) vagrant
@@ -162,9 +141,7 @@ aspell: ## Setup personal dictionary
 	ln -s $(CDIR)aspell/aspell.en.pws $(HOME)/.aspell.en.pws
 	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
 
-shells: bash fish zsh tmux direnv powerline ## Configure Shells
-
-bash:
+bash: ## Configure Bash
 	$(BI) bash
 	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile
 	$(GC):Bash-it/bash-it.git $(BIT)
@@ -172,15 +149,16 @@ bash:
 	rm -rf $(HOME)/.bashrc $(HOME)/.bash_profile $(BITP)/enabled/*.bash
 	ln -s $(CDIR)/bashrc $(HOME)/.bashrc
 	ln -s $(CDIR)/bash_profile $(HOME)/.bash_profile
+	mkdir $(BITP)/enabled
 	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
 fish: ## Configure Fish Shell, get TackleBox and custom plugins
 	$(BI) fish mr
 	rm -rf .config/fish .config/fish_plugins
 	mkdir -p .config/fish
-	mr boostrap $(CDIR)/mrconfig .config/fish_plugins
+	mr bootstrap $(CDIR)/fish/mrconfig $(HC)/fish_plugins
 	ln -s $(CDIR)/fish $(HC)/fish
-	sudo chsh -s /usr/local/bin/fish `echo $USER`
+	sudo chsh -s /usr/local/bin/fish `whoami`
 
 zsh: ## Install oh-my-zsh
 	$(BI) zsh
@@ -197,28 +175,13 @@ direnv: ## Configure direnv
 	rm -rf $(HOME)/.direnvrc
 	ln -s $(CDIR)/direnvrc $(HOME)/.direnvrc
 
-powerline: ## Pretty up the prompt using PowerLine
-	$(GC):milkbikis/powerline-shell.git $(HC)/powerline-shell
-	cd $(HC)/powerline-shell; ./install.py
-	ln -s $(HC)/powerline-shell/powerline-shell.py $(HOME)/powerline-shell.py
-
 osx: ## Setup sane OSX Defaults
 	./scripts/_osx
 
-update_brew: ## Update brew
-	brew update
-	brew upgrade
-	brew cleanup
-
-update_vim: ## Update VIM
-	vim +BundleInstall! +BundleClean +q
-
 update: ## Update Software
 	mr update
-	make update_brew
 	rustup update
 	apm update -c false
-	make update_vim
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

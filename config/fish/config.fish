@@ -18,9 +18,10 @@ source ~/.config/fish_plugins/tacklebox/tacklebox.fish
 
 source /usr/local/opt/asdf/asdf.fish
 
-opam config env | source
-
 set -xg PATH (yarn global bin) $PATH
+set -xg PATH /usr/local/opt/asdf/installs/python/(asdf list python|head -n 1)/bin $PATH
 set -xg PATH /usr/local/opt/asdf/installs/ruby/(asdf list ruby|head -n 1)/bin $PATH
+
+opam config env | source
 
 source ~/.config/fish/private.fish

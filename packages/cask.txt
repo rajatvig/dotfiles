@@ -1,5 +1,3 @@
-1password
-adobe-reader
 amethyst
 atom
 authy
@@ -20,8 +18,6 @@ firefox
 firefoxdeveloperedition
 flycut
 font-camingocode
-font-droid-sans
-font-droid-sans-mono
 font-great-vibes
 font-inconsolata
 font-inconsolata-for-powerline
@@ -32,17 +28,16 @@ font-open-sans
 font-source-code-pro
 font-source-code-pro-for-powerline
 freemind
-github-desktop
+github
 gitter
 gitup
 google-chrome
 google-chrome-canary
 google-cloud-sdk
-google-drive
 google-drive-file-stream
 google-featured-photos
 google-hangouts
-gpgtools
+gpg-suite
 graphiql
 handbrake
 haskell-platform

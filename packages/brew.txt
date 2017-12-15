@@ -19,7 +19,7 @@ carthage
 cask
 cayley
 ccze
-clasp
+clingo
 cloc
 cmake
 colordiff
@@ -35,6 +35,7 @@ docker-machine
 docker-machine-driver-xhyve
 docker-machine-parallels
 dub
+emacs
 exercism
 fftw
 fish
@@ -65,9 +66,7 @@ gperftools
 graphviz
 grc
 grep
-gringo
 htop
-htop-osx
 httpie
 hub
 icu4c
@@ -159,12 +158,10 @@ spiff
 sqlite
 ssh-copy-id
 storm
-swiftlint
 sysdig
 telegraf
 telnet
 the_silver_searcher
-thefuck
 tig
 tmux
 toilet
@@ -173,10 +170,8 @@ uncrustify
 unibilium
 unixodbc
 utf8proc
-vim
 webp
 wget
-xctool
 xz
 yajl
 yarn
