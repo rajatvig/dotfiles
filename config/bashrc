@@ -49,4 +49,8 @@ eval "$(direnv hook bash)"
 
 source /usr/local/opt/asdf/asdf.sh
 
+export PATH=$(yarn global bin):$PATH
+export PATH=/usr/local/opt/asdf/installs/python/$(asdf list python|head -n 1)/bin:$PATH
+export PATH=/usr/local/opt/asdf/installs/ruby/$(asdf list ruby|head -n 1)/bin:$PATH
+
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay

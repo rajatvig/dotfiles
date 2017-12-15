@@ -51,7 +51,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf aws brew brew-cask docker docker-compose git github golang gulp lein node osx python sbt scala terraform thefuck vagrant vault z)
+plugins=(asdf aws brew brew-cask docker docker-compose git github golang node osx python terraform vagrant vault z)
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
@@ -84,7 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# eval "$(opam config env)"
 eval "$(direnv hook zsh)"
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay
