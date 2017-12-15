@@ -109,7 +109,7 @@ limechat: ## Configure LimeChat (currently broken)
 
 vim: ## Configure SPF-13 for VIM
 	$(BI) --without-ruby --without-python vim
-	$(BI) nvim
+	$(BI) neovim
 	$(BCI) macvim
 	curl -sLf https://spacevim.org/install.sh | bash
 
