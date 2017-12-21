@@ -2,7 +2,6 @@ ack
 ant
 asdf
 aspell
-atlassian-plugin-sdk
 augeas
 autoconf
 automake
@@ -19,7 +18,6 @@ carthage
 cask
 cayley
 ccze
-clingo
 cloc
 cmake
 colordiff
@@ -63,6 +61,7 @@ godep
 goss
 gource
 gperftools
+gradle
 graphviz
 grc
 grep
@@ -89,6 +88,7 @@ libffi
 libgcrypt
 libgit2
 libgpg-error
+libidn2
 libksba
 libmpc
 libpng
@@ -172,6 +172,7 @@ unibilium
 unixodbc
 utf8proc
 vim
+watchman
 webp
 wget
 xz
