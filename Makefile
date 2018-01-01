@@ -63,11 +63,12 @@ node: ## Install required Node Packages
 
 python: ## Install Pip Packages
 	cat $(PDIR)/pip.txt | xargs pip install
+	rm -rf $(HOME)/.pypirc
 	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
 asdf: ## Install Languages
 	$(BI) asdf
-	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name | true
+	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version
 	rm -f $(HOME)/.tool-versions
 	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
