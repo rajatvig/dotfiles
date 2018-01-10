@@ -59,7 +59,8 @@ golang: ## Install and configure GoLang
 
 node: ## Install required Node Packages
 	$(BI) yarn --without-node
-	cat $(PDIR)/npm.txt | xargs yarn global add
+	mkdir -p $(HC)/yarn
+	cat $(PDIR)/npm.txt | xargs -I package-name yarn global add package-name
 
 python: ## Install Pip Packages
 	cat $(PDIR)/pip.txt | xargs pip install
@@ -109,16 +110,13 @@ limechat: ## Configure LimeChat (currently broken)
 	cd $(LCT); rake themes:install
 
 vim: ## Configure SPF-13 for VIM
-	$(BI) --without-ruby --without-python vim
-	$(BI) neovim
+	$(BI) vim neovim
 	$(BCI) macvim
 	curl -sLf https://spacevim.org/install.sh | bash
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
 	cp $(CDIR)/com.googlecode.iterm2.plist $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
-
-config: git aspell shells osx ## Configure Git, Aspell, Shells, OSX Defaults
 
 git: ## Configure Git Global Settings and an Ignore file
 	$(BI) git
@@ -151,10 +149,11 @@ bash: ## Configure Bash
 
 fish: ## Configure Fish Shell, get TackleBox and custom plugins
 	$(BI) fish mr
-	rm -rf .config/fish .config/fish_plugins
-	mkdir -p .config/fish
-	mr bootstrap $(CDIR)/fish/mrconfig $(HC)/fish_plugins
+	rm -rf $(HC)/fish $(HC)/fish_plugins
 	ln -s $(CDIR)/fish $(HC)/fish
+	mkdir -p $(HC)/fish_plugins
+	cp $(CDIR)/fish/mrconfig $(HC)/fish_plugins/.mrconfig
+	cd $(HC)/fish_plugins; mr bootstrap .mrconfig
 	sudo chsh -s /usr/local/bin/fish `whoami`
 
 zsh: ## Install oh-my-zsh

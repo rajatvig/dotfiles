@@ -4,8 +4,8 @@ checkout = git clone 'git@github.com:rajatvig/fish-brew.git' 'brew'
 [git]
 checkout = git clone 'git@github.com:rajatvig/fish-git.git' 'git'
 
-[pyenv]
-checkout = git clone 'git@github.com:rajatvig/fish-pyenv.git' 'pyenv'
+[kubectl]
+checkout = git clone 'git@github.com:evanlucas/fish-kubectl-completions.git' 'kubectl/completions'
 
 [tackle]
 checkout = git clone 'git@github.com:justinmayer/tackle.git' 'tackle'
