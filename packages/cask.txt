@@ -10,12 +10,12 @@ corectl-app
 cyberduck
 darktable
 djview
-docker
+docker-edge
 dropbox
 emacs
 etrecheck
 firefox
-firefoxdeveloperedition
+firefox-developer-edition
 flycut
 font-camingocode
 font-great-vibes
@@ -52,13 +52,13 @@ kdiff3
 keybase
 kindle
 limechat
+lyx
 macdown
 macvim
 mysqlworkbench
 ngrok
 onedrive
 p4merge
-parallels
 pgadmin3
 poedit
 protege
@@ -72,6 +72,7 @@ spotify
 transmission
 vagrant
 vienna
+virtualbox
 vivaldi
 vlc
 xscreensaver

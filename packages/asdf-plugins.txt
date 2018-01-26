@@ -1,12 +1,16 @@
 consul
+dep
 elixir
 erlang
+glide
+golang
 haskell
 kubectl
 lfe
 minikube
 nim
 nodejs
+nomad
 ocaml
 packer
 python

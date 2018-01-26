@@ -50,14 +50,11 @@ git
 git-lfs
 glew
 glib
-glide
 global
 gmp
 gnu-sed
 gnu-tar
 gnutls
-go
-godep
 goss
 gource
 gperftools
@@ -78,6 +75,7 @@ jq
 jsoncpp
 kompose
 kotlin
+kubernetes-helm
 leiningen
 leveldb
 libcaca
@@ -137,6 +135,7 @@ popt
 postgresql
 protobuf
 pstree
+python
 python3
 r
 ranger
@@ -145,6 +144,7 @@ readline
 reattach-to-user-namespace
 rename
 rocksdb
+ruby
 sbt
 scala
 scons
