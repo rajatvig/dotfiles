@@ -24,7 +24,7 @@ BITP=$(BIT)/plugins
 .DEFAULT_GOAL := help
 
 bootstrap: ## Bootstrap Brew, dotfiles
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	cat $(PDIR)/taps.txt | xargs -I tap_name brew tap tap_name
 	touch $(DDIR)/config/fish/private.fish
 
