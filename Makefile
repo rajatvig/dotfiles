@@ -40,9 +40,8 @@ relink: ## Relink the Packages with what is installed
 	pip list --format=legacy | cut -d ' ' -f 1 > packages/pip.txt
 
 brew_base: ## Install bare minimum brew packages
-	$(BI) cask fortune cowsay toilet asdf
+	$(BI) cask fortune cowsay toilet asdf python3 vim
 	$(BI) --without-node yarn
-	$(BI) --without-python --without-ruby vim
 	$(BCI) java java8 haskell-platform vagrant
 
 brew_all: ## Install all configured brew packages
@@ -63,13 +62,14 @@ node: ## Install required Node Packages
 	cat $(PDIR)/npm.txt | xargs -I package-name yarn global add package-name
 
 python: ## Install Pip Packages
-	cat $(PDIR)/pip.txt | xargs pip install
+	$(BI) python3
+	cat $(PDIR)/pip.txt | xargs pip3 install
 	rm -rf $(HOME)/.pypirc
 	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
 asdf: ## Install Languages
 	$(BI) asdf
-	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name
+	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name || true
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version
 	rm -f $(HOME)/.tool-versions
 	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
