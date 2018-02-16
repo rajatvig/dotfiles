@@ -29,10 +29,6 @@ dialog
 direnv
 djvulibre
 dmd
-docker-machine
-docker-machine-driver-xhyve
-docker-machine-parallels
-dub
 emacs
 exercism
 fftw
@@ -137,7 +133,6 @@ protobuf
 pstree
 python
 python3
-r
 ranger
 re2c
 readline
@@ -146,7 +141,6 @@ rename
 rocksdb
 ruby
 sbt
-scala
 scons
 sdl2
 sdl2_image
@@ -158,7 +152,6 @@ snappy
 spiff
 sqlite
 ssh-copy-id
-storm
 sysdig
 telegraf
 telnet
@@ -176,7 +169,6 @@ watchman
 webp
 wget
 xz
-yajl
 yarn
 zlib
 zsh

@@ -6,11 +6,9 @@ ccleaner
 ccmenu
 chromium
 colloquy
-corectl-app
 cyberduck
 darktable
 djview
-docker
 docker-edge
 dropbox
 emacs
@@ -48,12 +46,12 @@ intellij-idea-ce
 iterm2
 java
 java8
+jetbrains-toolbox
 julia
 kdiff3
 keybase
 kindle
 limechat
-lyx
 macdown
 macvim
 mysqlworkbench
@@ -62,8 +60,8 @@ onedrive
 p4merge
 pgadmin3
 poedit
-protege
 pycharm-ce
+r-app
 rstudio
 slack
 soundnode

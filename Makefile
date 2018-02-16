@@ -1,9 +1,6 @@
 BI=brew install
 BCI=brew cask install
 
-GO_DIR=/usr/local/var/go
-GG=env GOPATH=$(GO_DIR) get -u
-
 DDIR=$(HOME)/dotfiles
 PDIR=$(DDIR)/packages
 CDIR=$(DDIR)/config
@@ -14,8 +11,6 @@ GC=git clone --recursive git@github.com
 GCG=git config --global
 
 HC=$(HOME)/.config
-
-LCT=$(HC)/limchat-themes
 
 BIT=$(HC)/bash_it
 BITP=$(BIT)/plugins
@@ -29,32 +24,24 @@ bootstrap: ## Bootstrap Brew, dotfiles
 	touch $(DDIR)/config/fish/private.fish
 
 relink: ## Relink the Packages with what is installed
-	brew tap > $(PDIR)/taps.txt
 	brew list > $(PDIR)/brew.txt
 	brew cask list > $(PDIR)/cask.txt
+	brew tap > $(PDIR)/taps.txt
 	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
-	pip list --format=legacy | cut -d ' ' -f 1 > packages/pip.txt
+	pip3 list --format=legacy | cut -d ' ' -f 1 > packages/pip.txt
 
 brew_base: ## Install bare minimum brew packages
 	$(BI) cask fortune cowsay toilet asdf python3 vim
 	$(BI) --without-node yarn
 	$(BCI) java java8 haskell-platform vagrant
 
-brew_all: ## Install all configured brew packages
+brew_all: brew_base ## Install all configured brew packages
 	cat $(PDIR)/brew.txt | xargs $(BI)
 	cat $(PDIR)/cask.txt | xargs $(BCI)
-
-golang: ## Install and configure GoLang
-	$(BI) go
-	mkdir -p $(GO_DIR)
-	$(GG) golang.org/x/tools/cmd/goimports
-	$(GG) github.com/golang/lint/golint
-	$(GG) github.com/nsf/gocode
-	$(GG) golang.org/x/tools/cmd/oracle
 
 node: ## Install required Node Packages
 	$(BI) yarn --without-node
@@ -69,6 +56,8 @@ python: ## Install Pip Packages
 
 asdf: ## Install Languages
 	$(BI) asdf
+	asdf plugin-add glide https://github.com/rajatvig/asdf-glide.git
+	asdf plugin-add glide https://       github.com/rajatvig/asdf-dep.git
 	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name || true
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version
 	rm -f $(HOME)/.tool-versions
@@ -91,23 +80,12 @@ atom: ## Configure Atom
 	ln -s $(CDIR)/atom/keymap.cson $(HOME)/.atom/
 	cat $(PDIR)/atom.txt | xargs apm install
 
-editorconfig: ## Setup default editorconfig
-	rm -f $(HOME)/.editorconfig
-	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
-
 emacs: ## Configure Spacemacs
 	$(BCI) emacs
 	rm -rf $(HOME)/.spacemacs $(HC)/spacemacs $(HOME)/.emacs.d
 	$(GC):syl20bnr/spacemacs.git $(HOME)/.emacs.d
 	$(GC):rajatvig/spacemacs-config.git $(HC)/spacemacs
 	ln -s $(HC)/spacemacs/spacemacs.el $(HOME)/.spacemacs
-
-limechat: ## Configure LimeChat (currently broken)
-	$(BCI) limechat
-	mkdir -p $(LCT)
-	$(GC):jschoolcraft/Limechat-Themes.git $(LCT)
-	cd $(LCT); rake themes:init
-	cd $(LCT); rake themes:install
 
 vim: ## Configure SPF-13 for VIM
 	$(BI) vim neovim
@@ -127,15 +105,6 @@ git: ## Configure Git Global Settings and an Ignore file
 	rm -f $(HOME)/.gitignore_global
 	ln -s $(CDIR)/gitignore_global $(HOME)/.gitignore_global
 
-mr: ## Configire mr config
-	$(BI) mr
-	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
-
-aspell: ## Setup personal dictionary
-	rm -f $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl
-	ln -s $(CDIR)aspell/aspell.en.pws $(HOME)/.aspell.en.pws
-	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
-
 bash: ## Configure Bash
 	$(BI) bash
 	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile
@@ -147,7 +116,7 @@ bash: ## Configure Bash
 	mkdir $(BITP)/enabled
 	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
-fish: ## Configure Fish Shell, get TackleBox and custom plugins
+fish: python ## Configure Fish Shell, get TackleBox and custom plugins
 	$(BI) fish mr
 	rm -rf $(HC)/fish $(HC)/fish_plugins
 	ln -s $(CDIR)/fish $(HC)/fish
@@ -156,28 +125,20 @@ fish: ## Configure Fish Shell, get TackleBox and custom plugins
 	cd $(HC)/fish_plugins; mr bootstrap .mrconfig
 	sudo chsh -s /usr/local/bin/fish `whoami`
 
-zsh: ## Install oh-my-zsh
-	$(BI) zsh
+configurations: ## Configure tmux
+	$(BI) direnv zsh mr
 	$(GC):robbyrussell/oh-my-zsh.git $(HOME)/.oh-my-zsh
-	rm -f $(HOME)/.zshrc
-	ln -s $(CDIR)/zshrc $(HOME)/.zshrc
-
-tmux: ## Configure tmux
-	rm -f $(HOME)/.tmux.conf
+	rm -f $(HOME)/.tmux.conf $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl $(HOME)/.zshrc $(HOME)/.direnvrc $(HOME)/.mrconfig $(HOME)/.editorconfig
 	ln -s $(CDIR)/tmux.conf $(HOME)/.tmux.conf
-
-direnv: ## Configure direnv
-	$(BI) direnv
-	rm -rf $(HOME)/.direnvrc
+	ln -s $(CDIR)/aspell/aspell.en.pws $(HOME)/.aspell.en.pws
+	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
+	ln -s $(CDIR)/zshrc $(HOME)/.zshrc
 	ln -s $(CDIR)/direnvrc $(HOME)/.direnvrc
+	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
+	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
 
 osx: ## Setup sane OSX Defaults
 	./scripts/_osx
-
-update: ## Update Software
-	mr update
-	rustup update
-	apm update -c false
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

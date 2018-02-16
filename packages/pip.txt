@@ -25,3 +25,4 @@ thefuck
 tox
 virtualenv
 wcwidth
+wheel
