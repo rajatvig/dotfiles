@@ -57,9 +57,9 @@ python: ## Install Pip Packages
 asdf: ## Install Languages
 	$(BI) asdf
 	asdf plugin-add glide https://github.com/rajatvig/asdf-glide.git
-	asdf plugin-add glide https://       github.com/rajatvig/asdf-dep.git
+	asdf plugin-add glide https://github.com/rajatvig/asdf-dep.git
 	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name || true
-	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version
+	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version || true
 	rm -f $(HOME)/.tool-versions
 	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
 	opam init
