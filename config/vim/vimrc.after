@@ -1,0 +1,10 @@
+color base16-material-darker
+
+set cursorline
+set cursorcolumn
+set number relativenumber
+
+set foldenable
+set foldlevelstart=10
+set foldnestmax=30
+set foldmethod=indent
