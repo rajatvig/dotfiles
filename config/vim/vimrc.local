@@ -1,5 +1,0 @@
-let base16colorspace=256
-set background=dark
-colorscheme Tomorrow-Night-Eighties
-
-set guifont=CamingoCode:h11

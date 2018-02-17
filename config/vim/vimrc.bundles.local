@@ -1,4 +1,0 @@
-Bundle 'chriskempson/base16-vim'
-Bundle 'racer-rust/vim-racer'
-
-Plugin 'udalov/kotlin-vim'

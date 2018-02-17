@@ -1,0 +1,12 @@
+
+[rust.vim]
+checkout = git clone 'git@github.com:rust-lang/rust.vim.git' 'rust.vim'
+
+[vim-airline]
+checkout = git clone 'git@github.com:vim-airline/vim-airline.git' 'vim-airline'
+
+[kotlin-vim]
+checkout = git clone 'git@github.com:udalov/kotlin-vim.git' 'kotlin-vim'
+
+[vim-go]
+checkout = git clone 'git@github.com:fatih/vim-go.git' 'vim-go'

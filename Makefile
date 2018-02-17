@@ -56,6 +56,7 @@ asdf: ## Install Languages
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version || true
 	rm -f $(HOME)/.tool-versions
 	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
+	(setq exec-path (append exec-path '("/usr/local/bin")))
 	opam init
 	cabal update
 
@@ -84,7 +85,11 @@ emacs: ## Configure Spacemacs
 vim: ## Configure SPF-13 for VIM
 	$(BI) vim neovim
 	$(BCI) macvim
-	curl -sLf https://spacevim.org/install.sh | bash
+	rm -rf $(HOME)/.vim $(HOME)/.janus
+	curl -L https://bit.ly/janus-bootstrap | bash
+	mkdir -p $(HOME)/.janus
+	cp $(CDIR)/vim/mrconfig $(HC)/vim/.mrconfig
+	cd $(HOME)/.janus; mr bootstrap .mrconfig
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
