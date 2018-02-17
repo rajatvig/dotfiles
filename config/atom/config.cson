@@ -28,7 +28,7 @@
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
-      "atom-material-syntax-light"
+      "atom-material-syntax-dark"
     ]
   editor:
     fontFamily: "CamingoCode"

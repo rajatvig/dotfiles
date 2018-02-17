@@ -25,6 +25,8 @@ font-merriweather
 font-merriweather-sans
 font-monoid
 font-open-sans
+font-roboto
+font-roboto-mono
 font-source-code-pro
 font-source-code-pro-for-powerline
 freemind

@@ -56,7 +56,6 @@ asdf: ## Install Languages
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version || true
 	rm -f $(HOME)/.tool-versions
 	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
-	(setq exec-path (append exec-path '("/usr/local/bin")))
 	opam init
 	cabal update
 
