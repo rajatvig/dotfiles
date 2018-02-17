@@ -131,7 +131,6 @@ popt
 postgresql
 protobuf
 pstree
-python
 python3
 ranger
 re2c

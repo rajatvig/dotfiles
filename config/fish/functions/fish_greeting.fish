@@ -4,5 +4,5 @@ function fish_greeting
   end
 
   set -l rnd_animal (rnd_animal)
-  fortune | cowsay -f /usr/local/share/cows/$rnd_animal | grep -v pm | toilet -f term --gay
+  fortune | cowsay -f /usr/local/share/cows/$rnd_animal | grep -v pm | toilet -f term --metal
 end

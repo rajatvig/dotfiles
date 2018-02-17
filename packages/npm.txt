@@ -1,8 +1,0 @@
-grunt-cli
-js-beautify
-tern
-karma-cli
-yo
-nodemon
-generator-hottowel
-eslint

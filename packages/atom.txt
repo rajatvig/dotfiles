@@ -1,11 +1,17 @@
 atom-ide-ui
+atom-material-syntax
+atom-material-syntax-dark
+atom-material-syntax-light
+atom-material-ui
 busy
+file-icons
 haskell-ghc-mod
 ide-haskell
 ide-java
 ide-php
 ide-python
 ide-typescript
+language-fish-shell
 language-gradle
 language-groovy
 language-haskell

@@ -32,10 +32,10 @@ relink: ## Relink the Packages with what is installed
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
-	pip3 list --format=legacy | cut -d ' ' -f 1 > packages/pip.txt
 
 brew_base: ## Install bare minimum brew packages
-	$(BI) cask fortune cowsay toilet asdf python3 vim
+	$(BI) cask fortune cowsay toilet asdf python3
+	$(BI) --with-python3 --without-python vim
 	$(BI) --without-node yarn
 	$(BCI) java java8 haskell-platform vagrant
 
@@ -47,12 +47,6 @@ node: ## Install required Node Packages
 	$(BI) yarn --without-node
 	mkdir -p $(HC)/yarn
 	cat $(PDIR)/npm.txt | xargs -I package-name yarn global add package-name
-
-python: ## Install Pip Packages
-	$(BI) python3
-	cat $(PDIR)/pip.txt | xargs pip3 install
-	rm -rf $(HOME)/.pypirc
-	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
 asdf: ## Install Languages
 	$(BI) asdf
@@ -96,28 +90,27 @@ iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
 	cp $(CDIR)/com.googlecode.iterm2.plist $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
 
-git: ## Configure Git Global Settings and an Ignore file
-	$(BI) git
-	$(GCG) user.name "Rajat Vig"
-	$(GCG) user.email "rajat.vig@gmail.com"
-	$(GCG) core.editor vim
-	$(GCG) core.excludesfile "$(HOME)/.gitignore_global"
-	rm -f $(HOME)/.gitignore_global
-	ln -s $(CDIR)/gitignore_global $(HOME)/.gitignore_global
+config: ## Create Links for config files
+	$(BI) direnv zsh mr fish bash git
+	rm -f $(HOME)/.pypirc $(HOME)/.tmux.conf $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl $(HOME)/.direnvrc $(HOME)/.mrconfig $(HOME)/.editorconfig
+	ln -s $(CDIR)/tmux.conf $(HOME)/.tmux.conf
+	ln -s $(CDIR)/aspell/aspell.en.pws $(HOME)/.aspell.en.pws
+	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
+	ln -s $(CDIR)/direnvrc $(HOME)/.direnvrc
+	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
+	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
+	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
 
-bash: ## Configure Bash
-	$(BI) bash
-	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile
+bash: ## Configure Bash Shell
+	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile $(BITP)/enabled/*.bash
 	$(GC):Bash-it/bash-it.git $(BIT)
 	$(BIT)/install.sh --silent
-	rm -rf $(HOME)/.bashrc $(HOME)/.bash_profile $(BITP)/enabled/*.bash
 	ln -s $(CDIR)/bashrc $(HOME)/.bashrc
 	ln -s $(CDIR)/bash_profile $(HOME)/.bash_profile
 	mkdir $(BITP)/enabled
 	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
-fish: python ## Configure Fish Shell, get TackleBox and custom plugins
-	$(BI) fish mr
+fish: ## Configure Fish Shell
 	rm -rf $(HC)/fish $(HC)/fish_plugins
 	ln -s $(CDIR)/fish $(HC)/fish
 	mkdir -p $(HC)/fish_plugins
@@ -125,17 +118,18 @@ fish: python ## Configure Fish Shell, get TackleBox and custom plugins
 	cd $(HC)/fish_plugins; mr bootstrap .mrconfig
 	sudo chsh -s /usr/local/bin/fish `whoami`
 
-configurations: ## Configure tmux
-	$(BI) direnv zsh mr
+zsh: ## Configure Zsh
+	rm -rf $(HOME)/.zshrc
 	$(GC):robbyrussell/oh-my-zsh.git $(HOME)/.oh-my-zsh
-	rm -f $(HOME)/.tmux.conf $(HOME)/.aspell.en.pws $(HOME)/.aspell.en.prepl $(HOME)/.zshrc $(HOME)/.direnvrc $(HOME)/.mrconfig $(HOME)/.editorconfig
-	ln -s $(CDIR)/tmux.conf $(HOME)/.tmux.conf
-	ln -s $(CDIR)/aspell/aspell.en.pws $(HOME)/.aspell.en.pws
-	ln -s $(CDIR)/aspell/aspell.en.prepl $(HOME)/.aspell.en.prepl
 	ln -s $(CDIR)/zshrc $(HOME)/.zshrc
-	ln -s $(CDIR)/direnvrc $(HOME)/.direnvrc
-	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
-	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
+
+git: ## Configure Git Global Settings and an Ignore file
+	rm -rf $(HOME)/.gitignore_global
+	ln -s $(CDIR)/gitignore_global $(HOME)/.gitignore_global
+	$(GCG) user.name "Rajat Vig"
+	$(GCG) user.email "rajat.vig@gmail.com"
+	$(GCG) core.editor vim
+	$(GCG) core.excludesfile "$(HOME)/.gitignore_global"
 
 osx: ## Setup sane OSX Defaults
 	./scripts/_osx

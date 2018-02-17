@@ -4,6 +4,9 @@ checkout = git clone 'git@github.com:rajatvig/fish-brew.git' 'brew'
 [git]
 checkout = git clone 'git@github.com:rajatvig/fish-git.git' 'git'
 
+[pure]
+checkout = git clone 'git@github.com:brandonweiss/pure.fish.git' 'pure/functions'
+
 [kubectl]
 checkout = git clone 'git@github.com:evanlucas/fish-kubectl-completions.git' 'kubectl/completions'
 

@@ -3,6 +3,11 @@
     _analyticsUserId: "21580839-a0fe-44f6-96a1-28e2e81b0a61"
     general:
       _analyticsUserId: "dddf97f8-33ae-4614-8c2b-04107d243e7c"
+  "atom-material-ui":
+    fonts:
+      fontSize: 14
+    tabs:
+      stretchedTabs: true
   autosave:
     enabled: true
   core:
@@ -20,11 +25,10 @@
       "source.python": [
         "BUCK"
       ]
-    disabledPackages: []
     telemetryConsent: "limited"
     themes: [
-      "atom-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "atom-material-ui"
+      "atom-material-syntax-light"
     ]
   editor:
     fontFamily: "CamingoCode"
