@@ -82,12 +82,10 @@ emacs: ## Configure Spacemacs
 	ln -s $(HC)/spacemacs/spacemacs.el $(HOME)/.spacemacs
 
 vim: ## Configure SPF-13 for VIM
-	$(BI) vim neovim
-	$(BCI) macvim
 	rm -rf $(HOME)/.vim $(HOME)/.janus
 	curl -L https://bit.ly/janus-bootstrap | bash
 	mkdir -p $(HOME)/.janus
-	cp $(CDIR)/vim/mrconfig $(HC)/vim/.mrconfig
+	cp $(CDIR)/vim/mrconfig $(HOME)/.janus
 	cd $(HOME)/.janus; mr bootstrap .mrconfig
 
 iterm2: ## iTerm2 Configuration
