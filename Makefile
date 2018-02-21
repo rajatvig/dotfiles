@@ -87,6 +87,9 @@ vim: ## Configure SPF-13 for VIM
 	mkdir -p $(HOME)/.janus
 	cp $(CDIR)/vim/mrconfig $(HOME)/.janus
 	cd $(HOME)/.janus; mr bootstrap .mrconfig
+	ln -s $(CDIR)/vim/vimrc.after $(HOME)/.vimrc.after
+	cd $(HOME)/.janus/YouCompleteMe; git submodule update --init --recursive
+	cd $(HOME)/.janus/YouCompleteMe; ./install.py --rust-completer --clang-completer --go-completer --js-completer --java-completer
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
