@@ -123,6 +123,7 @@ oniguruma
 openssl
 openssl@1.1
 p11-kit
+pandoc
 pcre
 pcre2
 perl
@@ -131,7 +132,7 @@ popt
 postgresql
 protobuf
 pstree
-python3
+python
 ranger
 re2c
 readline

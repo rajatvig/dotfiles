@@ -48,7 +48,6 @@ intellij-idea-ce
 iterm2
 java
 java8
-jetbrains-toolbox
 julia
 kdiff3
 keybase
@@ -80,3 +79,4 @@ xscreensaver
 yed
 zeplin
 zoomus
+zotero

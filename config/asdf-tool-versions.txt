@@ -18,3 +18,4 @@ nomad 0.7.1
 golang 1.9.4
 dep 0.4.1
 glide 0.13.1
+serf 0.8.1
