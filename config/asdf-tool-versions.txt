@@ -3,7 +3,7 @@ elixir 1.6.3
 erlang 20.2.3
 lfe 1.2.1
 rust 1.24.1
-haskell 8.2.2
+haskell 8.4.1
 minikube 0.25.0
 nim v0.18.0
 consul 1.0.6
@@ -11,7 +11,7 @@ packer 1.2.1
 terraform 0.11.3
 vault 0.9.3
 python 3.6.4
-ocaml 4.06.0
+ocaml 4.06.1
 kubectl 1.9.3
 nodejs 9.5.0
 nomad 0.7.1
