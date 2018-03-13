@@ -34,8 +34,7 @@ relink: ## Relink the Packages with what is installed
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
 
 brew_base: ## Install bare minimum brew packages
-	$(BI) cask fortune cowsay toilet asdf python3
-	$(BI) --with-python3 --without-python vim
+	$(BI) cask fortune cowsay toilet python3 vim
 	$(BI) --without-node yarn
 	$(BCI) java java8 haskell-platform vagrant
 
@@ -50,8 +49,10 @@ node: ## Install required Node Packages
 
 asdf: ## Install Languages
 	$(BI) asdf
+	asdf plugin-remove glide || true
+	asdf plugin-remove dep || true
 	asdf plugin-add glide https://github.com/rajatvig/asdf-glide.git
-	asdf plugin-add glide https://github.com/rajatvig/asdf-dep.git
+	asdf plugin-add dep https://github.com/rajatvig/asdf-dep.git
 	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name || true
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version || true
 	rm -f $(HOME)/.tool-versions
@@ -82,6 +83,7 @@ emacs: ## Configure Spacemacs
 	ln -s $(HC)/spacemacs/spacemacs.el $(HOME)/.spacemacs
 
 vim: ## Configure SPF-13 for VIM
+	$(BI) vim
 	rm -rf $(HOME)/.vim $(HOME)/.janus
 	curl -L https://bit.ly/janus-bootstrap | bash
 	mkdir -p $(HOME)/.janus
