@@ -1,13 +1,13 @@
 ruby 2.5.0
-elixir 1.6.1
+elixir 1.6.3
 erlang 20.2.3
 lfe 1.2.1
-rust 1.24.0
+rust 1.24.1
 haskell 8.2.2
 minikube 0.25.0
-nim v0.17.2
+nim v0.18.0
 consul 1.0.6
-packer 1.2.0
+packer 1.2.1
 terraform 0.11.3
 vault 0.9.3
 python 3.6.4
