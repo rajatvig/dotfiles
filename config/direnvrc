@@ -4,10 +4,13 @@ use_node() {
 
 use_ruby() {
   asdf local ruby $1
-  PATH_add /usr/local/opt/asdf/installs/ruby/$1/bin
+  local ruby_root=/usr/local/opt/asdf/installs/ruby/$1
+  load_prefix "$ruby_root"
+  layout_ruby
 }
 
 use_python() {
+  asdf local python $1
   local python_root=/usr/local/opt/asdf/installs/python/$1
   load_prefix "$python_root"
   layout_python "$python_root/bin/python"
@@ -17,4 +20,8 @@ layout_haskell() {
   [ -d .cabal-sandbox ] || cabal sandbox init
   PATH_add .cabal-sandbox/bin
   export GHC_PACKAGE_PATH=$(cabal exec -- sh -c "echo \$GHC_PACKAGE_PATH")
+}
+
+session_name(){
+  export TMUX_SESSION_NAME="${*:?session_name needs a name as argument}"
 }
