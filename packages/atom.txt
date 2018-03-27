@@ -1,3 +1,4 @@
+000-project-shell-env
 atom-ide-ui
 atom-material-syntax
 atom-material-syntax-dark
@@ -6,10 +7,12 @@ atom-material-ui
 busy
 file-icons
 haskell-ghc-mod
+ide-go
 ide-haskell
 ide-java
 ide-php
 ide-python
+ide-rust
 ide-typescript
 language-fish-shell
 language-gradle

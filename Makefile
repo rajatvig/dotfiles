@@ -24,9 +24,7 @@ bootstrap: ## Bootstrap Brew, dotfiles
 	touch $(DDIR)/config/fish/private.fish
 
 relink: ## Relink the Packages with what is installed
-	brew list > $(PDIR)/brew.txt
-	brew cask list > $(PDIR)/cask.txt
-	brew tap > $(PDIR)/taps.txt
+	brew bundle dump --force --file=$(PDIR)/Brewfile
 	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
@@ -38,9 +36,8 @@ brew_base: ## Install bare minimum brew packages
 	$(BI) --without-node yarn
 	$(BCI) java java8 haskell-platform vagrant
 
-brew_all: brew_base ## Install all configured brew packages
-	cat $(PDIR)/brew.txt | xargs $(BI)
-	cat $(PDIR)/cask.txt | xargs $(BCI)
+brew_bundle: ## Install all configured brew packages
+	brew bundle --file=$(PDIR)/Brewfile
 
 node: ## Install required Node Packages
 	$(BI) yarn --without-node
