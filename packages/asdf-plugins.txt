@@ -16,6 +16,8 @@ packer
 python
 ruby
 rust
+sbt
+scala
 serf
 terraform
 vault

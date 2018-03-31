@@ -1,10 +1,10 @@
 ruby 2.5.0
-elixir 1.6.3
+elixir 1.6.4
 erlang 20.2.3
 lfe 1.2.1
 rust 1.24.1
 haskell 8.4.1
-minikube 0.25.0
+minikube 0.25.2
 nim v0.18.0
 consul 1.0.6
 packer 1.2.1
@@ -19,3 +19,5 @@ golang 1.9.4
 dep 0.4.1
 glide 0.13.1
 serf 0.8.1
+scala 2.12.5
+sbt 0.13.15
