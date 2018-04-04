@@ -3,6 +3,8 @@
     _analyticsUserId: "21580839-a0fe-44f6-96a1-28e2e81b0a61"
     general:
       _analyticsUserId: "dddf97f8-33ae-4614-8c2b-04107d243e7c"
+  "atom-ide-ui":
+    use: {}
   "atom-material-ui":
     fonts:
       fontSize: 14
