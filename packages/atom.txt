@@ -19,3 +19,4 @@ language-gradle
 language-groovy
 language-haskell
 language-rdf
+language-rust

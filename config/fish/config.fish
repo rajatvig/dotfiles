@@ -19,7 +19,5 @@ source ~/.config/fish_plugins/tacklebox/tacklebox.fish
 
 source /usr/local/opt/asdf/asdf.fish
 
-opam config env | source
-
 source ~/.config/fish/autotmux.fish
 source ~/.config/fish/private.fish
