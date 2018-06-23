@@ -1,13 +1,15 @@
 direnv hook fish | source
 
-set -gx EDITOR vim
-set -gx GIT_EDITOR vim
+set -gx EDITOR nvim
+set -gx GIT_EDITOR nvim
 set -gx GOPATH /usr/local/var/go
 
 set -g fish_user_paths /usr/local/bin $fish_user_paths
 set -g fish_user_paths /usr/local/sbin $fish_user_paths
 set -g fish_user_paths /usr/local/opt/gettext/bin $fish_user_paths
 set -g fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths
+
+set -g fish_user_paths $GOPATH/bin $fish_user_paths
 
 set -g fish_user_paths $HOME/Library/Haskell/bin $fish_user_paths
 
