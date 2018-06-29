@@ -2,7 +2,7 @@ ruby 2.5.0
 elixir 1.6.4
 erlang 20.3.2
 lfe 1.2.1
-rust 1.25.0
+rust 1.27.0
 haskell 8.4.1
 minikube 0.26.0
 nim v0.18.0

@@ -30,6 +30,7 @@ relink: ## Relink the Packages with what is installed
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
+	cp $(HOME)/.tool-versions $(CDIR)/asdf-tool-versions.txt
 
 brew_base: ## Install bare minimum brew packages
 	$(BI) cask fortune cowsay toilet python3 vim
@@ -53,7 +54,7 @@ asdf: ## Install Languages
 	cat $(PDIR)/asdf-plugins.txt | xargs -I plugin-name asdf plugin-add plugin-name || true
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version || true
 	rm -f $(HOME)/.tool-versions
-	ln -s $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
+	cp $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
 	opam init
 	cabal update
 
@@ -104,6 +105,9 @@ config: ## Create Links for config files
 	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
 	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
 	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
+
+alacritty: ## install alacritty
+	ln -s $(CDIR)/alacritty.yml $(HOME)/alacritty/alacritty.yml
 
 bash: ## Configure Bash Shell
 	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile $(BITP)/enabled/*.bash
