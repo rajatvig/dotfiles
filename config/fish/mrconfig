@@ -7,8 +7,8 @@ checkout = git clone 'git@github.com:rajatvig/fish-git.git' 'git'
 [pure]
 checkout = git clone 'git@github.com:brandonweiss/pure.fish.git' 'pure/functions'
 
-[kubectl]
-checkout = git clone 'git@github.com:evanlucas/fish-kubectl-completions.git' 'kubectl/completions'
+[docker]
+checkout = git clone 'git@github.com:rajatvig/fish-docker.git' 'docker'
 
 [tackle]
 checkout = git clone 'git@github.com:justinmayer/tackle.git' 'tackle'
