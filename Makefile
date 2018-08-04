@@ -55,8 +55,6 @@ asdf: ## Install Languages
 	cat $(CDIR)/asdf-tool-versions.txt | xargs -I tool-version asdf install tool-version || true
 	rm -f $(HOME)/.tool-versions
 	cp $(CDIR)/asdf-tool-versions.txt $(HOME)/.tool-versions
-	opam init
-	cabal update
 
 vagrant: ## Install and configure Vagrant
 	$(BCI) vagrant
