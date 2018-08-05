@@ -1,6 +1,6 @@
 ruby 2.5.0
 elixir 1.7.1
-erlang 21.0.2
+erlang 21.0.4
 lfe 1.2.1
 rust 1.28.0
 haskell 8.4.3

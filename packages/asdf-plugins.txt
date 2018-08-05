@@ -4,6 +4,8 @@ elixir
 erlang
 glide
 golang
+haskell
+helm
 kubectl
 lfe
 minikube
