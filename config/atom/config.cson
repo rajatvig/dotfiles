@@ -12,6 +12,11 @@
       stretchedTabs: true
   autosave:
     enabled: true
+  "base16-syntax":
+    scheme: "Summerfruit"
+    style: "Dark"
+  "city-lights-ui":
+    tabSize: "small"
   core:
     audioBeep: false
     customFileTypes:
@@ -30,7 +35,7 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "gruvbox-plus-syntax"
+      "base16-syntax"
     ]
   editor:
     fontFamily: "Hack Nerd Font"
