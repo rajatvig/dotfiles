@@ -139,7 +139,7 @@ set ruler
 set number
 
 let no_buffers_menu=1
-colorscheme base16-tomorrow-night
+colorscheme base16-gruvbox-dark-hard
 
 set mousemodel=popup
 set t_Co=256
