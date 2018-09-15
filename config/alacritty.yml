@@ -73,6 +73,10 @@ font:
     x: 0
     y: 0
 
+  # Scale the font size based on the monitor's DPI. This will lead to bigger text on HiDPI
+  # screens and make reading text a little easier.
+  scale_with_dpi: true
+
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
   # false.
@@ -85,34 +89,40 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: false
 
-# Colors (Material Theme)
+# Base16 Tomorrow Night 256 - alacritty color config
+# Chris Kempson (http://chriskempson.com)
 colors:
   # Default colors
   primary:
-    background: '0x1e282d'
-    foreground: '0xc4c7d1'
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x1d1f21'
+    cursor: '0xc5c8c6'
 
   # Normal colors
   normal:
-    black:   '0x666666'
-    red:     '0xeb606b'
-    green:   '0xc3e88d'
-    yellow:  '0xf7eb95'
-    blue:    '0x80cbc4'
-    magenta: '0xff2f90'
-    cyan:    '0xaeddff'
-    white:   '0xffffff'
+    black:   '0x1d1f21'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xc5c8c6'
 
   # Bright colors
   bright:
-    black:   '0xff262b'
-    red:     '0xeb606b'
-    green:   '0xc3e88d'
-    yellow:  '0xf7eb95'
-    blue:    '0x7dc6bf'
-    magenta: '0x6c71c4'
-    cyan:    '0x35434d'
-    white:   '0xffffff'
+    black:   '0x969896'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xc5c8c6'
 
 # Visual Bell
 #
@@ -195,6 +205,9 @@ hide_cursor_when_typing: false
 # - Beam
 cursor_style: Block
 
+# Whether the cursor should be a hollow block on window focus loss
+unfocused_hollow_cursor: true
+
 # Live config reload (changes require restart)
 live_config_reload: true
 
@@ -246,6 +259,9 @@ live_config_reload: true
 key_bindings:
   - { key: V,        mods: Command, action: Paste                        }
   - { key: C,        mods: Command, action: Copy                         }
+  - { key: Paste,                   action: Paste                        }
+  - { key: Copy,                    action: Copy                         }
+  - { key: H,        mods: Command, action: Hide                         }
   - { key: Q,        mods: Command, action: Quit                         }
   - { key: W,        mods: Command, action: Quit                         }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
@@ -346,3 +362,4 @@ key_bindings:
   - { key: F10,      mods: Command, chars: "\x1b[21;3~"                  }
   - { key: F11,      mods: Command, chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Command, chars: "\x1b[24;3~"                  }
+  - { key: NumpadEnter,             chars: "\n"                          }

@@ -33,7 +33,7 @@
       "atom-material-syntax-dark"
     ]
   editor:
-    fontFamily: "CamingoCode"
+    fontFamily: "Hack Nerd Font"
     fontSize: 11
     invisibles: {}
     lineHeight: 1.1
