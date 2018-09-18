@@ -81,11 +81,14 @@ emacs: ## Configure Spacemacs
 vim: ## Configure SPF-13 for VIM
 	$(BI) vim nvim
 	$(BCI) macvim vimr
-	rm -rf $(HOME)/.vimrc (HOME)/.vim $(HOME)/.config/nvim
+	rm -rf $(HOME)/.vimrc $(HOME)/.vim $(HOME)/.config/nvim
+	mkdir -p $(HOME)/.config/nvim
 	ln -s $(CDIR)/vim/.vimrc $(HOME)/.vimrc
-	ln -s $(CDIR)/vim/init.nvim $(HOME)/.config/nvim/init.vim
+	cp $(CDIR)/vim/init.nvim $(HOME)/.config/nvim/init.vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	vim +PlugInstall +qall
+	nvim +PlugInstall +qall
 
 iterm2: ## iTerm2 Configuration
 	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
