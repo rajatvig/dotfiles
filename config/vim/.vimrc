@@ -60,6 +60,10 @@ Plug 'pbrisbin/vim-syntax-shakespeare'
 "" Lisp Bundle
 Plug 'vim-scripts/slimv.vim'
 
+" Racket
+" Racket Bundle
+Plug 'wlangstroth/vim-racket'
+
 " rust
 " Vim racer
 Plug 'racer-rust/vim-racer'

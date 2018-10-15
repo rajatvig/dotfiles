@@ -59,6 +59,13 @@ echo ""
 echo "Show path bar."
 defaults write com.apple.finder ShowPathbar -bool true
 
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
+
+
 ###############################################################################
 # Dock
 ###############################################################################
@@ -86,6 +93,35 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
-chflags nohidden ~/Library
+# Hide remaining battery time; show percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+# Set sidebar icon size to small
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+
+# show scrollbars when scrolling
+# Possible values: `WhenScrolling`, `Automatic` and `Always`
+defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
+
+# Temperature units
+defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
+
+###############################################################################
+# Flycut                                                                      #
+###############################################################################
+defaults write com.generalarcade.flycut rememberNum -int 60
+defaults write com.generalarcade.flycut loadOnStartup -bool true
+defaults write com.generalarcade.flycut pasteMovesToTop -bool true
+defaults write com.generalarcade.flycut removeDuplicates -bool true
+
+###############################################################################
+# Screen capture                                                              #
+###############################################################################
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
 
 killall Dock
