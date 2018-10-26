@@ -1,7 +1,14 @@
 atom-ide-ui
 base16-syntax
+busy
 file-icons
 ide-go
+git-plus
+go-plus
+haskell-ghc-mod
+ide-go
+ide-haskell
+ide-java
 ide-python
 ide-rust
 ide-typescript

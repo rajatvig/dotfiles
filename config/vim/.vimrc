@@ -83,6 +83,12 @@ Plug 'udalov/kotlin-vim'
 " JavaScript
 Plug 'pangloss/vim-javascript'
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
+" Vagrant
+Plug 'hashivim/vim-vagrant'
+
 "*****************************************************************************
 "*****************************************************************************
 
@@ -509,6 +515,8 @@ au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
+" Terraform
+let g:terraform_fmt_on_save = 1
 
 "*****************************************************************************
 "" Convenience variables
