@@ -3,7 +3,7 @@ direnv hook fish | source
 set -gx EDITOR nvim
 set -gx GIT_EDITOR nvim
 set -gx GOPATH /usr/local/var/go
-set -gx ASDF_DIR /usr/local/opt/asdf
+set -gx ASDF_DIR ~/.asdf
 
 set -g fish_user_paths /usr/local/bin $fish_user_paths
 set -g fish_user_paths /usr/local/sbin $fish_user_paths

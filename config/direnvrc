@@ -9,14 +9,14 @@ use_nvm() {
 
 use_ruby() {
   asdf local ruby $1
-  local ruby_root=/usr/local/opt/asdf/installs/ruby/$1
+  local ruby_root=~/.asdf/installs/ruby/$1
   load_prefix "$ruby_root"
   layout_ruby
 }
 
 use_python() {
   asdf local python $1
-  local python_root=/usr/local/opt/asdf/installs/python/$1
+  local python_root=~/.asdf/installs/python/$1
   load_prefix "$python_root"
   layout_python "$python_root/bin/python"
 }

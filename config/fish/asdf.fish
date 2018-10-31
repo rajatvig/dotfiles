@@ -1,4 +1,4 @@
-set -l asdf_dir /usr/local/opt/asdf
+set -l asdf_dir ~/.asdf
 
 # we get an ugly warning when setting the path if shims does not exist
 mkdir -p $asdf_dir/shims
