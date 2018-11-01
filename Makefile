@@ -28,14 +28,13 @@ relink: ## Relink the Packages with what is installed
 	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
-	cp $(HOME)/Library/Preferences/com.googlecode.iterm2.plist $(CDIR)/com.googlecode.iterm2.plist
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
 	cp $(HOME)/.tool-versions $(CDIR)/asdf-tool-versions.txt
 
 brew_base: ## Install bare minimum brew packages
-	$(BI) cask fortune cowsay toilet python3 vim
+	$(BI) cask fortune cowsay toilet python vim
 	$(BI) --without-node yarn
-	$(BCI) java java8 haskell-platform vagrant
+	$(BCI) emacs java java8 vagrant
 
 brew_bundle: ## Install all configured brew packages
 	brew bundle --file=$(PDIR)/Brewfile
@@ -46,7 +45,7 @@ node: ## Install required Node Packages
 	cat $(PDIR)/npm.txt | xargs -I package-name yarn global add package-name
 
 asdf: ## Install Languages
-	$(BI) asdf
+	$(GC):asdf-vm/asdf.git $(HOME)/.asdf --branch v0.6.0
 	asdf plugin-remove glide || true
 	asdf plugin-remove dep || true
 	asdf plugin-add glide https://github.com/rajatvig/asdf-glide.git
@@ -80,19 +79,17 @@ emacs: ## Configure Spacemacs
 
 vim: ## Configure SPF-13 for VIM
 	$(BI) vim nvim
-	$(BCI) macvim vimr
+	$(BCI) macvim
 	rm -rf $(HOME)/.vimrc $(HOME)/.vim $(HOME)/.config/nvim
 	mkdir -p $(HOME)/.config/nvim
 	ln -s $(CDIR)/vim/.vimrc $(HOME)/.vimrc
-	cp $(CDIR)/vim/init.nvim $(HOME)/.config/nvim/init.vim
+	cp $(CDIR)/vim/init.vim $(HOME)/.config/nvim/init.vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	vim +PlugInstall +qall
 	nvim +PlugInstall +qall
-
-iterm2: ## iTerm2 Configuration
-	rm -rf $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
-	cp $(CDIR)/com.googlecode.iterm2.plist $(HOME)/Library/Preferences/com.googlecode.iterm2.plist
+	pip3 install --upgrade pip
+	pip3 install sexpdata websocket-client neovim
 
 config: ## Create Links for config files
 	$(BI) direnv zsh mr fish bash git
@@ -104,9 +101,7 @@ config: ## Create Links for config files
 	ln -s $(CDIR)/mrconfig $(HOME)/.mrconfig
 	ln -s $(CDIR)/editorconfig $(HOME)/.editorconfig
 	ln -s $(CDIR)/pypirc $(HOME)/.pypirc
-
-alacritty: ## install alacritty
-	ln -s $(CDIR)/alacritty.yml $(HOME)/alacritty/alacritty.yml
+	cp $(CDIR)/alacritty.yml $(HOME)/alacritty/alacritty.yml
 
 bash: ## Configure Bash Shell
 	rm -rf $(BIT) $(HOME)/.bashrc $(HOME)/.bash_profile $(BITP)/enabled/*.bash

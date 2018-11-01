@@ -1,6 +1,7 @@
 config/fish/private.fish
 config/fish/fish_history
 config/fish/fishd.*
+config/fish/completions
 
 # Created by https://www.gitignore.io/api/osx,vim,emacs
 

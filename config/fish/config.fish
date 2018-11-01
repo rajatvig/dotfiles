@@ -3,7 +3,6 @@ direnv hook fish | source
 set -gx EDITOR nvim
 set -gx GIT_EDITOR nvim
 set -gx GOPATH /usr/local/var/go
-set -gx ASDF_DIR ~/.asdf
 
 set -g fish_user_paths /usr/local/bin $fish_user_paths
 set -g fish_user_paths /usr/local/sbin $fish_user_paths
@@ -18,6 +17,8 @@ set tacklebox_plugins docker extract grc
 
 source ~/.config/fish_plugins/tacklebox/tacklebox.fish
 
-for f in asdf autotmux private
+source ~/.asdf/asdf.fish
+
+for f in autotmux private
     source ~/.config/fish/$f.fish
 end

@@ -80,6 +80,15 @@ Plug 'udalov/kotlin-vim'
 " JavaScript
 Plug 'pangloss/vim-javascript'
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
+" Vagrant
+Plug 'hashivim/vim-vagrant'
+
+" Scala
+Plug 'ensime/ensime-vim'
+
 call plug#end()
 
 " Required:
