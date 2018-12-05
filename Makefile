@@ -25,7 +25,6 @@ bootstrap: ## Bootstrap Brew, dotfiles
 
 relink: ## Relink the Packages with what is installed
 	brew bundle dump --force --file=$(PDIR)/Brewfile
-	ls $(HOME)/.atom/packages > $(PDIR)/atom.txt
 	vagrant plugin list | cut -f 1 -d ' ' > $(PDIR)/vagrant.txt
 	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(PDIR)/bash_plugins.txt
 	asdf plugin-list > $(PDIR)/asdf-plugins.txt
@@ -61,14 +60,6 @@ vagrant: ## Install and configure Vagrant
 	mkdir -p $(HOME)/.vagrant.d
 	rm -f $(HOME)/.vagrant.d/Vagrantfile
 	ln -s $(CDIR)/Vagrantfile $(HOME)/.vagrant.d/Vagrantfile
-
-atom: ## Configure Atom
-	$(BCI) atom
-	rm -rf $(HOME)/.atom
-	mkdir $(HOME)/.atom
-	ln -s $(CDIR)/atom/config.cson $(HOME)/.atom/
-	ln -s $(CDIR)/atom/keymap.cson $(HOME)/.atom/
-	cat $(PDIR)/atom.txt | xargs apm install
 
 emacs: ## Configure Spacemacs
 	$(BCI) emacs

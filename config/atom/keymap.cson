@@ -1,4 +1,0 @@
-'atom-text-editor':
-  'ctrl-alt-\\': 'atom-beautify:beautify-editor'
-'atom-workspace':
-  'alt-m \\': 'fuzzy-grep:toggle'

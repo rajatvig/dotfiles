@@ -47,6 +47,6 @@ source $BASH_IT/bash_it.sh
 
 eval "$(direnv hook bash)"
 
-source /usr/local/opt/asdf/asdf.sh
+source ~/.asdf/asdf.sh
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay

@@ -1,9 +1,5 @@
 vagrant-hostmanager
 vagrant-omnibus
-
 vagrant-proxyconf
-
 vagrant-scp
-
 vagrant-share
-

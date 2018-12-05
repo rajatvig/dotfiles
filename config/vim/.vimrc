@@ -56,10 +56,6 @@ Plug 'eagletmt/neco-ghc'
 Plug 'dag/vim2hs'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
-" lisp
-"" Lisp Bundle
-Plug 'vim-scripts/slimv.vim'
-
 " Racket
 " Racket Bundle
 Plug 'wlangstroth/vim-racket'

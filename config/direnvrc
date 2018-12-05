@@ -1,5 +1,6 @@
 use_node() {
   cat .node-version | xargs -I node-version asdf local nodejs node-version
+  layout node
 }
 
 use_nvm() {
