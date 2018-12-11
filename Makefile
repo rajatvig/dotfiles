@@ -30,8 +30,8 @@ bootstrap: $(BINARY_STOW) ## Bootstrap Brew, dotfiles
 relink: ## Relink the Packages with what is installed
 	brew bundle dump --force --file=$(CDIR)/Brewfile
 	vagrant plugin list | cut -f 1 -d ' ' > $(CDIR)/vagrant/.vagrant.d/plugins
-	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(CDIR)/config/.bash_plugins
-	asdf plugin-list > $(CDIR)/config/.asdf-plugins
+	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(CDIR)/home/.bash_plugins
+	asdf plugin-list > $(CDIR)/home/.asdf-plugins
 
 brew: ## Install all configured brew packages
 	brew bundle --file=$(CDIR)/Brewfile
@@ -55,8 +55,8 @@ vim: ## Configure SPF-13 for VIM
 
 bash: ## Configure Bash Shell
 	$(BIT)/install.sh --silent
-	mkdir $(BITP)/enabled
-	cat $(PDIR)/bash_plugins.txt | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
+	mkdir -p $(BITP)/enabled
+	cat $(CDIR)/home/.bash_plugins | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
 
 git: ## Configure Git Global Settings and an Ignore file
 	$(GCG) user.name "Rajat Vig"
