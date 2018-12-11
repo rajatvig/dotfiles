@@ -1,0 +1,15 @@
+[user]
+	name = Rajat Vig
+	email = rajat.vig@gmail.com
+	signingkey = 5658F732DAAC0B39
+[core]
+	editor = vim
+	excludesfile = /Users/rajatv/.gitignore_global
+[gitreview]
+	username = rajatvig
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[commit]
+	gpgsign = true

@@ -2,6 +2,7 @@
 .direnv
 .envrc
 .env
+.tool-versions
 
 # OS Specific
 .DS_Store

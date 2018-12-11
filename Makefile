@@ -22,7 +22,7 @@ $(BINARY_STOW):
 	brew install stow
 
 bootstrap: $(BINARY_STOW) ## Bootstrap Brew, dotfiles
-	stow config
+	stow home
 	mr update
 	stow emacs
 	stow vim
