@@ -25,11 +25,9 @@
 (push 'company-lsp company-backends)
 
 (add-hook 'go-mode-hook #'lsp-go-enable)
-;; (add-hook 'lsp-mode-hook 'lsp-ui-mode)
+(add-hook 'lsp-mode-hook 'lsp-ui-mode)
 
-;; (global-set-key (kbd "M-.") 'xref-find-definitions)
-
-;; (define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
-;; (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook 'rainbow-mode)
 
 (direnv-mode)

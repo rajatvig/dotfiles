@@ -23,12 +23,12 @@ $(BINARY_STOW):
 
 bootstrap: $(BINARY_STOW) ## Bootstrap Brew, dotfiles
 	stow home
-	mr update
 	stow emacs
 	stow vim
 	stow alacritty
 	stow vagrant
 	stow fish
+	mr update
 	cd $(HC)/fish_plugins; mr bootstrap .mrconfig
 
 relink: ## Relink the Packages with what is installed
