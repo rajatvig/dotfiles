@@ -23,6 +23,9 @@ make
 
 #### Extra notes
 
+0. Relies on [GNU Stow](https://www.gnu.org/software/stow/) and
+   [mr](https://myrepos.branchable.com/)
+
 1. [Doom emacs](https://github.com/hlissner/doom-emacs/)
 
 ``` bash

@@ -13,11 +13,15 @@ BITP=$(BIT)/plugins
 .DEFAULT_GOAL := help
 
 BINARY_STOW := /usr/local/bin/stow
+BINARY_MR   := /usr/local/bin/mr
 
 $(BINARY_STOW):
 	brew install stow
 
-bootstrap: $(BINARY_STOW) ## Bootstrap Brew, dotfiles
+$(BINARY_MR):
+	brew install mr
+
+bootstrap: $(BINARY_STOW) $(BINARY_MR) ## Bootstrap Brew, dotfiles
 	stow home
 	stow emacs
 	stow vim
