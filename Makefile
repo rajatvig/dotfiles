@@ -32,13 +32,13 @@ bootstrap: $(BINARY_STOW) ## Bootstrap Brew, dotfiles
 	cd $(HC)/fish_plugins; mr bootstrap .mrconfig
 
 relink: ## Relink the Packages with what is installed
-	brew bundle dump --force --file=$(PDIR)/Brewfile
+	brew bundle dump --force --file=$(CDIR)/Brewfile
 	vagrant plugin list | cut -f 1 -d ' ' > $(CDIR)/vagrant/.vagrant.d/plugins
-	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(CDIR)/config/bash_plugins
+	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(CDIR)/config/.bash_plugins
 	asdf plugin-list > $(CDIR)/config/.asdf-plugins
 
 brew: ## Install all configured brew packages
-	brew bundle --file=$(PDIR)/Brewfile
+	brew bundle --file=$(CDIR)/Brewfile
 
 asdf: ## Install Languages
 	asdf plugin-remove glide || true
