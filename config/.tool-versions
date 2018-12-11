@@ -20,6 +20,5 @@ rust 1.30.0
 sbt 0.13.15
 scala 2.12.5
 serf 0.8.1
-skaffold 0.1.0
 terraform 0.11.10
 vault 0.11.4

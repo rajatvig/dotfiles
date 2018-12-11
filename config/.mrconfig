@@ -7,10 +7,7 @@ jobs = 3
 checkout = git clone 'git@github.com:rajatvig/dotfiles.git' 'dotfiles'
 
 [.emacs.d]
-checkout = git clone 'git@github.com:syl20bnr/spacemacs.git' '.emacs.d'
-
-[.config/spacemacs]
-checkout = git clone 'git@github.com:rajatvig/spacemacs-config.git' 'spacemacs'
+checkout = git clone 'git@github.com:hlissner/.emacs.d.git' '.emacs.d'
 
 [.config/bash_it]
 checkout = git clone 'git@github.com:Bash-it/bash-it.git' 'bash_it'

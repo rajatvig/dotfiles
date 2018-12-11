@@ -21,6 +21,6 @@ set tacklebox_plugins docker extract grc
 
 source ~/.config/fish_plugins/tacklebox/tacklebox.fish
 
-for f in autotmux private
+for f in autotmux
     source ~/.config/fish/$f.fish
 end
