@@ -1,11 +1,7 @@
-BI=brew install
-BCI=brew cask install
-
 CDIR=$(HOME)/dotfiles
 
 VPI=vagrant plugin install
 
-GC=git clone --recursive git@github.com
 GCG=git config --global
 
 HC=$(HOME)/.config

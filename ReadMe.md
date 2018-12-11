@@ -20,3 +20,25 @@ Other targets are defined when `make` is run without a target
 ```bash
 make
 ```
+
+#### Extra notes
+
+1. [Doom emacs](https://github.com/hlissner/doom-emacs/)
+
+``` bash
+cd ~/.emacs.d
+git checkout develop
+bin/doom refresh
+```
+
+2. Languages/SDK
+
+``` bash
+make asdf
+```
+
+3. Relinking
+
+``` bash
+make relink
+```
