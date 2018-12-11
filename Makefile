@@ -37,12 +37,8 @@ brew: ## Install all configured brew packages
 	brew bundle --file=$(CDIR)/Brewfile
 
 asdf: ## Install Languages
-	asdf plugin-remove glide || true
-	asdf plugin-remove dep || true
-	asdf plugin-add glide https://github.com/rajatvig/asdf-glide.git
-	asdf plugin-add dep https://github.com/rajatvig/asdf-dep.git
-	cat $(CDIR)/config/.asdf-plugins | xargs -I plugin-name asdf plugin-add plugin-name || true
-	cat $(CDIR)/config/.tool-versions | xargs -I tool-version asdf install tool-version || true
+	cat $(CDIR)/home/.asdf-plugins | xargs -I plugin-name asdf plugin-add plugin-name || true
+	cat $(CDIR)/home/.tool-versions | xargs -I tool-version asdf install tool-version || true
 
 vagrant: ## Install and configure Vagrant
 	cat $(CDIR)/vagrant/.vagrant.d/plugins | xargs $(VPI)
