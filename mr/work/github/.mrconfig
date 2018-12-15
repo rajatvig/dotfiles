@@ -1,0 +1,78 @@
+
+[charts]
+checkout = git clone 'git@github.com:helm/charts.git' 'charts'
+
+[dynalite]
+checkout = git clone 'git@github.com:rajatvig/dynalite.git' 'dynalite'
+
+[homebrew-cask]
+checkout = git clone 'git@github.com:rajatvig/homebrew-cask.git' 'homebrew-cask'
+
+[homebrew-rajat]
+checkout = git clone 'git@github.com:rajatvig/homebrew-rajat.git' 'homebrew-rajat'
+
+[node-skeleton]
+checkout = git clone 'git@github.com:rajatvig/node-skeleton.git' 'node-skeleton'
+
+[rajatvig.github.com]
+checkout = git clone 'git@github.com:rajatvig/rajatvig.github.com.git' 'rajatvig.github.com'
+
+[docker-images/docker-dynalite-alpine]
+checkout = git clone 'git@github.com:rajatvig/docker-dynalite-alpine.git' 'docker-dynalite-alpine'
+
+[docker-images/docker-kinesalite-alpine]
+checkout = git clone 'git@github.com:rajatvig/docker-kinesalite-alpine.git' 'docker-kinesalite-alpine'
+
+[docker-images/docker-local-dynamo-alpine]
+checkout = git clone 'git@github.com:rajatvig/docker-local-dynamo-alpine.git' 'docker-local-dynamo-alpine'
+
+[docker-images/docker-pactbroker]
+checkout = git clone 'git@github.com:rajatvig/docker-pactbroker.git' 'docker-pactbroker'
+
+[docker-images/docker-pactbroker-client]
+checkout = git clone 'git@github.com:rajatvig/docker-pactbroker-client.git' 'docker-pactbroker-client'
+
+[docker-images/docker-pactprovider-proxy]
+checkout = git clone 'git@github.com:rajatvig/docker-pactprovider-proxy.git' 'docker-pactprovider-proxy'
+
+[docker-images/docker-pactservice]
+checkout = git clone 'git@github.com:rajatvig/docker-pactservice.git' 'docker-pactservice'
+
+[docker-images/docker-zulu-9]
+checkout = git clone 'git@github.com:rajatvig/docker-zulu-9.git' 'docker-zulu-9'
+
+[medium_post/PactSwiftExample]
+checkout = git clone 'git@github.com:andrewspinks/PactSwiftExample.git' 'PactSwiftExample'
+
+[medium_post/pact-demo-client]
+checkout = git clone 'git@github.com:rajatvig/pact-demo-client.git' 'pact-demo-client'
+
+[medium_post/product-client]
+checkout = git clone 'git@github.com:rajatvig/product-client.git' 'product-client'
+
+[medium_post/todo-backend/todo-backend-js-spec]
+checkout = git clone 'git@github.com:TodoBackend/todo-backend-js-spec.git' 'todo-backend-js-spec'
+
+[medium_post/todo-backend/todo-backend-node-koa-redis]
+checkout = git clone 'git@github.com:rajatvig/todo-backend-node-koa-redis.git' 'todo-backend-node-koa-redis'
+
+[medium_post/todo-backend/todo-backend-restify-redux]
+checkout = git clone 'git@github.com:danielsiwiec/todo-backend-restify-redux.git' 'todo-backend-restify-redux'
+
+[asdf/asdf-bazel]
+checkout = git clone 'git@github.com:rajatvig/asdf-bazel.git' 'asdf-bazel'
+
+[asdf/asdf-dep]
+checkout = git clone 'git@github.com:rajatvig/asdf-dep.git' 'asdf-dep'
+
+[asdf/asdf-glide]
+checkout = git clone 'git@github.com:rajatvig/asdf-glide.git' 'asdf-glide'
+
+[arch]
+checkout = git clone 'git@github.com:rajatvig/ansible-osx.git' 'arch'
+
+[sicp]
+checkout = git clone 'git@github.com:rajatvig/sicp.git' 'sicp'
+
+[rust_euler]
+checkout = git clone 'git@github.com:rajatvig/rust_euler.git' 'rust_euler'

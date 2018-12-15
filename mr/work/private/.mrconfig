@@ -1,0 +1,27 @@
+
+[algorithms]
+checkout = git clone 'keybase://private/rajatvig/kotlin-algos' 'algorithms'
+
+[kotlin-demo-code]
+checkout = git clone 'keybase://private/rajatvig/kotlin-demo-code' 'kotlin-demo-code'
+
+[intellij-config]
+checkout = git clone 'keybase://private/rajatvig/intellij-config' 'intellij-config'
+
+[ios_app]
+checkout = git clone 'keybase://private/rajatvig/ios_app' 'ios_app'
+
+[haskell]
+checkout = git clone 'keybase://private/rajatvig/haskell' 'haskell'
+
+[erlang]
+checkout = git clone 'keybase://private/rajatvig/erlang' 'erlang'
+
+[ios_skeleton]
+checkout = git clone 'keybase://private/rajatvig/ios_skeleton' 'ios_skeleton'
+
+[mesos-marathon]
+checkout = git clone 'keybase://private/rajatvig/mesos-marathon' 'mesos-marathon'
+
+[posts]
+checkout = git clone 'keybase://private/rajatvig/posts' 'posts'

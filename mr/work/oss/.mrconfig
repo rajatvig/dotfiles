@@ -1,0 +1,639 @@
+
+[analyzers/code-maat]
+checkout = git clone 'git@github.com:adamtornhill/code-maat.git' 'code-maat'
+
+[aws/amazon-kinesis-client]
+checkout = git clone 'git@github.com:awslabs/amazon-kinesis-client.git' 'amazon-kinesis-client'
+
+[aws/aws-cli]
+checkout = git clone 'git@github.com:aws/aws-cli.git' 'aws-cli'
+
+[aws/kinesis-storm-spout]
+checkout = git clone 'git@github.com:awslabs/kinesis-storm-spout.git' 'kinesis-storm-spout'
+
+[aws/kinesis-vcr]
+checkout = git clone 'git@github.com:scopely/kinesis-vcr.git' 'kinesis-vcr'
+
+[buck/buck]
+checkout = git clone 'git@github.com:facebook/buck.git' 'buck'
+
+[buck/buck-http-cache]
+checkout = git clone 'git@github.com:uber/buck-http-cache.git' 'buck-http-cache'
+
+[buck/bucklets]
+checkout = git clone 'git@github.com:davido/bucklets.git' 'bucklets'
+
+[buck/gerrit]
+checkout = git clone 'git@github.com:gerrit-review/gerrit.git' 'gerrit'
+
+[cassandra/cassandra]
+checkout = git clone 'git://git.apache.org/cassandra.git' 'cassandra'
+
+[cassandra/cassandra-dtest]
+checkout = git clone 'git@github.com:riptano/cassandra-dtest.git' 'cassandra-dtest'
+
+[cassandra/cpp-driver]
+checkout = git clone 'git@github.com:datastax/cpp-driver.git' 'cpp-driver'
+
+[cassandra/erlcass]
+checkout = git clone 'git@github.com:silviucpp/erlcass.git' 'erlcass'
+
+[cassandra/rust-cql]
+checkout = git clone 'git@github.com:neich/rust-cql.git' 'rust-cql'
+
+[clojure/tesser]
+checkout = git clone 'git@github.com:aphyr/tesser.git' 'tesser'
+
+[coap/go-coap]
+checkout = git clone 'git@github.com:dustin/go-coap.git' 'go-coap'
+
+[coq/frap]
+checkout = git clone 'git@github.com:achlipala/frap.git' 'frap'
+
+[cpp/coz]
+checkout = git clone 'git@github.com:plasma-umass/coz.git' 'coz'
+
+[disruptor/Turbine]
+checkout = git clone 'git@github.com:polyfractal/Turbine.git' 'Turbine'
+
+[disruptor/conversant-disruptor]
+checkout = git clone 'git@github.com:conversant/disruptor.git' 'conversant-disruptor'
+
+[disruptor/disruptor]
+checkout = git clone 'git@github.com:LMAX-Exchange/disruptor.git' 'disruptor'
+
+[docker/buri]
+checkout = git clone 'git@github.com:viafoura/buri.git' 'buri'
+
+[docker/cadvisor]
+checkout = git clone 'git@github.com:google/cadvisor.git' 'cadvisor'
+
+[docker/corekube]
+checkout = git clone 'git@github.com:metral/corekube.git' 'corekube'
+
+[docker/docker-cheat-sheet]
+checkout = git clone 'git@github.com:wsargent/docker-cheat-sheet.git' 'docker-cheat-sheet'
+
+[docker_images/alpine-node]
+checkout = git clone 'git@github.com:mhart/alpine-node.git' 'alpine-node'
+
+[docker_images/docker-base-images]
+checkout = git clone 'git@github.com:MeteoGroup/docker-base-images.git' 'docker-base-images'
+
+[docker_images/docker-dd-agent]
+checkout = git clone 'git@github.com:DataDog/docker-dd-agent.git' 'docker-dd-agent'
+
+[docker_images/docker-node]
+checkout = git clone 'git@github.com:nodejs/docker-node.git' 'docker-node'
+
+[docker_images/dockerfiles]
+checkout = git clone 'git@github.com:instructure/dockerfiles.git' 'dockerfiles'
+
+[docker_images/ecs-cloudwatch-logs]
+checkout = git clone 'git@github.com:awslabs/ecs-cloudwatch-logs.git' 'ecs-cloudwatch-logs'
+
+[docker_images/openjdk]
+checkout = git clone 'git@github.com:docker-library/openjdk.git' 'openjdk'
+
+[erlang/classifier]
+checkout = git clone 'git@github.com:inaka/classifier.git' 'classifier'
+
+[erlang/dispcount]
+checkout = git clone 'git@github.com:ferd/dispcount.git' 'dispcount'
+
+[erlang/druuid]
+checkout = git clone 'git@github.com:kellymclaughlin/druuid.git' 'druuid'
+
+[erlang/elvis]
+checkout = git clone 'git@github.com:inaka/elvis.git' 'elvis'
+
+[erlang/gen_paxos]
+checkout = git clone 'git@github.com:gburd/gen_paxos.git' 'gen_paxos'
+
+[erlang/goldrush]
+checkout = git clone 'git@github.com:DeadZen/goldrush.git' 'goldrush'
+
+[erlang/hackney]
+checkout = git clone 'git@github.com:benoitc/hackney.git' 'hackney'
+
+[erlang/lager]
+checkout = git clone 'git@github.com:basho/lager.git' 'lager'
+
+[erlang/lasp]
+checkout = git clone 'git@github.com:lasp-lang/lasp.git' 'lasp'
+
+[erlang/mochiweb]
+checkout = git clone 'git@github.com:mochi/mochiweb.git' 'mochiweb'
+
+[erlang/plumtree]
+checkout = git clone 'git@github.com:helium/plumtree.git' 'plumtree'
+
+[erlang/poolboy]
+checkout = git clone 'git@github.com:devinus/poolboy.git' 'poolboy'
+
+[erlang/proper]
+checkout = git clone 'git@github.com:manopapad/proper.git' 'proper'
+
+[erlang/riak_core]
+checkout = git clone 'git@github.com:basho/riak_core.git' 'riak_core'
+
+[erlang/riak_ensemble]
+checkout = git clone 'git@github.com:basho/riak_ensemble.git' 'riak_ensemble'
+
+[erlang/riak_test]
+checkout = git clone 'git@github.com:basho/riak_test.git' 'riak_test'
+
+[extras/Limechat-Themes]
+checkout = git clone 'git@github.com:jschoolcraft/Limechat-Themes.git' 'Limechat-Themes'
+
+[extras/base16-iterm2]
+checkout = git clone 'git@github.com:chriskempson/base16-iterm2.git' 'base16-iterm2'
+
+[go/agento]
+checkout = git clone 'git@github.com:abrander/agento.git' 'agento'
+
+[go/grafana]
+checkout = git clone 'git@github.com:grafana/grafana.git' 'grafana'
+
+[go/telegraf]
+checkout = git clone 'git@github.com:influxdata/telegraf.git' 'telegraf'
+
+[graphdb/cayley]
+checkout = git clone 'git@github.com:google/cayley.git' 'cayley'
+
+[graphql/express-graphql]
+checkout = git clone 'git@github.com:graphql/express-graphql.git' 'express-graphql'
+
+[graphql/graphiql]
+checkout = git clone 'git@github.com:graphql/graphiql.git' 'graphiql'
+
+[graphql/graphiql-app]
+checkout = git clone 'git@github.com:skevy/graphiql-app.git' 'graphiql-app'
+
+[graphql/graphql]
+checkout = git clone 'git@github.com:facebook/graphql.git' 'graphql'
+
+[graphql/graphql-go]
+checkout = git clone 'git@github.com:graphql-go/graphql.git' 'graphql-go'
+
+[graphql/graphql-go-utils]
+checkout = git clone 'git@github.com:tmc/graphql.git' 'graphql-go-utils'
+
+[graphql/graphql-java]
+checkout = git clone 'git@github.com:andimarek/graphql-java.git' 'graphql-java'
+
+[graphql/graphql-js]
+checkout = git clone 'git@github.com:graphql/graphql-js.git' 'graphql-js'
+
+[graphql/graphql-rs]
+checkout = git clone 'git@github.com:jaredonline/graphql-rs.git' 'graphql-rs'
+
+[hyperloglog/cityhash]
+checkout = git clone 'git@github.com:google/cityhash.git' 'cityhash'
+
+[hyperloglog/hyperloglog]
+checkout = git clone 'git@github.com:clarkduvall/hyperloglog.git' 'hyperloglog'
+
+[hyperloglog/java-hll]
+checkout = git clone 'git@github.com:aggregateknowledge/java-hll.git' 'java-hll'
+
+[hyperloglog/rust-hyperloglog]
+checkout = git clone 'git@github.com:jedisct1/rust-hyperloglog.git' 'rust-hyperloglog'
+
+[hyperloglog/smhasher]
+checkout = git clone 'git@github.com:aappleby/smhasher.git' 'smhasher'
+
+[java/Aeron]
+checkout = git clone 'git@github.com:real-logic/Aeron.git' 'Aeron'
+
+[java/Agrona]
+checkout = git clone 'git@github.com:real-logic/Agrona.git' 'Agrona'
+
+[java/Chronicle-Algorithms]
+checkout = git clone 'git@github.com:OpenHFT/Chronicle-Algorithms.git' 'Chronicle-Algorithms'
+
+[java/Chronicle-Queue]
+checkout = git clone 'git@github.com:OpenHFT/Chronicle-Queue.git' 'Chronicle-Queue'
+
+[java/LMAXCollections]
+checkout = git clone 'git@github.com:LMAX-Exchange/LMAXCollections.git' 'LMAXCollections'
+
+[java/fluxcapacitor]
+checkout = git clone 'git@github.com:cfregly/fluxcapacitor.git' 'fluxcapacitor'
+
+[java/high-scale-lib]
+checkout = git clone 'git@github.com:stephenc/high-scale-lib.git' 'high-scale-lib'
+
+[java/hppc]
+checkout = git clone 'git@github.com:carrotsearch/hppc.git' 'hppc'
+
+[java/qbit]
+checkout = git clone 'git@github.com:advantageous/qbit.git' 'qbit'
+
+[java/simple-binary-encoding]
+checkout = git clone 'git@github.com:real-logic/simple-binary-encoding.git' 'simple-binary-encoding'
+
+[java/stream-lib]
+checkout = git clone 'git@github.com:addthis/stream-lib.git' 'stream-lib'
+
+[javascript/Font-Awesome]
+checkout = git clone 'git@github.com:FortAwesome/Font-Awesome.git' 'Font-Awesome'
+
+[javascript/MaterialDesign-Webfont]
+checkout = git clone 'git@github.com:Templarian/MaterialDesign-Webfont.git' 'MaterialDesign-Webfont'
+
+[javascript/angular.js]
+checkout = git clone 'git@github.com:angular/angular.js.git' 'angular.js'
+
+[javascript/jasmine]
+checkout = git clone 'git@github.com:jasmine/jasmine.git' 'jasmine'
+
+[javascript/jsencrypt]
+checkout = git clone 'git@github.com:travist/jsencrypt.git' 'jsencrypt'
+
+[javascript/magic-search]
+checkout = git clone 'git@github.com:eucalyptus/magic-search.git' 'magic-search'
+
+[javascript/magic-search-dist]
+checkout = git clone 'git@github.com:eucalyptus/magic-search-dist.git' 'magic-search-dist'
+
+[javascript/mountebank]
+checkout = git clone 'git@github.com:bbyars/mountebank.git' 'mountebank'
+
+[javascript/nconf-redis]
+checkout = git clone 'git@github.com:indexzero/nconf-redis.git' 'nconf-redis'
+
+[javascript/react]
+checkout = git clone 'git@github.com:facebook/react.git' 'react'
+
+[javascript/react-native]
+checkout = git clone 'git@github.com:facebook/react-native.git' 'react-native'
+
+[javascript/relay]
+checkout = git clone 'git@github.com:facebook/relay.git' 'relay'
+
+[javascript/rickshaw]
+checkout = git clone 'git@github.com:shutterstock/rickshaw.git' 'rickshaw'
+
+[javascript/swagger-jsdoc]
+checkout = git clone 'git@github.com:Surnet/swagger-jsdoc.git' 'swagger-jsdoc'
+
+[javascript/swagger-tools]
+checkout = git clone 'git@github.com:apigee-127/swagger-tools.git' 'swagger-tools'
+
+[javascript/term.js]
+checkout = git clone 'git@github.com:chjj/term.js.git' 'term.js'
+
+[kakfa/kafka]
+checkout = git clone 'git@github.com:apache/kafka.git' 'kafka'
+
+[kakfa/kafkerl]
+checkout = git clone 'git@github.com:HernanRivasAcosta/kafkerl.git' 'kafkerl'
+
+[kakfa/mesos-kakfa]
+checkout = git clone 'git@github.com:mesos/kafka.git' 'mesos-kakfa'
+
+[kvstores/bolt]
+checkout = git clone 'git@github.com:boltdb/bolt.git' 'bolt'
+
+[kvstores/leveldb]
+checkout = git clone 'git@github.com:google/leveldb.git' 'leveldb'
+
+[kvstores/rocksdb]
+checkout = git clone 'git@github.com:facebook/rocksdb.git' 'rocksdb'
+
+[latex/Templates]
+checkout = git clone 'git@github.com:rmtfleming/Templates.git' 'Templates'
+
+[mesos/bamboo]
+checkout = git clone 'git@github.com:QubitProducts/bamboo.git' 'bamboo'
+
+[mesos/satellite]
+checkout = git clone 'git@github.com:twosigma/satellite.git' 'satellite'
+
+[ml/PredictionIO]
+checkout = git clone 'git@github.com:PredictionIO/PredictionIO.git' 'PredictionIO'
+
+[ml/pfff]
+checkout = git clone 'git@github.com:facebook/pfff.git' 'pfff'
+
+[mqtt/emqttd]
+checkout = git clone 'git@github.com:emqtt/emqttd.git' 'emqttd'
+
+[mqtt/org.eclipse.mosquitto]
+checkout = git clone 'https://git.eclipse.org/r/mosquitto/org.eclipse.mosquitto' 'org.eclipse.mosquitto'
+
+[nsq/go-nsq]
+checkout = git clone 'git@github.com:nsqio/go-nsq.git' 'go-nsq'
+
+[nsq/nsq]
+checkout = git clone 'git@github.com:nsqio/nsq.git' 'nsq'
+
+[onyx/ansible-onyx]
+checkout = git clone 'git@github.com:onyx-platform/ansible-onyx.git' 'ansible-onyx'
+
+[onyx/learn-onyx]
+checkout = git clone 'git@github.com:onyx-platform/learn-onyx.git' 'learn-onyx'
+
+[onyx/onyx]
+checkout = git clone 'git@github.com:onyx-platform/onyx.git' 'onyx'
+
+[onyx/onyx-starter]
+checkout = git clone 'git@github.com:onyx-platform/onyx-starter.git' 'onyx-starter'
+
+[onyx/onyx-template]
+checkout = git clone 'git@github.com:onyx-platform/onyx-template.git' 'onyx-template'
+
+[os/contiki]
+checkout = git clone 'git@github.com:contiki-os/contiki.git' 'contiki'
+
+[pact/pact-mobile-preso]
+checkout = git clone 'git@github.com:andrewspinks/pact-mobile-preso.git' 'pact-mobile-preso'
+
+[pact/pact_broker]
+checkout = git clone 'git@github.com:bethesque/pact_broker.git' 'pact_broker'
+
+[pact/pact_broker-docker]
+checkout = git clone 'git@github.com:DiUS/pact_broker-docker.git' 'pact_broker-docker'
+
+[papers/Articles]
+checkout = git clone 'git@github.com:aistrate/Articles.git' 'Articles'
+
+[papers/Research-Papers]
+checkout = git clone 'git@github.com:dterei/Research-Papers.git' 'Research-Papers'
+
+[papers/emintham-papers]
+checkout = git clone 'git@github.com:emintham/Papers.git' 'emintham-papers'
+
+[papers/gspindles-papers]
+checkout = git clone 'git@github.com:gspindles/Papers.git' 'gspindles-papers'
+
+[papers/papers-we-love]
+checkout = git clone 'git@github.com:papers-we-love/papers-we-love.git' 'papers-we-love'
+
+[papers/streaming-papers]
+checkout = git clone 'git@github.com:gardnervickers/streaming-papers.git' 'streaming-papers'
+
+[python/vy]
+checkout = git clone 'git@github.com:iogf/vy.git' 'vy'
+
+[raft/logcabin]
+checkout = git clone 'git@github.com:logcabin/logcabin.git' 'logcabin'
+
+[raft/raft-rs]
+checkout = git clone 'git@github.com:Hoverbear/raft-rs.git' 'raft-rs'
+
+[raft/zraft]
+checkout = git clone 'git@github.com:dreyk/zraft.git' 'zraft'
+
+[raft/zraft_lib]
+checkout = git clone 'git@github.com:dreyk/zraft_lib.git' 'zraft_lib'
+
+[rust/bounded-spsc-queue]
+checkout = git clone 'git@github.com:polyfractal/bounded-spsc-queue.git' 'bounded-spsc-queue'
+
+[rust/differential-dataflow]
+checkout = git clone 'git@github.com:frankmcsherry/differential-dataflow.git' 'differential-dataflow'
+
+[rust/eligos]
+checkout = git clone 'git@github.com:disasters/eligos.git' 'eligos'
+
+[rust/mio]
+checkout = git clone 'git@github.com:carllerche/mio.git' 'mio'
+
+[rust/murmur3]
+checkout = git clone 'git@github.com:stusmall/murmur3.git' 'murmur3'
+
+[rust/pagerank]
+checkout = git clone 'git@github.com:frankmcsherry/pagerank.git' 'pagerank'
+
+[rust/rust]
+checkout = git clone 'git@github.com:rust-lang/rust.git' 'rust'
+
+[rust/rust-leveldb]
+checkout = git clone 'git@github.com:skade/leveldb.git' 'rust-leveldb'
+
+[rust/rust-rocksdb]
+checkout = git clone 'git@github.com:spacejam/rust-rocksdb.git' 'rust-rocksdb'
+
+[rust/timely-dataflow]
+checkout = git clone 'git@github.com:frankmcsherry/timely-dataflow.git' 'timely-dataflow'
+
+[scala/algebird]
+checkout = git clone 'git@github.com:twitter/algebird.git' 'algebird'
+
+[scala/scala-style-guide]
+checkout = git clone 'git@github.com:databricks/scala-style-guide.git' 'scala-style-guide'
+
+[spark/incubator-zeppelin]
+checkout = git clone 'git@github.com:apache/incubator-zeppelin.git' 'incubator-zeppelin'
+
+[spark/spark]
+checkout = git clone 'git@github.com:apache/spark.git' 'spark'
+
+[spark/spark-redshift]
+checkout = git clone 'git@github.com:databricks/spark-redshift.git' 'spark-redshift'
+
+[spinnaker/clouddriver]
+checkout = git clone 'git@github.com:spinnaker/clouddriver.git' 'clouddriver'
+
+[spinnaker/deck]
+checkout = git clone 'git@github.com:spinnaker/deck.git' 'deck'
+
+[spinnaker/echo]
+checkout = git clone 'git@github.com:spinnaker/echo.git' 'echo'
+
+[spinnaker/igor]
+checkout = git clone 'git@github.com:spinnaker/igor.git' 'igor'
+
+[spinnaker/orca]
+checkout = git clone 'git@github.com:spinnaker/orca.git' 'orca'
+
+[spinnaker/spinnaker]
+checkout = git clone 'git@github.com:spinnaker/spinnaker.git' 'spinnaker'
+
+[swift/Alamofire]
+checkout = git clone 'git@github.com:Alamofire/Alamofire.git' 'Alamofire'
+
+[swift/Async]
+checkout = git clone 'git@github.com:duemunk/Async.git' 'Async'
+
+[swift/AsyncDisplayKit]
+checkout = git clone 'git@github.com:facebook/AsyncDisplayKit.git' 'AsyncDisplayKit'
+
+[swift/BrightFutures]
+checkout = git clone 'git@github.com:Thomvis/BrightFutures.git' 'BrightFutures'
+
+[swift/CocoaPods]
+checkout = git clone 'git@github.com:CocoaPods/CocoaPods.git' 'CocoaPods'
+
+[swift/Gaikan]
+checkout = git clone 'git@github.com:akane/Gaikan.git' 'Gaikan'
+
+[swift/Gloss]
+checkout = git clone 'git@github.com:hkellaway/Gloss.git' 'Gloss'
+
+[swift/Interstellar]
+checkout = git clone 'git@github.com:JensRavens/Interstellar.git' 'Interstellar'
+
+[swift/Moya]
+checkout = git clone 'git@github.com:Moya/Moya.git' 'Moya'
+
+[swift/NMessenger]
+checkout = git clone 'git@github.com:eBay/NMessenger.git' 'NMessenger'
+
+[swift/Neon]
+checkout = git clone 'git@github.com:mamaral/Neon.git' 'Neon'
+
+[swift/Nocilla]
+checkout = git clone 'git@github.com:luisobo/Nocilla.git' 'Nocilla'
+
+[swift/OHHTTPStubs]
+checkout = git clone 'git@github.com:AliSoftware/OHHTTPStubs.git' 'OHHTTPStubs'
+
+[swift/Rainforest]
+checkout = git clone 'git@github.com:CocoaPods/Rainforest.git' 'Rainforest'
+
+[swift/Result]
+checkout = git clone 'git@github.com:antitypical/Result.git' 'Result'
+
+[swift/RxDataSources]
+checkout = git clone 'git@github.com:RxSwiftCommunity/RxDataSources.git' 'RxDataSources'
+
+[swift/RxSwift]
+checkout = git clone 'git@github.com:ReactiveX/RxSwift.git' 'RxSwift'
+
+[swift/SnapKit]
+checkout = git clone 'git@github.com:SnapKit/SnapKit.git' 'SnapKit'
+
+[swift/Swift]
+checkout = git clone 'git@github.com:carlbutron/Swift.git' 'Swift'
+
+[swift/SwiftWeather]
+checkout = git clone 'git@github.com:JakeLin/SwiftWeather.git' 'SwiftWeather'
+
+[swift/SwiftyJSON]
+checkout = git clone 'git@github.com:SwiftyJSON/SwiftyJSON.git' 'SwiftyJSON'
+
+[swift/SwiftyLISP]
+checkout = git clone 'git@github.com:uraimo/SwiftyLISP.git' 'SwiftyLISP'
+
+[swift/Swinject]
+checkout = git clone 'https://github.com/Swinject/Swinject.git' 'Swinject'
+
+[swift/WebViewJavascriptBridge]
+checkout = git clone 'git@github.com:marcuswestin/WebViewJavascriptBridge.git' 'WebViewJavascriptBridge'
+
+[swift/boilerplate]
+checkout = git clone 'git@github.com:tailec/boilerplate.git' 'boilerplate'
+
+[swift/eidolon]
+checkout = git clone 'git@github.com:artsy/eidolon.git' 'eidolon'
+
+[swift/eigen]
+checkout = git clone 'git@github.com:artsy/eigen.git' 'eigen'
+
+[swift/open-source-ios-apps]
+checkout = git clone 'git@github.com:dkhamsing/open-source-ios-apps.git' 'open-source-ios-apps'
+
+[swift/pact-consumer-swift]
+checkout = git clone 'git@github.com:DiUS/pact-consumer-swift.git' 'pact-consumer-swift'
+
+[swift/pod-template]
+checkout = git clone 'git@github.com:CocoaPods/pod-template.git' 'pod-template'
+
+[swift/protobuf-swift]
+checkout = git clone 'git@github.com:alexeyxo/protobuf-swift.git' 'protobuf-swift'
+
+[swift/realm-cocoa]
+checkout = git clone 'git@github.com:realm/realm-cocoa.git' 'realm-cocoa'
+
+[swift/vlc]
+checkout = git clone 'git@github.com:videolan/vlc.git' 'vlc'
+
+[teamcity/teamcity-agent-docker]
+checkout = git clone 'git@github.com:sjoerdmulder/teamcity-agent-docker.git' 'teamcity-agent-docker'
+
+[teamcity/teamcity-docker-agent]
+checkout = git clone 'git@github.com:JetBrains/teamcity-docker-agent.git' 'teamcity-docker-agent'
+
+[teamcity/teamcity-docker-minimal-agent]
+checkout = git clone 'git@github.com:JetBrains/teamcity-docker-minimal-agent.git' 'teamcity-docker-minimal-agent'
+
+[teamcity/teamcity-docker-server]
+checkout = git clone 'git@github.com:JetBrains/teamcity-docker-server.git' 'teamcity-docker-server'
+
+[unikernels/HaLVM]
+checkout = git clone 'git@github.com:GaloisInc/HaLVM.git' 'HaLVM'
+
+[unikernels/ling]
+checkout = git clone 'git@github.com:cloudozer/ling.git' 'ling'
+
+[unikernels/mirage]
+checkout = git clone 'git@github.com:mirage/mirage.git' 'mirage'
+
+[zeromq/czmq]
+checkout = git clone 'git://github.com/zeromq/czmq.git' 'czmq'
+
+[zeromq/erlzmq2]
+checkout = git clone 'git@github.com:zeromq/erlzmq2.git' 'erlzmq2'
+
+[zeromq/exzmq]
+checkout = git clone 'git@github.com:zeromq/exzmq.git' 'exzmq'
+
+[zeromq/jeromq]
+checkout = git clone 'git@github.com:zeromq/jeromq.git' 'jeromq'
+
+[zeromq/jzmq]
+checkout = git clone 'git@github.com:zeromq/jzmq.git' 'jzmq'
+
+[zeromq/libsodium]
+checkout = git clone 'git://github.com/jedisct1/libsodium.git' 'libsodium'
+
+[zeromq/libzmq]
+checkout = git clone 'git@github.com:zeromq/libzmq.git' 'libzmq'
+
+[zeromq/malamute]
+checkout = git clone 'git@github.com:zeromq/malamute.git' 'malamute'
+
+[zeromq/mangos]
+checkout = git clone 'git@github.com:go-mangos/mangos.git' 'mangos'
+
+[zeromq/rust-zmq]
+checkout = git clone 'git@github.com:erickt/rust-zmq.git' 'rust-zmq'
+
+[zeromq/zmq.rs]
+checkout = git clone 'git@github.com:zeromq/zmq.rs.git' 'zmq.rs'
+
+[zeromq/zyre]
+checkout = git clone 'git@github.com:zeromq/zyre.git' 'zyre'
+
+[zipkin/brave]
+checkout = git clone 'git@github.com:openzipkin/brave.git' 'brave'
+
+[zipkin/docker-zipkin]
+checkout = git clone 'git@github.com:openzipkin/docker-zipkin.git' 'docker-zipkin'
+
+[zipkin/zipkin]
+checkout = git clone 'git@github.com:openzipkin/zipkin.git' 'zipkin'
+
+[zipkin/zipkin-tracer]
+checkout = git clone 'git@github.com:openzipkin/zipkin-tracer.git' 'zipkin-tracer'
+
+[java/atomix]
+checkout = git clone 'git@github.com:atomix/atomix.git' 'atomix'
+
+[vert.x/vert.x]
+checkout = git clone 'git@github.com:eclipse/vert.x.git' 'vert.x'
+
+[vert.x/vertx-web]
+checkout = git clone 'git@github.com:vert-x3/vertx-web.git' 'vertx-web'
+
+[microservices-demo]
+checkout = git clone 'git@github.com:microservices-demo/microservices-demo' 'microservices-demo'
+
+[rust/ProjectEulerRust]
+checkout = git clone 'git@github.com:gifnksm/ProjectEulerRust.git' 'ProjectEulerRust'
+
+[rust/rust-learning]
+checkout = git clone 'git@github.com:ctjhoa/rust-learning.git' 'rust-learning'

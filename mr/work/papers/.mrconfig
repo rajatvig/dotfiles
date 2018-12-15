@@ -1,0 +1,21 @@
+
+[Articles]
+checkout = git clone 'git@github.com:aistrate/Articles.git' 'Articles'
+
+[Research-Papers]
+checkout = git clone 'git@github.com:dterei/Research-Papers.git' 'Research-Papers'
+
+[emintham-papers]
+checkout = git clone 'git@github.com:emintham/Papers.git' 'emintham-papers'
+
+[gspindles-papers]
+checkout = git clone 'git@github.com:gspindles/Papers.git' 'gspindles-papers'
+
+[papers-we-love]
+checkout = git clone 'git@github.com:papers-we-love/papers-we-love.git' 'papers-we-love'
+
+[reading]
+checkout = git clone 'git@github.com:amilajack/reading.git' 'reading'
+
+[streaming-papers]
+checkout = git clone 'git@github.com:gardnervickers/streaming-papers.git' 'streaming-papers'

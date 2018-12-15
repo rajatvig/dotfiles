@@ -23,6 +23,7 @@ $(BINARY_MR):
 
 bootstrap: $(BINARY_STOW) $(BINARY_MR) ## Bootstrap Brew, dotfiles
 	stow home
+	stow mr
 	stow emacs
 	stow vim
 	stow alacritty
