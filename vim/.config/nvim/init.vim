@@ -27,9 +27,9 @@ Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
-Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug '/usr/local/opt/fzf'
+
 let g:make = 'gmake'
 if exists('make')
         let g:make = 'make'
@@ -72,7 +72,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Colors
 Plug 'chriskempson/base16-vim'
-Plug 'tomasr/molokai'
 
 " Kotlin
 Plug 'udalov/kotlin-vim'

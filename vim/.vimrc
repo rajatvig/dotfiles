@@ -71,7 +71,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Colors
 Plug 'chriskempson/base16-vim'
-Plug 'tomasr/molokai'
 
 " Kotlin
 Plug 'udalov/kotlin-vim'

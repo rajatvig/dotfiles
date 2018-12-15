@@ -1,7 +1,7 @@
 ;;;*~/.doom.d/config.el -*- lexical-binding: t; -*-
 
+(setq doom-theme 'base16-summerfruit-dark)
 (setq doom-font (font-spec :family "Hack Nerd Font" :size 11))
-
 (setq projectile-enable-caching t)
 
 (global-set-key (kbd "A-/") 'hippie-expand)
