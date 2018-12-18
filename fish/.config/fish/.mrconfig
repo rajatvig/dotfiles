@@ -1,0 +1,8 @@
+[plugins/pure/functions]
+checkout = git clone 'git@github.com:brandonweiss/pure.fish.git' 'functions'
+
+[modules/z]
+checkout = git clone 'git@github.com:sjl/z-fish.git' 'z'
+
+[plugins/to]
+checkout = git clone 'git@github.com:joehillen/to-fish.git' 'to'
