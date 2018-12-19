@@ -29,7 +29,7 @@ bootstrap: $(BINARY_STOW) $(BINARY_MR) ## Bootstrap Brew, dotfiles
 	stow vagrant
 	stow fish
 	mr update
-	cd $(HC)/fish_plugins; mr bootstrap .mrconfig
+	cd $(HC)/fish; mr bootstrap .mrconfig
 
 relink: ## Relink the Packages with what is installed
 	brew bundle dump --force --file=$(CDIR)/Brewfile
