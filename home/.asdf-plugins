@@ -19,6 +19,7 @@ nim
 nomad
 ocaml
 packer
+protoc
 python
 ruby
 rust

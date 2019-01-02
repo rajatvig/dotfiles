@@ -27,3 +27,4 @@ scala 2.12.5
 serf 0.8.1
 terraform 0.11.10
 vault 0.11.4
+protoc 3.6.1
