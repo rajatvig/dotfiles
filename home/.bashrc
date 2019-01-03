@@ -50,3 +50,5 @@ eval "$(direnv hook bash)"
 source ~/.asdf/asdf.sh
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --gay
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

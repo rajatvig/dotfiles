@@ -87,3 +87,5 @@ source $ZSH/oh-my-zsh.sh
 eval "$(direnv hook zsh)"
 
 fortune | cowsay -f $(ls /usr/local/share/cows/ | gshuf -n1) | toilet -f term --metal
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
