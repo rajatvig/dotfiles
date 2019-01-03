@@ -85,9 +85,6 @@ Plug 'hashivim/vim-terraform'
 " Vagrant
 Plug 'hashivim/vim-vagrant'
 
-" Scala
-Plug 'ensime/ensime-vim'
-
 call plug#end()
 
 " Required:
