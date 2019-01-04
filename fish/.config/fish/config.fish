@@ -4,7 +4,6 @@ set -gx EDITOR nvim
 set -gx GIT_EDITOR nvim
 set -gx GOPATH /usr/local/var/go
 
-
 set -g fish_user_paths $GOPATH/bin $fish_user_paths
 
 set fish_plugin_dir ~/.config/fish/plugins
