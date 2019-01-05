@@ -1,7 +1,6 @@
 fish/.config/fish/fish_history
 fish/.config/fish/fishd.*
 fish/.config/fish/modules/z
-fish/.config/fish/plugins/pure
 fish/.config/fish/plugins/to
 
 # Created by https://www.gitignore.io/api/osx,vim,emacs
