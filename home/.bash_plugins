@@ -1,7 +1,13 @@
-alias-completion
+general
 base
+docker
 edit-mode-emacs
 git
+go
 osx
 tmux
 z
+bash-it
+system
+alias-completion
+fzf

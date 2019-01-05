@@ -12,8 +12,5 @@ checkout = git clone 'git@github.com:hlissner/doom-emacs.git' '.emacs.d'
 [.config/bash_it]
 checkout = git clone 'git@github.com:Bash-it/bash-it.git' 'bash_it'
 
-[.oh-my-zsh]
-checkout = git clone 'git@github.com:robbyrussell/oh-my-zsh.git' '.oh-my-zsh'
-
 [.asdf]
 checkout = git clone 'git@github.com:asdf-vm/asdf.git' '.asdf'

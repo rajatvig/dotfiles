@@ -34,7 +34,7 @@ bootstrap: $(BINARY_STOW) $(BINARY_MR) ## Bootstrap Brew, dotfiles
 relink: ## Relink the Packages with what is installed
 	brew bundle dump --force --file=$(CDIR)/Brewfile
 	vagrant plugin list | cut -f 1 -d ' ' > $(CDIR)/vagrant/.vagrant.d/plugins
-	ls $(BIT)/plugins/enabled/ | cut -d "." -f 1 > $(CDIR)/home/.bash_plugins
+	ls $(BIT)/enabled/ | cut -d "." -f 1 | awk -F "---" '{print $$2}' > $(CDIR)/home/.bash_plugins
 	asdf plugin-list > $(CDIR)/home/.asdf-plugins
 
 brew: ## Install all configured brew packages
@@ -47,7 +47,7 @@ asdf: ## Install Languages
 vagrant: ## Install and configure Vagrant
 	cat $(CDIR)/vagrant/.vagrant.d/plugins | xargs $(VPI)
 
-vim: ## Configure SPF-13 for VIM
+vim: ## Configure VIM
 	vim +PlugInstall +qall
 	nvim +PlugInstall +qall
 	pip3 install --upgrade pip
@@ -55,8 +55,7 @@ vim: ## Configure SPF-13 for VIM
 
 bash: ## Configure Bash Shell
 	$(BIT)/install.sh --silent
-	mkdir -p $(BITP)/enabled
-	cat $(CDIR)/home/.bash_plugins | xargs -I '{}' bash -c 'ln -s $(BITP)/available/{}.plugin.bash $(BITP)/enabled/{}.plugin.bash'
+	cat $(CDIR)/home/.bash_plugins | xargs -I '{}' bash -c 'bash-it enable plugin {}'
 
 git: ## Configure Git Global Settings and an Ignore file
 	$(GCG) user.name "Rajat Vig"
