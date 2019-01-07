@@ -1,7 +1,9 @@
 ;;;*~/.doom.d/config.el -*- lexical-binding: t; -*-
 
 (setq doom-theme 'base16-summerfruit-dark)
+
 (setq doom-font (font-spec :family "Hack Nerd Font" :size 11))
+
 (setq projectile-enable-caching t)
 
 (global-set-key (kbd "A-/") 'hippie-expand)
@@ -29,5 +31,16 @@
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'rainbow-mode)
+
+(add-to-list 'auto-mode-alist '("\\.libsonnet$" . jsonnet-mode))
+
+(add-to-list 'auto-mode-alist '("\\.kt$" . kotlin-mode))
+(add-to-list 'auto-mode-alist '("\\.kts$" . kotlin-mode))
+(add-hook 'kotlin-mode-hook 'flycheck-mode)
+
+(add-hook 'terraform-mode-hook 'terraform-format-on-save-mode)
+
+(add-to-list 'auto-mode-alist '("WORKSPACE$" . bazel-mode))
+(add-to-list 'auto-mode-alist '("BUILD$" . bazel-mode))
 
 (direnv-mode)
