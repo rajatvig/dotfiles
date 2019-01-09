@@ -43,4 +43,7 @@
 (add-to-list 'auto-mode-alist '("WORKSPACE$" . bazel-mode))
 (add-to-list 'auto-mode-alist '("BUILD$" . bazel-mode))
 
+(add-to-list 'auto-mode-alist '("\\Jenkinsfile$", groovy-mode))
+(add-to-list 'auto-mode-alist '("\\*.gradle$", groovy-mode))
+
 (direnv-mode)

@@ -14,3 +14,5 @@
 (package! lsp-ui)
 (package! lsp-go)
 (package! company-lsp)
+
+(package! groovy-mode)
