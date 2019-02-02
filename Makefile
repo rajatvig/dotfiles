@@ -6,10 +6,7 @@ GCG=git config --global
 
 HC=$(HOME)/.config
 
-BIT=$(HC)/bash_it
-BITP=$(BIT)/plugins
-
-.PHONY: help bootstrap relink
+.PHONY: help bootstrap relink vim vagrant work java
 .DEFAULT_GOAL := help
 
 BINARY_STOW := /usr/local/bin/stow
@@ -21,7 +18,13 @@ $(BINARY_STOW):
 $(BINARY_MR):
 	brew install mr
 
-bootstrap: $(BINARY_STOW) $(BINARY_MR) ## Bootstrap Brew, dotfiles
+java:
+	brew cask install java
+
+work:
+	mkdir -p $(HOME)/work/{github,oss,personal,papers}
+
+bootstrap: $(BINARY_STOW) $(BINARY_MR) work java ## Bootstrap Brew, dotfiles
 	stow home
 	stow mr
 	stow emacs
@@ -35,7 +38,6 @@ bootstrap: $(BINARY_STOW) $(BINARY_MR) ## Bootstrap Brew, dotfiles
 relink: ## Relink the Packages with what is installed
 	brew bundle dump --force --file=$(CDIR)/Brewfile
 	vagrant plugin list | cut -f 1 -d ' ' > $(CDIR)/vagrant/.vagrant.d/plugins
-	ls $(BIT)/enabled/ | cut -d "." -f 1 | awk -F "---" '{print $$2}' > $(CDIR)/home/.bash_plugins
 	asdf plugin-list > $(CDIR)/home/.asdf-plugins
 
 brew: ## Install all configured brew packages
@@ -43,7 +45,7 @@ brew: ## Install all configured brew packages
 
 asdf: ## Install Languages
 	cat $(CDIR)/home/.asdf-plugins | xargs -I plugin-name asdf plugin-add plugin-name || true
-	cat $(CDIR)/home/.tool-versions | xargs -I tool-version asdf install tool-version || true
+	cat $(CDIR)/home/.tool-versions | xargs -I tool-version asdf install tool-version || xargs -I {} sh -c {} || true
 
 vagrant: ## Install and configure Vagrant
 	cat $(CDIR)/vagrant/.vagrant.d/plugins | xargs $(VPI)
@@ -53,10 +55,6 @@ vim: ## Configure VIM
 	nvim +PlugInstall +qall
 	pip3 install --upgrade pip
 	pip3 install sexpdata websocket-client neovim
-
-bash: ## Configure Bash Shell
-	$(BIT)/install.sh --silent
-	cat $(CDIR)/home/.bash_plugins | xargs -I '{}' bash -c 'bash-it enable plugin {}'
 
 git: ## Configure Git Global Settings and an Ignore file
 	$(GCG) user.name "Rajat Vig"

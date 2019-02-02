@@ -3,6 +3,9 @@ fish/.config/fish/fishd.*
 fish/.config/fish/modules/z
 fish/.config/fish/plugins/to
 
+vim/.vim/plugged
+vim/.config/nvim/plugged
+
 # Created by https://www.gitignore.io/api/osx,vim,emacs
 
 ### Emacs ###

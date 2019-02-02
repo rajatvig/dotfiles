@@ -9,8 +9,5 @@ checkout = git clone 'git@github.com:rajatvig/dotfiles.git' 'dotfiles'
 [.emacs.d]
 checkout = git clone 'git@github.com:hlissner/doom-emacs.git' '.emacs.d'
 
-[.config/bash_it]
-checkout = git clone 'git@github.com:Bash-it/bash-it.git' 'bash_it'
-
 [.asdf]
 checkout = git clone 'git@github.com:asdf-vm/asdf.git' '.asdf'
