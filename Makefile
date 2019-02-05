@@ -6,7 +6,7 @@ GCG=git config --global
 
 HC=$(HOME)/.config
 
-.PHONY: help bootstrap relink vim vagrant work java
+.PHONY: help bootstrap relink vim vagrant base_dirs java
 .DEFAULT_GOAL := help
 
 BINARY_STOW := /usr/local/bin/stow
@@ -21,10 +21,11 @@ $(BINARY_MR):
 java:
 	brew cask install java
 
-work:
+base_dirs:
 	mkdir -p $(HOME)/work/{github,oss,personal,papers}
+	mkdir $(HOME)/.vagrant.d
 
-bootstrap: $(BINARY_STOW) $(BINARY_MR) work java ## Bootstrap Brew, dotfiles
+bootstrap: $(BINARY_STOW) $(BINARY_MR) base_dirs java ## Bootstrap Brew, dotfiles
 	stow home
 	stow mr
 	stow emacs
