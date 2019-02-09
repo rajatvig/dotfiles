@@ -29,6 +29,8 @@
 (add-hook 'go-mode-hook #'lsp-go-enable)
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
 
+(add-hook 'rust-mode-hook 'lsp)
+
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'rainbow-mode)
 
