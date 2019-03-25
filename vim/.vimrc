@@ -70,7 +70,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'editorconfig/editorconfig-vim'
 
 " Colors
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
+Plug 'danielwe/base16-vim'
 
 " Kotlin
 Plug 'udalov/kotlin-vim'
