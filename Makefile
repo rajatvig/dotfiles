@@ -12,6 +12,10 @@ HC=$(HOME)/.config
 BINARY_STOW := /usr/local/bin/stow
 BINARY_MR   := /usr/local/bin/mr
 
+init: ## initialize core
+	ssh-keyscan github.com >> ~/.ssh/known_hosts
+	ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "rajat.vig@gmail.com"
+
 $(BINARY_STOW):
 	brew install stow
 
@@ -24,7 +28,6 @@ java:
 base:
 	mkdir -p $(HOME)/work/{github,oss,personal,papers}
 	mkdir -p $(HOME)/.vagrant.d
-	ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 bootstrap: $(BINARY_STOW) $(BINARY_MR) base_dirs java ## bootstrap dotfiles
 	stow home
@@ -52,9 +55,15 @@ relink: ## relink the packages with what is installed
 brew: ## install all configured brew packages
 	brew bundle --file=$(CDIR)/Brewfile
 
-asdf: ## install compilers/sdks/tools using asdf
-	cat $(CDIR)/home/.asdf-plugins | xargs -I plugin-name asdf plugin-add plugin-name
-	cat $(CDIR)/home/.tool-versions | xargs -I tool-version asdf install tool-version | xargs -I {} sh -c {} | true
+asdf-plugins:
+	cat $(CDIR)/home/.asdf-plugins | xargs -I plugin-name asdf plugin-add plugin-name | true
+	asdf plugin-remove bazel
+	asdf plugin-add bazel https://github.com/rajatvig/asdf-bazel.git
+
+asdf-tools: ## install compilers/sdks/tools using asdf
+	cat $(CDIR)/home/.tool-versions | xargs -I tool-version echo asdf install tool-version > /tmp/tools
+	chmod +x /tmp/tools
+	/tmp/tools
 
 vagrant: ## Install and configure Vagrant
 	cat $(CDIR)/vagrant/.vagrant.d/plugins | xargs $(VPI)

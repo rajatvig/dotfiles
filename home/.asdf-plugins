@@ -13,7 +13,6 @@ kops
 kotlin
 kubectl
 maven
-minikube
 nim
 nomad
 ocaml
@@ -22,8 +21,6 @@ protoc
 python
 ruby
 rust
-sbt
-scala
 serf
 terraform
 vault
