@@ -9,6 +9,7 @@ function __plugin_add
     set -l load_file_path "$plugin/init.fish"
 
     for repository in $fish_plugin_dir[-1..1]
+        __prepend_path_plugin $repository/$plugin fish_function_path
         if test -e $repository/$function_path
             __prepend_path_plugin $repository/$function_path fish_function_path
         end

@@ -7,7 +7,7 @@ set -gx GOPATH /usr/local/var/go
 set -g fish_user_paths $GOPATH/bin $fish_user_paths
 
 set fish_plugin_dir ~/.config/fish/plugins
-set fish_plugins pure docker utils grc asdf to brew git devops
+set fish_plugins asdf brew devops docker git grc spacefish to utils
 
 for f in autotmux plugins z/z
     source ~/.config/fish/modules/$f.fish

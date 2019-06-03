@@ -43,6 +43,15 @@ BINARY_FISH := /usr/local/bin/fish
 $(BINARY_FISH):
 	brew install fish toilet cowsay kubectl
 
+BINARY_PIP := /usr/local/bin/pip
+
+$(BINARY_PIP):
+	brew install python
+
+bash: $(BINARY_PIP) ## configure bash
+	pip install --upgrade pip
+	pip install	powerline-status
+
 fish: $(BINARY_FISH) ## configure fish
 	sudo chsh -s /usr/local/bin/fish $(USER)
 	cd $(HC)/fish; mr bootstrap .mrconfig
@@ -77,11 +86,11 @@ $(BINARY_VIM):
 $(BINARY_NVIM):
 	brew install nvim
 
-vim: $(BINARY_VIM) $(BINARY_NVIM) ## configure vim/nvim
+vim: $(BINARY_PIP) $(BINARY_VIM) $(BINARY_NVIM) ## configure vim/nvim
 	vim +PlugInstall +qall
 	nvim +PlugInstall +qall
-	pip3 install --upgrade pip
-	pip3 install sexpdata websocket-client neovim
+	pip install --upgrade pip
+	pip install sexpdata websocket-client neovim
 
 git: ## configure git global settings and an ignore file
 	$(GCG) user.name "Rajat Vig"

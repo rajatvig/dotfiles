@@ -2,6 +2,7 @@ fish/.config/fish/fish_history
 fish/.config/fish/fishd.*
 fish/.config/fish/modules/z
 fish/.config/fish/plugins/to
+fish/.config/fish/plugins/spacefish
 
 vim/.vim/plugged
 vim/.config/nvim/plugged
