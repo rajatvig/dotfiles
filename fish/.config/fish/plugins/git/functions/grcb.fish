@@ -1,4 +1,4 @@
-function git_rebase_current_branch
+function grcb --description "rebase current branch against master"
   function _git_branch_name
     echo (git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
   end
@@ -6,8 +6,7 @@ function git_rebase_current_branch
   set -l git_branch (_git_branch_name)
 
   git checkout master
-  git pull --rebase origin master
-  git fetch --all
+  gup
   git checkout $git_branch
   git rebase master
 end

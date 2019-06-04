@@ -4,5 +4,7 @@ function gup --description 'git pull --rebase origin $(branch)'
   end
 
   set -l git_branch (_git_branch_name)
+  git fetch --all
+  git remote prune origin
   git pull --rebase origin $git_branch
 end

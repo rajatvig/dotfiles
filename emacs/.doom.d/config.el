@@ -24,13 +24,6 @@
 
 (add-hook 'focus-out-hook 'save-all)
 
-(push 'company-lsp company-backends)
-
-(add-hook 'go-mode-hook #'lsp-go-enable)
-(add-hook 'lsp-mode-hook 'lsp-ui-mode)
-
-(add-hook 'rust-mode-hook 'lsp)
-
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'rainbow-mode)
 
@@ -44,6 +37,7 @@
 
 (add-to-list 'auto-mode-alist '("WORKSPACE$" . bazel-mode))
 (add-to-list 'auto-mode-alist '("BUILD$" . bazel-mode))
+(add-hook 'bazel-mode-hook (lambda () (add-hook 'before-save-hook #'bazel-format nil t)))
 
 (add-to-list 'auto-mode-alist '("\\Jenkinsfile$", groovy-mode))
 (add-to-list 'auto-mode-alist '("\\*.gradle$", groovy-mode))
